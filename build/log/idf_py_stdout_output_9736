@@ -1,0 +1,514 @@
+0m�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug 12 2025 22:54:49[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0add8h ( 44504) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001ae00 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (121) esp_image: segment 2: paddr=0001ae0c vaddr=3ffb0000 size=02188h (  8584) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=0001cf9c vaddr=40080000 size=0307ch ( 12412) load[0m
+[0;32mI (140) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=1722ch ( 94764) map[0m
+[0;32mI (178) esp_image: segment 5: paddr=00037254 vaddr=4008307c size=0a514h ( 42260) load[0m
+[0;32mI (202) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (203) boot: Disabling RNG early entropy source...[0m
+[0;32mI (214) cpu_start: Multicore app[0m
+[0;32mI (214) cpu_start: Pro cpu up.[0m
+[0;32mI (214) cpu_start: Starting app cpu, entry point is 0x40081204[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (232) cpu_start: Pro cpu start user code[0m
+[0;32mI (232) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (232) cpu_start: Application information:[0m
+[0;32mI (237) cpu_start: Project name:     flexsonic[0m
+[0;32mI (242) cpu_start: App version:      1[0m
+[0;32mI (247) cpu_start: Compile time:     Aug 12 2025 22:54:29[0m
+[0;32mI (253) cpu_start: ELF file SHA256:  829f3b8f6605c7ef...[0m
+[0;32mI (259) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (264) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (269) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (274) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (292) heap_init: At 3FFB2A30 len 0002D5D0 (181 KiB): DRAM[0m
+[0;32mI (298) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (304) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (311) heap_init: At 4008D590 len 00012A70 (74 KiB): IRAM[0m
+[0;32mI (318) spi_flash: detected chip: generic[0m
+[0;32mI (321) spi_flash: flash io: dio[0m
+[0;33mW (325) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (339) app_start: Starting scheduler on CPU0[0m
+[0;32mI (344) app_start: Starting scheduler on CPU1[0m
+[0;32mI (344) main_task: Started on CPU0[0m
+[0;32mI (354) main_task: Calling app_main()[0m
+[0;32mI (354) FLEX+GYRO: MPU6050 initialized[0m
+[0;32mI (354) FLEX+GYRO: System Ready. Reading sensors...[0m
+[0;32mI (374) FLEX+GYRO: FLEX | Thumb:28 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:14.32 Y:48.11 Z:47.35[0m
+[0;32mI (874) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-2.22 Y:-0.86 Z:-1.18[0m
+[0;32mI (1374) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-2.22 Y:-1.09 Z:-0.71[0m
+[0;32mI (1874) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-2.49 Y:-1.26 Z:-2.15[0m
+[0;32mI (2374) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-2.18 Y:-1.30 Z:-1.03[0m
+[0;32mI (2874) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-2.22 Y:-1.25 Z:-0.82[0m
+[0;32mI (3374) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-2.39 Y:-1.11 Z:-1.37[0m
+[0;32mI (3874) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-2.34 Y:-0.78 Z:-1.04[0m
+[0;32mI (4374) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-2.34 Y:-0.89 Z:-0.98[0m
+[0;32mI (4874) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-1.86 Y:-0.85 Z:-0.63[0m
+[0;32mI (5374) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:6.31 Y:-0.65 Z:1.52[0m
+[0;32mI (5874) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-1.19 Y:-1.33 Z:-0.11[0m
+[0;32mI (6374) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:1.18 Y:-6.01 Z:-3.33[0m
+[0;32mI (6874) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:6.48 Y:-20.63 Z:0.66[0m
+[0;32mI (7374) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-2.32 Y:-1.08 Z:-3.28[0m
+[0;32mI (7874) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-6.09 Y:-3.22 Z:0.68[0m
+[0;32mI (8374) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-2.50 Y:-2.47 Z:-0.45[0m
+[0;32mI (8874) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:4 || GYRO | X:-3.92 Y:0.78 Z:-0.76[0m
+[0;32mI (9374) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-8.79 Y:-2.34 Z:-5.95[0m
+[0;32mI (9874) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-3.11 Y:-2.11 Z:-1.78[0m
+[0;32mI (10374) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-3.69 Y:0.66 Z:-1.63[0m
+[0;32mI (10874) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:59 || GYRO | X:-9.22 Y:15.14 Z:10.63[0m
+[0;32mI (11374) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:1.51 Y:-2.39 Z:-0.96[0m
+[0;32mI (11874) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-1.38 Y:-1.73 Z:2.00[0m
+[0;32mI (12374) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-5.17 Y:-2.12 Z:-3.99[0m
+[0;32mI (12874) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-1.20 Y:-0.08 Z:-0.23[0m
+[0;32mI (13374) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-1.81 Y:-4.16 Z:-3.64[0m
+[0;32mI (13874) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-4.27 Y:-4.26 Z:0.42[0m
+[0;32mI (14374) FLEX+GYRO: FLEX | Thumb:2 Index:0 Middle:0 Ring:0 Pinky:106 || GYRO | X:-4.02 Y:-0.85 Z:-4.20[0m
+[0;32mI (14874) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:149 || GYRO | X:-3.68 Y:-0.03 Z:-0.60[0m
+[0;32mI (15374) FLEX+GYRO: FLEX | Thumb:1 Index:0 Middle:0 Ring:0 Pinky:95 || GYRO | X:-2.09 Y:1.72 Z:-2.46[0m
+[0;32mI (15874) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-2.24 Y:-0.53 Z:-1.08[0m
+[0;32mI (16374) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-2.11 Y:-1.22 Z:0.30[0m
+[0;32mI (16874) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-2.05 Y:-1.31 Z:-1.64[0m
+[0;32mI (17374) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-6.83 Y:-1.21 Z:-1.40[0m
+[0;32mI (17874) FLEX+GYRO: FLEX | Thumb:1 Index:0 Middle:0 Ring:0 Pinky:2 || GYRO | X:-7.17 Y:-1.68 Z:-1.94[0m
+[0;32mI (18374) FLEX+GYRO: FLEX | Thumb:3 Index:0 Middle:0 Ring:0 Pinky:4 || GYRO | X:-5.40 Y:0.32 Z:-4.11[0m
+[0;32mI (18874) FLEX+GYRO: FLEX | Thumb:5 Index:0 Middle:0 Ring:0 Pinky:4 || GYRO | X:-0.61 Y:-5.11 Z:-1.58[0m
+[0;32mI (19374) FLEX+GYRO: FLEX | Thumb:6 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-4.39 Y:3.31 Z:-0.29[0m
+[0;32mI (19874) FLEX+GYRO: FLEX | Thumb:10 Index:0 Middle:0 Ring:0 Pinky:1 || GYRO | X:-3.60 Y:4.52 Z:2.73[0m
+[0;32mI (20374) FLEX+GYRO: FLEX | Thumb:8 Index:0 Middle:0 Ring:0 Pinky:2 || GYRO | X:-2.82 Y:0.19 Z:-0.79[0m
+[0;32mI (20874) FLEX+GYRO: FLEX | Thumb:27 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-5.83 Y:4.01 Z:2.20[0m
+[0;32mI (21374) FLEX+GYRO: FLEX | Thumb:28 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-0.89 Y:-3.06 Z:-1.73[0m
+[0;32mI (21874) FLEX+GYRO: FLEX | Thumb:12 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-2.46 Y:1.11 Z:-0.18[0m
+[0;32mI (22374) FLEX+GYRO: FLEX | Thumb:10 Index:0 Middle:1 Ring:0 Pinky:0 || GYRO | X:-8.74 Y:-1.08 Z:-7.92[0m
+[0;32mI (22874) FLEX+GYRO: FLEX | Thumb:11 Index:0 Middle:0 Ring:1 Pinky:0 || GYRO | X:-5.06 Y:1.29 Z:-0.90[0m
+[0;32mI (23374) FLEX+GYRO: FLEX | Thumb:11 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-3.03 Y:-3.29 Z:-3.95[0m
+[0;32mI (23874) FLEX+GYRO: FLEX | Thumb:34 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-2.91 Y:0.21 Z:-1.04[0m
+[0;32mI (24374) FLEX+GYRO: FLEX | Thumb:13 Index:0 Middle:5 Ring:0 Pinky:0 || GYRO | X:-5.53 Y:-0.43 Z:-0.47[0m
+[0;32mI (24874) FLEX+GYRO: FLEX | Thumb:11 Index:0 Middle:31 Ring:0 Pinky:0 || GYRO | X:-3.97 Y:-1.89 Z:-5.65[0m
+[0;32mI (25374) FLEX+GYRO: FLEX | Thumb:26 Index:0 Middle:5 Ring:0 Pinky:0 || GYRO | X:-3.49 Y:1.38 Z:0.31[0m
+[0;32mI (25874) FLEX+GYRO: FLEX | Thumb:17 Index:0 Middle:22 Ring:0 Pinky:0 || GYRO | X:-1.04 Y:-1.92 Z:-0.66[0m
+[0;32mI (26374) FLEX+GYRO: FLEX | Thumb:12 Index:0 Middle:9 Ring:0 Pinky:0 || GYRO | X:-1.96 Y:-2.49 Z:-1.64[0m
+[0;32mI (26874) FLEX+GYRO: FLEX | Thumb:18 Index:0 Middle:3 Ring:0 Pinky:0 || GYRO | X:-4.82 Y:27.69 Z:9.91[0m
+[0;32mI (27374) FLEX+GYRO: FLEX | Thumb:12 Index:1 Middle:11 Ring:0 Pinky:0 || GYRO | X:-2.74 Y:-0.17 Z:-0.42[0m
+[0;32mI (27874) FLEX+GYRO: FLEX | Thumb:12 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-0.96 Y:-3.53 Z:-2.18[0m
+[0;32mI (28374) FLEX+GYRO: FLEX | Thumb:9 Index:0 Middle:3 Ring:0 Pinky:0 || GYRO | X:-1.90 Y:-0.48 Z:-1.36[0m
+[0;32mI (28874) FLEX+GYRO: FLEX | Thumb:18 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:31.00 Y:-28.82 Z:8.66[0m
+[0;32mI (29374) FLEX+GYRO: FLEX | Thumb:14 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-2.31 Y:-0.66 Z:-1.02[0m
+[0;32mI (29874) FLEX+GYRO: FLEX | Thumb:15 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-2.02 Y:-2.31 Z:-0.62[0m
+[0;32mI (30374) FLEX+GYRO: FLEX | Thumb:12 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-2.34 Y:-0.98 Z:-1.33[0m
+[0;32mI (30874) FLEX+GYRO: FLEX | Thumb:9 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-3.30 Y:0.23 Z:-1.43[0m
+[0;32mI (31374) FLEX+GYRO: FLEX | Thumb:9 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-2.02 Y:-1.21 Z:-0.93[0m
+[0;32mI (31874) FLEX+GYRO: FLEX | Thumb:8 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-1.98 Y:-1.82 Z:-1.21[0m
+[0;32mI (32374) FLEX+GYRO: FLEX | Thumb:5 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-2.56 Y:-0.51 Z:-1.52[0m
+[0;32mI (32874) FLEX+GYRO: FLEX | Thumb:2 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-1.99 Y:-0.57 Z:-0.55[0m
+[0;32mI (33374) FLEX+GYRO: FLEX | Thumb:2 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-2.27 Y:-1.15 Z:-0.70[0m
+[0;32mI (33874) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-2.58 Y:-0.98 Z:-1.08[0m
+[0;32mI (34374) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-2.27 Y:-0.93 Z:-1.10[0m
+[0;32mI (34874) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-2.44 Y:-0.87 Z:-1.38[0m
+[0;32mI (35374) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-2.35 Y:-0.72 Z:-1.02[0m
+[0;32mI (35874) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-2.09 Y:-1.02 Z:-1.08[0m
+[0;32mI (36374) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-2.27 Y:-0.96 Z:-1.16[0m
+[0;32mI (36874) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-2.30 Y:-1.05 Z:-1.10[0m
+[0;32mI (37374) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-2.53 Y:-1.08 Z:-1.05[0m
+[0;32mI (37874) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-2.34 Y:-1.28 Z:-0.89[0m
+[0;32mI (38374) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-2.44 Y:-0.76 Z:-1.26[0m
+[0;32mI (38874) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-2.43 Y:-0.85 Z:-1.06[0m
+[0;32mI (39374) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-2.24 Y:-1.22 Z:-1.27[0m
+[0;32mI (39874) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-2.08 Y:-0.95 Z:-1.13[0m
+[0;32mI (40374) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-2.60 Y:-0.85 Z:-0.86[0m
+[0;32mI (40874) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-2.34 Y:-1.18 Z:-1.26[0m
+[0;32mI (41374) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-2.21 Y:-1.14 Z:-0.88[0m
+[0;32mI (41874) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-2.29 Y:-0.74 Z:-1.00[0m
+[0;32mI (42374) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-22.62 Y:-7.38 Z:-4.60[0m
+[0;32mI (42874) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-3.43 Y:1.37 Z:0.74[0m
+[0;32mI (43374) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-7.86 Y:4.09 Z:-5.47[0m
+[0;32mI (43874) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-3.54 Y:12.32 Z:9.99[0m
+[0;32mI (44374) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:-3.46 Y:2.53 Z:1.59[0m
+[0;32mI (44874) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.21 Y:-8.85 Z:-6.22[0m
+[0;32mI (45374) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:1.85 Y:-9.55 Z:-13.47[0m
+[0;32mI (45874) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (47374) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (48874) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:22 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (50374) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (51874) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (53374) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (54874) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (56374) FLEX+GYRO: FLEX | Thumb:10 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (57874) FLEX+GYRO: FLEX | Thumb:22 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (59374) FLEX+GYRO: FLEX | Thumb:30 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (60874) FLEX+GYRO: FLEX | Thumb:35 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (62374) FLEX+GYRO: FLEX | Thumb:36 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (63874) FLEX+GYRO: FLEX | Thumb:9 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (65374) FLEX+GYRO: FLEX | Thumb:3 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (66874) FLEX+GYRO: FLEX | Thumb:5 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (68374) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (69874) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (71374) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (72874) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (74374) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (75874) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (77374) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (78874) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (80374) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (81874) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (83374) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (84874) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (86374) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (87874) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (89374) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:229 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (90874) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:278 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (92374) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:325 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (93874) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:366 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (95374) FLEX+GYRO: FLEX | Thumb:1 Index:0 Middle:145 Ring:0 Pinky:261 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (96874) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:412 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (98374) FLEX+GYRO: FLEX | Thumb:1 Index:0 Middle:0 Ring:0 Pinky:378 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (99874) FLEX+GYRO: FLEX | Thumb:1 Index:0 Middle:248 Ring:0 Pinky:198 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (101374) FLEX+GYRO: FLEX | Thumb:9 Index:0 Middle:1 Ring:0 Pinky:299 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (102874) FLEX+GYRO: FLEX | Thumb:23 Index:0 Middle:0 Ring:0 Pinky:253 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (104374) FLEX+GYRO: FLEX | Thumb:36 Index:0 Middle:0 Ring:0 Pinky:211 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (105874) FLEX+GYRO: FLEX | Thumb:67 Index:164 Middle:277 Ring:3266 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (108004) FLEX+GYRO: FLEX | Thumb:145 Index:102 Middle:269 Ring:1760 Pinky:867 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (108904) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:1026 Pinky:703 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (109414) FLEX+GYRO: FLEX | Thumb:2750 Index:2397 Middle:2008 Ring:2028 Pinky:141 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (109914) FLEX+GYRO: FLEX | Thumb:2743 Index:2371 Middle:1968 Ring:1902 Pinky:82 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (110414) FLEX+GYRO: FLEX | Thumb:2659 Index:2306 Middle:1770 Ring:1801 Pinky:53 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (110914) FLEX+GYRO: FLEX | Thumb:2614 Index:2287 Middle:1742 Ring:1718 Pinky:34 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (111414) FLEX+GYRO: FLEX | Thumb:2535 Index:2232 Middle:1622 Ring:1597 Pinky:9 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (111914) FLEX+GYRO: FLEX | Thumb:2378 Index:2177 Middle:1573 Ring:1603 Pinky:17 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (112414) FLEX+GYRO: FLEX | Thumb:2359 Index:2160 Middle:1487 Ring:1516 Pinky:2 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (112914) FLEX+GYRO: FLEX | Thumb:2425 Index:2112 Middle:1261 Ring:1179 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (113414) FLEX+GYRO: FLEX | Thumb:2385 Index:2089 Middle:1134 Ring:1052 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (113914) FLEX+GYRO: FLEX | Thumb:2337 Index:2029 Middle:975 Ring:905 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (114414) FLEX+GYRO: FLEX | Thumb:2205 Index:1936 Middle:906 Ring:824 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (114914) FLEX+GYRO: FLEX | Thumb:2197 Index:1875 Middle:753 Ring:668 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (115414) FLEX+GYRO: FLEX | Thumb:2142 Index:1781 Middle:624 Ring:624 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (115914) FLEX+GYRO: FLEX | Thumb:2103 Index:1700 Middle:579 Ring:620 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (116414) FLEX+GYRO: FLEX | Thumb:2104 Index:1506 Middle:307 Ring:263 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (116914) FLEX+GYRO: FLEX | Thumb:2036 Index:1350 Middle:224 Ring:203 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (117414) FLEX+GYRO: FLEX | Thumb:1907 Index:1319 Middle:291 Ring:392 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (117914) FLEX+GYRO: FLEX | Thumb:1834 Index:1079 Middle:130 Ring:186 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (118414) FLEX+GYRO: FLEX | Thumb:1757 Index:1005 Middle:125 Ring:229 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (118914) FLEX+GYRO: FLEX | Thumb:1655 Index:869 Middle:46 Ring:169 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (119414) FLEX+GYRO: FLEX | Thumb:1536 Index:626 Middle:0 Ring:26 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (119914) FLEX+GYRO: FLEX | Thumb:1423 Index:524 Middle:0 Ring:22 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (120414) FLEX+GYRO: FLEX | Thumb:1285 Index:445 Middle:0 Ring:52 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (120914) FLEX+GYRO: FLEX | Thumb:1202 Index:490 Middle:0 Ring:194 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (121414) FLEX+GYRO: FLEX | Thumb:1005 Index:234 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (121914) FLEX+GYRO: FLEX | Thumb:890 Index:200 Middle:0 Ring:13 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (122414) FLEX+GYRO: FLEX | Thumb:757 Index:144 Middle:0 Ring:4 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (122914) FLEX+GYRO: FLEX | Thumb:655 Index:103 Middle:0 Ring:22 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (123414) FLEX+GYRO: FLEX | Thumb:638 Index:178 Middle:0 Ring:268 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (123914) FLEX+GYRO: FLEX | Thumb:568 Index:173 Middle:0 Ring:282 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (124414) FLEX+GYRO: FLEX | Thumb:437 Index:129 Middle:0 Ring:282 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (124914) FLEX+GYRO: FLEX | Thumb:399 Index:104 Middle:0 Ring:268 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (125414) FLEX+GYRO: FLEX | Thumb:348 Index:75 Middle:0 Ring:274 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (125914) FLEX+GYRO: FLEX | Thumb:299 Index:40 Middle:0 Ring:264 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (126414) FLEX+GYRO: FLEX | Thumb:249 Index:16 Middle:0 Ring:254 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (126914) FLEX+GYRO: FLEX | Thumb:215 Index:5 Middle:0 Ring:249 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (127414) FLEX+GYRO: FLEX | Thumb:171 Index:0 Middle:0 Ring:242 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (127914) FLEX+GYRO: FLEX | Thumb:146 Index:0 Middle:0 Ring:244 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (128414) FLEX+GYRO: FLEX | Thumb:47 Index:0 Middle:0 Ring:53 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (128914) FLEX+GYRO: FLEX | Thumb:93 Index:0 Middle:0 Ring:230 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (129414) FLEX+GYRO: FLEX | Thumb:62 Index:0 Middle:0 Ring:235 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (129914) FLEX+GYRO: FLEX | Thumb:5 Index:0 Middle:0 Ring:34 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (130414) FLEX+GYRO: FLEX | Thumb:36 Index:0 Middle:0 Ring:228 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (130914) FLEX+GYRO: FLEX | Thumb:20 Index:0 Middle:0 Ring:215 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (131414) FLEX+GYRO: FLEX | Thumb:11 Index:0 Middle:0 Ring:216 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (131914) FLEX+GYRO: FLEX | Thumb:7 Index:0 Middle:0 Ring:211 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (132414) FLEX+GYRO: FLEX | Thumb:2 Index:0 Middle:0 Ring:215 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (132914) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:209 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (133414) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:187 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (133914) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:20 Pinky:4 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (134414) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (134914) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:41 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (135414) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (135914) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:172 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (136414) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:69 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (136914) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:90 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (137414) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:211 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (137914) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:227 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (138414) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:224 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (138914) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:221 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (139414) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:166 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (139914) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:46 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (140414) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:55 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (140914) FLEX+GYRO: FLEX | Thumb:2 Index:0 Middle:0 Ring:204 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (141414) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:25 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (141914) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:29 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (142414) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:39 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (142914) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:42 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (143414) FLEX+GYRO: FLEX | Thumb:4 Index:0 Middle:0 Ring:30 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (143914) FLEX+GYRO: FLEX | Thumb:17 Index:0 Middle:0 Ring:48 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (144414) FLEX+GYRO: FLEX | Thumb:30 Index:0 Middle:0 Ring:43 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (144914) FLEX+GYRO: FLEX | Thumb:70 Index:0 Middle:0 Ring:52 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (145414) FLEX+GYRO: FLEX | Thumb:123 Index:0 Middle:0 Ring:65 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (145914) FLEX+GYRO: FLEX | Thumb:183 Index:0 Middle:0 Ring:62 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (146414) FLEX+GYRO: FLEX | Thumb:254 Index:0 Middle:0 Ring:47 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (146914) FLEX+GYRO: FLEX | Thumb:366 Index:2 Middle:0 Ring:96 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (147414) FLEX+GYRO: FLEX | Thumb:508 Index:41 Middle:0 Ring:121 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (147914) FLEX+GYRO: FLEX | Thumb:674 Index:173 Middle:0 Ring:266 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (148414) FLEX+GYRO: FLEX | Thumb:824 Index:278 Middle:0 Ring:252 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (148914) FLEX+GYRO: FLEX | Thumb:978 Index:397 Middle:0 Ring:307 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (149414) FLEX+GYRO: FLEX | Thumb:1001 Index:529 Middle:4 Ring:358 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (149914) FLEX+GYRO: FLEX | Thumb:1123 Index:701 Middle:80 Ring:338 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (150414) FLEX+GYRO: FLEX | Thumb:1259 Index:841 Middle:153 Ring:430 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (150914) FLEX+GYRO: FLEX | Thumb:1375 Index:990 Middle:237 Ring:506 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (151414) FLEX+GYRO: FLEX | Thumb:1456 Index:1150 Middle:344 Ring:589 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (151914) FLEX+GYRO: FLEX | Thumb:1524 Index:1306 Middle:460 Ring:704 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (152414) FLEX+GYRO: FLEX | Thumb:1599 Index:1476 Middle:656 Ring:826 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (152914) FLEX+GYRO: FLEX | Thumb:1619 Index:1600 Middle:738 Ring:938 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (153414) FLEX+GYRO: FLEX | Thumb:1631 Index:1706 Middle:895 Ring:1037 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (153914) FLEX+GYRO: FLEX | Thumb:1715 Index:1827 Middle:1108 Ring:1179 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (154414) FLEX+GYRO: FLEX | Thumb:1776 Index:1891 Middle:1248 Ring:1322 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (154914) FLEX+GYRO: FLEX | Thumb:1793 Index:1928 Middle:1479 Ring:1447 Pinky:1 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (155414) FLEX+GYRO: FLEX | Thumb:1791 Index:1951 Middle:1596 Ring:1573 Pinky:27 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (155914) FLEX+GYRO: FLEX | Thumb:1800 Index:1988 Middle:1521 Ring:1666 Pinky:86 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (156414) FLEX+GYRO: FLEX | Thumb:1792 Index:2049 Middle:1754 Ring:1836 Pinky:164 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (156914) FLEX+GYRO: FLEX | Thumb:1785 Index:2129 Middle:1825 Ring:1987 Pinky:290 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (157414) FLEX+GYRO: FLEX | Thumb:1666 Index:2125 Middle:1843 Ring:2039 Pinky:415 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (157914) FLEX+GYRO: FLEX | Thumb:1818 Index:2398 Middle:2091 Ring:2394 Pinky:718 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (158414) FLEX+GYRO: FLEX | Thumb:1933 Index:2617 Middle:2073 Ring:2586 Pinky:970 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (158914) FLEX+GYRO: FLEX | Thumb:1645 Index:2533 Middle:2261 Ring:2641 Pinky:1138 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (159414) FLEX+GYRO: FLEX | Thumb:1503 Index:2476 Middle:2321 Ring:2650 Pinky:1252 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (159914) FLEX+GYRO: FLEX | Thumb:1367 Index:2365 Middle:2415 Ring:2664 Pinky:1373 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (160414) FLEX+GYRO: FLEX | Thumb:1325 Index:2403 Middle:2593 Ring:2760 Pinky:1490 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (160914) FLEX+GYRO: FLEX | Thumb:915 Index:1911 Middle:2344 Ring:2601 Pinky:1555 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (161414) FLEX+GYRO: FLEX | Thumb:951 Index:2088 Middle:2586 Ring:2814 Pinky:1616 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (161914) FLEX+GYRO: FLEX | Thumb:760 Index:1914 Middle:2402 Ring:2825 Pinky:1679 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (162414) FLEX+GYRO: FLEX | Thumb:594 Index:1724 Middle:2445 Ring:2805 Pinky:1731 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (162914) FLEX+GYRO: FLEX | Thumb:447 Index:1553 Middle:2322 Ring:2795 Pinky:1796 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (163414) FLEX+GYRO: FLEX | Thumb:330 Index:1376 Middle:2194 Ring:2757 Pinky:1861 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (163914) FLEX+GYRO: FLEX | Thumb:161 Index:823 Middle:1485 Ring:2164 Pinky:1562 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (164414) FLEX+GYRO: FLEX | Thumb:128 Index:684 Middle:1387 Ring:2089 Pinky:1581 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (164914) FLEX+GYRO: FLEX | Thumb:101 Index:531 Middle:1289 Ring:2022 Pinky:1644 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (165414) FLEX+GYRO: FLEX | Thumb:124 Index:514 Middle:1441 Ring:2211 Pinky:2006 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (165914) FLEX+GYRO: FLEX | Thumb:65 Index:284 Middle:959 Ring:1756 Pinky:1607 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (166414) FLEX+GYRO: FLEX | Thumb:55 Index:215 Middle:820 Ring:1679 Pinky:1588 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (166914) FLEX+GYRO: FLEX | Thumb:43 Index:176 Middle:641 Ring:1521 Pinky:1512 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (167414) FLEX+GYRO: FLEX | Thumb:25 Index:144 Middle:495 Ring:1441 Pinky:1452 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (167914) FLEX+GYRO: FLEX | Thumb:13 Index:121 Middle:351 Ring:1326 Pinky:1389 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (168414) FLEX+GYRO: FLEX | Thumb:6 Index:122 Middle:310 Ring:1264 Pinky:1511 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (168914) FLEX+GYRO: FLEX | Thumb:0 Index:67 Middle:140 Ring:947 Pinky:1067 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (169414) FLEX+GYRO: FLEX | Thumb:0 Index:42 Middle:92 Ring:797 Pinky:938 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (169914) FLEX+GYRO: FLEX | Thumb:0 Index:25 Middle:68 Ring:669 Pinky:824 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (170414) FLEX+GYRO: FLEX | Thumb:0 Index:11 Middle:44 Ring:571 Pinky:726 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (170914) FLEX+GYRO: FLEX | Thumb:0 Index:3 Middle:27 Ring:493 Pinky:611 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (171414) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:13 Ring:463 Pinky:518 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (171914) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:8 Ring:436 Pinky:412 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (172414) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:401 Pinky:332 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (172914) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:387 Pinky:271 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (173414) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:449 Pinky:230 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (173914) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:296 Pinky:195 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (174414) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:276 Pinky:270 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (174914) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:318 Pinky:199 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (175414) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:206 Pinky:197 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (175914) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:193 Pinky:195 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (176414) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:169 Pinky:174 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (176914) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:147 Pinky:153 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (177414) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:143 Pinky:99 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (177914) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:245 Pinky:91 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (178414) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:215 Pinky:79 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (178914) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:221 Pinky:59 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (179414) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:219 Pinky:49 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (179914) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:220 Pinky:32 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (180414) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:219 Pinky:24 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (180914) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:223 Pinky:15 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (181414) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:223 Pinky:4 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (181914) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:217 Pinky:2 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (182414) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:229 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (182914) FLEX+GYRO: FLEX | Thumb:11 Index:0 Middle:0 Ring:202 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (183414) FLEX+GYRO: FLEX | Thumb:46 Index:0 Middle:0 Ring:238 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (183914) FLEX+GYRO: FLEX | Thumb:95 Index:0 Middle:0 Ring:240 Pinky:0 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (184414) FLEX+GYRO: FLEX | Thumb:20 Index:0 Middle:0 Ring:282 Pinky:28 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (184914) FLEX+GYRO: FLEX | Thumb:68 Index:0 Middle:0 Ring:288 Pinky:21 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (185414) FLEX+GYRO: FLEX | Thumb:97 Index:14 Middle:0 Ring:305 Pinky:5 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (185914) FLEX+GYRO: FLEX | Thumb:200 Index:33 Middle:0 Ring:270 Pinky:4 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (186564) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:111 || GYRO | X:0.37 Y:-6.63 Z:-4.05[0m
+[0;32mI (187064) FLEX+GYRO: FLEX | Thumb:31 Index:2265 Middle:3655 Ring:4095 Pinky:4095 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (187564) FLEX+GYRO: FLEX | Thumb:20 Index:2060 Middle:3345 Ring:4095 Pinky:4095 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (188064) FLEX+GYRO: FLEX | Thumb:21 Index:2293 Middle:3462 Ring:4095 Pinky:4095 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (188564) FLEX+GYRO: FLEX | Thumb:1 Index:3050 Middle:4085 Ring:4095 Pinky:4095 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (189064) FLEX+GYRO: FLEX | Thumb:0 Index:2492 Middle:4039 Ring:4095 Pinky:4095 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (189564) FLEX+GYRO: FLEX | Thumb:0 Index:2093 Middle:3870 Ring:4095 Pinky:4095 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (190064) FLEX+GYRO: FLEX | Thumb:0 Index:1799 Middle:3703 Ring:4095 Pinky:4095 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (190564) FLEX+GYRO: FLEX | Thumb:0 Index:1499 Middle:3382 Ring:4095 Pinky:4095 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (191064) FLEX+GYRO: FLEX | Thumb:0 Index:1109 Middle:3127 Ring:4095 Pinky:4095 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (191564) FLEX+GYRO: FLEX | Thumb:0 Index:874 Middle:2797 Ring:4091 Pinky:4095 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (192064) FLEX+GYRO: FLEX | Thumb:0 Index:594 Middle:2457 Ring:4004 Pinky:4095 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (192564) FLEX+GYRO: FLEX | Thumb:0 Index:492 Middle:2217 Ring:3916 Pinky:4095 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (193064) FLEX+GYRO: FLEX | Thumb:0 Index:290 Middle:1886 Ring:3747 Pinky:4095 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (193564) FLEX+GYRO: FLEX | Thumb:0 Index:177 Middle:1608 Ring:3531 Pinky:4095 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (194064) FLEX+GYRO: FLEX | Thumb:0 Index:89 Middle:1353 Ring:3306 Pinky:4095 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (194564) FLEX+GYRO: FLEX | Thumb:0 Index:51 Middle:1085 Ring:3022 Pinky:4095 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (195064) FLEX+GYRO: FLEX | Thumb:0 Index:23 Middle:858 Ring:2773 Pinky:4082 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (195564) FLEX+GYRO: FLEX | Thumb:0 Index:21 Middle:712 Ring:2537 Pinky:4050 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (196064) FLEX+GYRO: FLEX | Thumb:0 Index:12 Middle:507 Ring:2253 Pinky:3942 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (196564) FLEX+GYRO: FLEX | Thumb:0 Index:26 Middle:425 Ring:2091 Pinky:3864 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (197064) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:287 Ring:1888 Pinky:3730 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (197564) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:187 Ring:1661 Pinky:3586 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (198064) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:134 Ring:1484 Pinky:3452 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (198564) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:89 Ring:1277 Pinky:3260 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (199064) FLEX+GYRO: FLEX | Thumb:0 Index:1 Middle:49 Ring:1102 Pinky:3070 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (199564) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:32 Ring:895 Pinky:2812 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (200064) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:19 Ring:748 Pinky:2610 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (200564) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:15 Ring:572 Pinky:2375 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (201064) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:5 Ring:451 Pinky:2142 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (201564) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:364 Pinky:1948 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (202064) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:236 Pinky:1715 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (202564) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:164 Pinky:1542 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (203064) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:96 Pinky:1295 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (203564) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:46 Pinky:1093 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (204064) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:21 Pinky:908 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (204564) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:21 Pinky:721 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (205064) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:552 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (205564) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:13 Pinky:394 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (206064) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:304 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (206564) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:196 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (207064) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:122 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (207564) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:88 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (208064) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:35 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (208564) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:1 Ring:0 Pinky:12 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (209064) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:19 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (209564) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:11 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (210064) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:6 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (210564) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (211064) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:2 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (211564) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (212064) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (212564) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (213064) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (213564) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:1 Ring:0 Pinky:2 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (214064) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (214564) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (215064) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (215564) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (216064) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:2 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (216564) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (217064) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (217564) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (218064) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (218564) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (219064) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (219564) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (220064) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (220564) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:1 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (221064) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (221564) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (222064) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (222564) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:2 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (223064) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:2 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (223564) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (224064) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (224564) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (225064) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (225564) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:1 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (226064) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (226564) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (227064) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:2 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (227564) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:2 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (228064) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (228564) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (229064) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:4 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (229564) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:2 Pinky:104 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (230064) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:111 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (230564) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:1 Pinky:104 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (231064) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:1 Ring:0 Pinky:105 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (231564) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:96 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (233064) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:89 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (234564) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:71 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (236064) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:63 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (237564) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:54 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (239064) FLEX+GYRO: FLEX | Thumb:4 Index:0 Middle:0 Ring:0 Pinky:32 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (240564) FLEX+GYRO: FLEX | Thumb:11 Index:0 Middle:0 Ring:0 Pinky:11 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (242064) FLEX+GYRO: FLEX | Thumb:23 Index:84 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (243564) FLEX+GYRO: FLEX | Thumb:27 Index:1128 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (245064) FLEX+GYRO: FLEX | Thumb:36 Index:2797 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (246564) FLEX+GYRO: FLEX | Thumb:53 Index:4042 Middle:612 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (248064) FLEX+GYRO: FLEX | Thumb:61 Index:4095 Middle:2533 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (249564) FLEX+GYRO: FLEX | Thumb:69 Index:4095 Middle:3994 Ring:483 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (251064) FLEX+GYRO: FLEX | Thumb:72 Index:4095 Middle:4095 Ring:2531 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (252564) FLEX+GYRO: FLEX | Thumb:80 Index:4095 Middle:4095 Ring:4050 Pinky:37 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (253764) FLEX+GYRO: FLEX | Thumb:84 Index:199 Middle:322 Ring:4095 Pinky:232 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (254264) FLEX+GYRO: FLEX | Thumb:1137 Index:1946 Middle:2504 Ring:2713 Pinky:1604 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (254764) FLEX+GYRO: FLEX | Thumb:863 Index:1740 Middle:2382 Ring:2679 Pinky:1653 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (255264) FLEX+GYRO: FLEX | Thumb:672 Index:1553 Middle:2261 Ring:2649 Pinky:1687 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (255764) FLEX+GYRO: FLEX | Thumb:497 Index:1396 Middle:2123 Ring:2602 Pinky:1736 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (256264) FLEX+GYRO: FLEX | Thumb:349 Index:1230 Middle:1965 Ring:2536 Pinky:1784 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (256764) FLEX+GYRO: FLEX | Thumb:244 Index:1010 Middle:1776 Ring:2448 Pinky:1834 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (257264) FLEX+GYRO: FLEX | Thumb:179 Index:767 Middle:1594 Ring:2337 Pinky:1877 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (257764) FLEX+GYRO: FLEX | Thumb:149 Index:580 Middle:1443 Ring:2211 Pinky:1923 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (258264) FLEX+GYRO: FLEX | Thumb:121 Index:418 Middle:1288 Ring:2090 Pinky:1946 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (258764) FLEX+GYRO: FLEX | Thumb:98 Index:287 Middle:1069 Ring:1914 Pinky:1908 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (259494) FLEX+GYRO: FLEX | Thumb:10 Index:61 Middle:288 Ring:4095 Pinky:472 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (259994) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:99 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (260494) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:120 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (260994) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (262494) FLEX+GYRO: FLEX | Thumb:2 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (263994) FLEX+GYRO: FLEX | Thumb:141 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (265494) FLEX+GYRO: FLEX | Thumb:190 Index:2139 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (266994) FLEX+GYRO: FLEX | Thumb:225 Index:4087 Middle:1481 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (268494) FLEX+GYRO: FLEX | Thumb:257 Index:4095 Middle:4051 Ring:803 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (269994) FLEX+GYRO: FLEX | Thumb:267 Index:4095 Middle:4095 Ring:3924 Pinky:402 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (271494) FLEX+GYRO: FLEX | Thumb:267 Index:4095 Middle:4095 Ring:4095 Pinky:3596 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (272994) FLEX+GYRO: FLEX | Thumb:264 Index:4095 Middle:4095 Ring:4095 Pinky:4095 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (274494) FLEX+GYRO: FLEX | Thumb:235 Index:4095 Middle:4095 Ring:4095 Pinky:4095 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (275994) FLEX+GYRO: FLEX | Thumb:145 Index:4095 Middle:4095 Ring:4095 Pinky:4095 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (277494) FLEX+GYRO: FLEX | Thumb:46 Index:3905 Middle:4095 Ring:4095 Pinky:4095 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (278994) FLEX+GYRO: FLEX | Thumb:2 Index:2994 Middle:4095 Ring:4095 Pinky:4095 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (280494) FLEX+GYRO: FLEX | Thumb:0 Index:1117 Middle:3085 Ring:4095 Pinky:4095 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (281994) FLEX+GYRO: FLEX | Thumb:0 Index:199 Middle:1674 Ring:3553 Pinky:4095 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (283494) FLEX+GYRO: FLEX | Thumb:0 Index:19 Middle:598 Ring:2402 Pinky:3991 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (284994) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:75 Ring:1174 Pinky:3133 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (286494) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:394 Pinky:2033 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (287994) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:60 Pinky:1063 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (289494) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:2 Pinky:414 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (290994) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:149 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (292494) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:33 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (293994) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:13 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (295494) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (296994) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (298494) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (299994) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (301494) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (302994) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (304494) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (305994) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:1 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (307494) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:2 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (308994) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:2 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (310494) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (311994) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (313494) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (314994) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (316494) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (317994) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (319494) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (320994) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (322494) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m
+[0;32mI (323994) FLEX+GYRO: FLEX | Thumb:0 Index:0 Middle:0 Ring:0 Pinky:0 || GYRO | X:0.00 Y:0.00 Z:0.00[0m

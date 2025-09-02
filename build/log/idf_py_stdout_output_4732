@@ -1,0 +1,324 @@
+lash: ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug 12 2025 22:54:49[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0ab70h ( 43888) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001ab98 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (121) esp_image: segment 2: paddr=0001aba4 vaddr=3ffb0000 size=02158h (  8536) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=0001cd04 vaddr=40080000 size=03314h ( 13076) load[0m
+[0;32mI (140) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=179c4h ( 96708) map[0m
+[0;32mI (178) esp_image: segment 5: paddr=000379ec vaddr=40083314 size=09bc4h ( 39876) load[0m
+[0;32mI (202) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (202) boot: Disabling RNG early entropy source...[0m
+[0;32mI (213) cpu_start: Multicore app[0m
+[0;32mI (214) cpu_start: Pro cpu up.[0m
+[0;32mI (214) cpu_start: Starting app cpu, entry point is 0x400811e0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (232) cpu_start: Pro cpu start user code[0m
+[0;32mI (232) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (232) cpu_start: Application information:[0m
+[0;32mI (236) cpu_start: Project name:     flexsonic[0m
+[0;32mI (241) cpu_start: App version:      1[0m
+[0;32mI (246) cpu_start: Compile time:     Aug 12 2025 22:54:29[0m
+[0;32mI (252) cpu_start: ELF file SHA256:  19539214224a9db3...[0m
+[0;32mI (258) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (263) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (268) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (273) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (278) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (285) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (291) heap_init: At 3FFB29F8 len 0002D608 (181 KiB): DRAM[0m
+[0;32mI (297) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (303) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (310) heap_init: At 4008CED8 len 00013128 (76 KiB): IRAM[0m
+[0;32mI (318) spi_flash: detected chip: generic[0m
+[0;32mI (321) spi_flash: flash io: dio[0m
+[0;33mW (325) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (338) app_start: Starting scheduler on CPU0[0m
+[0;32mI (343) app_start: Starting scheduler on CPU1[0m
+[0;32mI (343) main_task: Started on CPU0[0m
+[0;32mI (353) main_task: Calling app_main()[0m
+[0;32mI (1053) FLEX_DFPLAYER: System Ready. Monitoring flex sensors...[0m
+[0;32mI (3053) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 3996 | Ring: 400 | Pinky: 0[0m
+[0;32mI (3353) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 2550 | Ring: 0 | Pinky: 0[0m
+[0;32mI (3353) FLEX_DFPLAYER: Playing file 0003.mp3[0m
+[0;32mI (3853) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (4153) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (4453) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (4753) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (5053) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (5353) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 2359 | Ring: 0 | Pinky: 0[0m
+[0;32mI (5353) FLEX_DFPLAYER: Playing file 0003.mp3[0m
+[0;32mI (5853) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 3937 | Ring: 0 | Pinky: 0[0m
+[0;32mI (6153) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 3412 | Ring: 0 | Pinky: 0[0m
+[0;32mI (6153) FLEX_DFPLAYER: Playing file 0003.mp3[0m
+[0;32mI (6653) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (6953) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (7253) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (7553) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (7853) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (8153) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 3793 | Pinky: 0[0m
+[0;32mI (8453) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 3832 | Pinky: 0[0m
+[0;32mI (8753) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 3790 | Pinky: 0[0m
+[0;32mI (9053) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 2629 | Pinky: 0[0m
+[0;32mI (9053) FLEX_DFPLAYER: Playing file 0004.mp3[0m
+[0;32mI (9553) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (9853) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (10153) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (10453) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 3516 | Ring: 0 | Pinky: 0[0m
+[0;32mI (10753) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 3408 | Ring: 0 | Pinky: 0[0m
+[0;32mI (10753) FLEX_DFPLAYER: Playing file 0003.mp3[0m
+[0;32mI (11253) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (11553) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (11853) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (12153) FLEX_DFPLAYER: Thumb: 0 | Index: 792 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (12453) FLEX_DFPLAYER: Thumb: 0 | Index: 2751 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (12453) FLEX_DFPLAYER: Playing file 0001.mp3[0m
+[0;32mI (12953) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (13253) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (13553) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (13853) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (14153) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 3215 | Pinky: 0[0m
+[0;32mI (14153) FLEX_DFPLAYER: Playing file 0004.mp3[0m
+[0;32mI (14653) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 3569 | Pinky: 0[0m
+[0;32mI (14953) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (15253) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (15553) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (15853) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 3439 | Ring: 0 | Pinky: 0[0m
+[0;32mI (15853) FLEX_DFPLAYER: Playing file 0003.mp3[0m
+[0;32mI (16353) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 3404 | Ring: 0 | Pinky: 0[0m
+[0;32mI (16653) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (16953) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (17253) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (17553) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (17853) FLEX_DFPLAYER: Thumb: 0 | Index: 1473 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (17853) FLEX_DFPLAYER: Playing file 0001.mp3[0m
+[0;32mI (18353) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (18653) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (18953) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (19253) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (19553) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (19853) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (20153) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (20453) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (20753) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (21053) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (21353) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (21653) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (21953) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (22253) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (22553) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (22853) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (23153) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (23453) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (23753) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (24053) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (24353) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (24653) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (24953) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (25253) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (25553) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (25853) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (26153) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (26453) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (26753) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (27053) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (27353) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (27653) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (27953) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (28253) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (28553) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (28853) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (29153) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (29453) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (29753) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (30053) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (30353) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (30653) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (30953) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (31253) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (31553) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (31853) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (32153) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (32453) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (32753) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (33053) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (33353) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (33653) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (33953) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (34253) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (34553) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (34853) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (35153) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 3786 | Pinky: 0[0m
+[0;32mI (35453) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 3782 | Pinky: 0[0m
+[0;32mI (35753) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 3837 | Pinky: 0[0m
+[0;32mI (36053) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 3896 | Pinky: 0[0m
+[0;32mI (36353) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 3830 | Pinky: 0[0m
+[0;32mI (36653) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (36953) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (37253) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 3168 | Pinky: 0[0m
+[0;32mI (37253) FLEX_DFPLAYER: Playing file 0004.mp3[0m
+[0;32mI (37753) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 3916 | Pinky: 0[0m
+[0;32mI (38053) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 2711 | Pinky: 0[0m
+[0;32mI (38053) FLEX_DFPLAYER: Playing file 0004.mp3[0m
+[0;32mI (38553) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (38853) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (39153) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (39453) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 4035 | Ring: 0 | Pinky: 0[0m
+[0;32mI (39753) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 4023 | Ring: 0 | Pinky: 0[0m
+[0;32mI (40053) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 3923 | Ring: 0 | Pinky: 0[0m
+[0;32mI (40353) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 3740 | Ring: 0 | Pinky: 0[0m
+[0;32mI (40653) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (40953) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (41253) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 3631 | Ring: 0 | Pinky: 0[0m
+[0;32mI (41553) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 3759 | Ring: 0 | Pinky: 0[0m
+[0;32mI (41853) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 3803 | Ring: 0 | Pinky: 0[0m
+[0;32mI (42153) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (42453) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (42753) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (43053) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 3663 | Pinky: 0[0m
+[0;32mI (43353) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 3768 | Pinky: 0[0m
+[0;32mI (43653) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 3841 | Pinky: 0[0m
+[0;32mI (43953) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 3235 | Pinky: 0[0m
+[0;32mI (43953) FLEX_DFPLAYER: Playing file 0004.mp3[0m
+[0;32mI (44453) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 3991 | Ring: 0 | Pinky: 0[0m
+[0;32mI (44753) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 3696 | Ring: 0 | Pinky: 0[0m
+[0;32mI (45053) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (45353) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (45653) FLEX_DFPLAYER: Thumb: 0 | Index: 1167 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (45653) FLEX_DFPLAYER: Playing file 0001.mp3[0m
+[0;32mI (46153) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (46453) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (46753) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (47053) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (47353) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (47653) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (47953) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (48253) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (48553) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (48853) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (49153) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (49453) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (49753) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (50053) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (50353) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (50653) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (50953) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 1213 | Pinky: 0[0m
+[0;32mI (50953) FLEX_DFPLAYER: Playing file 0004.mp3[0m
+[0;32mI (51453) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 775 | Pinky: 0[0m
+[0;32mI (51753) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 916 | Pinky: 0[0m
+[0;32mI (52053) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 2145 | Pinky: 0[0m
+[0;32mI (52053) FLEX_DFPLAYER: Playing file 0004.mp3[0m
+[0;32mI (52553) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 1827 | Pinky: 0[0m
+[0;32mI (52853) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 2030 | Pinky: 0[0m
+[0;32mI (53153) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 1752 | Pinky: 0[0m
+[0;32mI (53453) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (53753) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (54053) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 562 | Pinky: 0[0m
+[0;32mI (54353) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (54653) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (54953) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (55253) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (55553) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (55853) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (56153) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (56453) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (56753) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (57053) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (57353) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (57653) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (57953) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (58253) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (58553) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (58853) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (59153) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (59453) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (59753) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (60053) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (60353) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (60653) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (60953) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (61253) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (61553) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 3363 | Pinky: 0[0m
+[0;32mI (61553) FLEX_DFPLAYER: Playing file 0004.mp3[0m
+[0;32mI (62053) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 3778 | Pinky: 0[0m
+[0;32mI (62353) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 3478 | Pinky: 0[0m
+[0;32mI (62353) FLEX_DFPLAYER: Playing file 0004.mp3[0m
+[0;32mI (62853) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 1176 | Pinky: 0[0m
+[0;32mI (63153) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 927 | Pinky: 0[0m
+[0;32mI (63453) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 654 | Pinky: 0[0m
+[0;32mI (63753) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 612 | Pinky: 0[0m
+[0;32mI (64053) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (64353) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 3642 | Ring: 0 | Pinky: 0[0m
+[0;32mI (64653) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 3910 | Ring: 0 | Pinky: 0[0m
+[0;32mI (64953) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 3953 | Ring: 0 | Pinky: 0[0m
+[0;32mI (65253) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 3837 | Ring: 0 | Pinky: 0[0m
+[0;32mI (65553) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 2686 | Ring: 0 | Pinky: 0[0m
+[0;32mI (65553) FLEX_DFPLAYER: Playing file 0003.mp3[0m
+[0;32mI (66053) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 1438 | Pinky: 0[0m
+[0;32mI (66053) FLEX_DFPLAYER: Playing file 0004.mp3[0m
+[0;32mI (66553) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 1169 | Pinky: 0[0m
+[0;32mI (66853) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 1056 | Pinky: 0[0m
+[0;32mI (67153) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 171 | Pinky: 0[0m
+[0;32mI (67453) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (67753) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 2068 | Ring: 0 | Pinky: 0[0m
+[0;32mI (67753) FLEX_DFPLAYER: Playing file 0003.mp3[0m
+[0;32mI (68253) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (68553) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 1490 | Pinky: 0[0m
+[0;32mI (68553) FLEX_DFPLAYER: Playing file 0004.mp3[0m
+[0;32mI (69053) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (69353) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (69653) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (69953) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (70253) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (70553) FLEX_DFPLAYER: Thumb: 0 | Index: 656 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (70853) FLEX_DFPLAYER: Thumb: 0 | Index: 676 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (71153) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (71453) FLEX_DFPLAYER: Thumb: 0 | Index: 991 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (71753) FLEX_DFPLAYER: Thumb: 0 | Index: 2895 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (71753) FLEX_DFPLAYER: Playing file 0001.mp3[0m
+[0;32mI (72253) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (72553) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (72853) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (73153) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (73453) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (73753) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (74053) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (74353) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (74653) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (74953) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (75253) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 1302 | Pinky: 0[0m
+[0;32mI (75253) FLEX_DFPLAYER: Playing file 0004.mp3[0m
+[0;32mI (75753) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 1982 | Pinky: 0[0m
+[0;32mI (76053) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 2252 | Ring: 2941 | Pinky: 0[0m
+[0;32mI (76053) FLEX_DFPLAYER: Playing file 0003.mp3[0m
+[0;32mI (76553) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 2776 | Ring: 2821 | Pinky: 0[0m
+[0;32mI (76553) FLEX_DFPLAYER: Playing file 0004.mp3[0m
+[0;32mI (77053) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 2798 | Ring: 2695 | Pinky: 0[0m
+[0;32mI (77053) FLEX_DFPLAYER: Playing file 0003.mp3[0m
+[0;32mI (77553) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 2951 | Ring: 2852 | Pinky: 0[0m
+[0;32mI (77553) FLEX_DFPLAYER: Playing file 0004.mp3[0m
+[0;32mI (78053) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 3189 | Ring: 3442 | Pinky: 0[0m
+[0;32mI (78053) FLEX_DFPLAYER: Playing file 0003.mp3[0m

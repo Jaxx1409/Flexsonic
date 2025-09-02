@@ -1,0 +1,431 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM6 instead...[0m
+[0;33m--- esp-idf-monitor 1.3.3 on \\.\COM6 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081204: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x400d5774: mpu_init at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:92 (discriminator 1)
+[0m
+[0;33m0x400869a7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081836: panic_abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/panic.c:452
+[0m
+[0;33m0x400869b1: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x4008c0d6: abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/newlib/abort.c:38
+[0m
+[0;33m0x400869a7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d5774: mpu_init at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:92 (discriminator 1)
+[0m
+[0;33m0x400d5941: app_main at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:123 (discriminator 2)
+[0m
+[0;33m0x400e6a9c: main_task at C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40089061: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081204: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x400d5774: mpu_init at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:92 (discriminator 1)
+[0m
+[0;33m0x400869a7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081836: panic_abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/panic.c:452
+[0m
+[0;33m0x400869b1: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x4008c0d6: abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/newlib/abort.c:38
+[0m
+[0;33m0x400869a7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d5774: mpu_init at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:92 (discriminator 1)
+[0m
+[0;33m0x400d5941: app_main at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:123 (discriminator 2)
+[0m
+[0;33m0x400e6a9c: main_task at C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40089061: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081204: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x400d5774: mpu_init at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:92 (discriminator 1)
+[0m
+[0;33m0x400869a7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081836: panic_abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/panic.c:452
+[0m
+[0;33m0x400869b1: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x4008c0d6: abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/newlib/abort.c:38
+[0m
+[0;33m0x400869a7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d5774: mpu_init at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:92 (discriminator 1)
+[0m
+[0;33m0x400d5941: app_main at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:123 (discriminator 2)
+[0m
+[0;33m0x400e6a9c: main_task at C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40089061: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081204: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x400d5774: mpu_init at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:92 (discriminator 1)
+[0m
+[0;33m0x400869a7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081836: panic_abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/panic.c:452
+[0m
+[0;33m0x400869b1: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x4008c0d6: abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/newlib/abort.c:38
+[0m
+[0;33m0x400869a7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d5774: mpu_init at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:92 (discriminator 1)
+[0m
+[0;33m0x400d5941: app_main at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:123 (discriminator 2)
+[0m
+[0;33m0x400e6a9c: main_task at C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40089061: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081204: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x400d5774: mpu_init at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:92 (discriminator 1)
+[0m
+[0;33m0x400869a7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081836: panic_abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/panic.c:452
+[0m
+[0;33m0x400869b1: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x4008c0d6: abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/newlib/abort.c:38
+[0m
+[0;33m0x400869a7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d5774: mpu_init at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:92 (discriminator 1)
+[0m
+[0;33m0x400d5941: app_main at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:123 (discriminator 2)
+[0m
+[0;33m0x400e6a9c: main_task at C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40089061: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081204: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x400d5774: mpu_init at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:92 (discriminator 1)
+[0m
+[0;33m0x400869a7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081836: panic_abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/panic.c:452
+[0m
+[0;33m0x400869b1: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x4008c0d6: abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/newlib/abort.c:38
+[0m
+[0;33m0x400869a7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d5774: mpu_init at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:92 (discriminator 1)
+[0m
+[0;33m0x400d5941: app_main at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:123 (discriminator 2)
+[0m
+[0;33m0x400e6a9c: main_task at C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40089061: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081204: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x400d5774: mpu_init at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:92 (discriminator 1)
+[0m
+[0;33m0x400869a7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081836: panic_abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/panic.c:452
+[0m
+[0;33m0x400869b1: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x4008c0d6: abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/newlib/abort.c:38
+[0m
+[0;33m0x400869a7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d5774: mpu_init at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:92 (discriminator 1)
+[0m
+[0;33m0x400d5941: app_main at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:123 (discriminator 2)
+[0m
+[0;33m0x400e6a9c: main_task at C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40089061: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081204: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x400d5774: mpu_init at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:92 (discriminator 1)
+[0m
+[0;33m0x400869a7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081836: panic_abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/panic.c:452
+[0m
+[0;33m0x400869b1: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x4008c0d6: abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/newlib/abort.c:38
+[0m
+[0;33m0x400869a7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d5774: mpu_init at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:92 (discriminator 1)
+[0m
+[0;33m0x400d5941: app_main at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:123 (discriminator 2)
+[0m
+[0;33m0x400e6a9c: main_task at C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40089061: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081204: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x400d5774: mpu_init at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:92 (discriminator 1)
+[0m
+[0;33m0x400869a7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081836: panic_abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/panic.c:452
+[0m
+[0;33m0x400869b1: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x4008c0d6: abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/newlib/abort.c:38
+[0m
+[0;33m0x400869a7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d5774: mpu_init at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:92 (discriminator 1)
+[0m
+[0;33m0x400d5941: app_main at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:123 (discriminator 2)
+[0m
+[0;33m0x400e6a9c: main_task at C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40089061: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081204: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x400d5774: mpu_init at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:92 (discriminator 1)
+[0m
+[0;33m0x400869a7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081836: panic_abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/panic.c:452
+[0m
+[0;33m0x400869b1: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x4008c0d6: abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/newlib/abort.c:38
+[0m
+[0;33m0x400869a7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d5774: mpu_init at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:92 (discriminator 1)
+[0m
+[0;33m0x400d5941: app_main at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:123 (discriminator 2)
+[0m
+[0;33m0x400e6a9c: main_task at C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40089061: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081204: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x400d5774: mpu_init at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:92 (discriminator 1)
+[0m
+[0;33m0x400869a7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081836: panic_abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/panic.c:452
+[0m
+[0;33m0x400869b1: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x4008c0d6: abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/newlib/abort.c:38
+[0m
+[0;33m0x400869a7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d5774: mpu_init at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:92 (discriminator 1)
+[0m
+[0;33m0x400d5941: app_main at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:123 (discriminator 2)
+[0m
+[0;33m0x400e6a9c: main_task at C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40089061: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081204: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x400d5774: mpu_init at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:92 (discriminator 1)
+[0m
+[0;33m0x400869a7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081836: panic_abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/panic.c:452
+[0m
+[0;33m0x400869b1: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x4008c0d6: abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/newlib/abort.c:38
+[0m
+[0;33m0x400869a7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d5774: mpu_init at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:92 (discriminator 1)
+[0m
+[0;33m0x400d5941: app_main at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:123 (discriminator 2)
+[0m
+[0;33m0x400e6a9c: main_task at C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40089061: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081204: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x400d5774: mpu_init at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:92 (discriminator 1)
+[0m
+[0;33m0x400869a7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081836: panic_abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/panic.c:452
+[0m
+[0;33m0x400869b1: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x4008c0d6: abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/newlib/abort.c:38
+[0m
+[0;33m0x400869a7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d5774: mpu_init at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:92 (discriminator 1)
+[0m
+[0;33m0x400d5941: app_main at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:123 (discriminator 2)
+[0m
+[0;33m0x400e6a9c: main_task at C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40089061: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081204: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x400d5774: mpu_init at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:92 (discriminator 1)
+[0m
+[0;33m0x400869a7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081836: panic_abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/panic.c:452
+[0m
+[0;33m0x400869b1: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x4008c0d6: abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/newlib/abort.c:38
+[0m
+[0;33m0x400869a7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d5774: mpu_init at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:92 (discriminator 1)
+[0m
+[0;33m0x400d5941: app_main at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:123 (discriminator 2)
+[0m
+[0;33m0x400e6a9c: main_task at C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40089061: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081204: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x400d5774: mpu_init at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:92 (discriminator 1)
+[0m
+[0;33m0x400869a7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081836: panic_abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/panic.c:452
+[0m
+[0;33m0x400869b1: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x4008c0d6: abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/newlib/abort.c:38
+[0m
+[0;33m0x400869a7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d5774: mpu_init at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:92 (discriminator 1)
+[0m
+[0;33m0x400d5941: app_main at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:123 (discriminator 2)
+[0m
+[0;33m0x400e6a9c: main_task at C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40089061: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081204: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x400d5774: mpu_init at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:92 (discriminator 1)
+[0m
+[0;33m0x400869a7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081836: panic_abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/panic.c:452
+[0m
+[0;33m0x400869b1: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x4008c0d6: abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/newlib/abort.c:38
+[0m
+[0;33m0x400869a7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d5774: mpu_init at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:92 (discriminator 1)
+[0m
+[0;33m0x400d5941: app_main at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:123 (discriminator 2)
+[0m
+[0;33m0x400e6a9c: main_task at C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40089061: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081204: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x400d5774: mpu_init at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:92 (discriminator 1)
+[0m
+[0;33m0x400869a7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081836: panic_abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/panic.c:452
+[0m
+[0;33m0x400869b1: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x4008c0d6: abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/newlib/abort.c:38
+[0m
+[0;33m0x400869a7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d5774: mpu_init at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:92 (discriminator 1)
+[0m
+[0;33m0x400d5941: app_main at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:123 (discriminator 2)
+[0m
+[0;33m0x400e6a9c: main_task at C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x40089061: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.1.2/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081204: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x400d5774: mpu_init at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:92 (discriminator 1)
+[0m
+[0;33m0x400869a7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x40081836: panic_abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/panic.c:452
+[0m
+[0;33m0x400869b1: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/port/esp_system_chip.c:84
+[0m
+[0;33m0x4008c0d6: abort at C:/Espressif/frameworks/esp-idf-v5.1.2/components/newlib/abort.c:38
+[0m
+[0;33m0x400869a7: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d5774: mpu_init at E:/Janhavi/SRA/flexsonic/main/flexsonic.c:92 (discriminator 1)
+[0m
+[0;33m0x400d5941: app_main at E:/Janhavi/SRA

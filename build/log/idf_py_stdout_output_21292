@@ -1,0 +1,234 @@
+t 3�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug 12 2025 22:54:49[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0ae98h ( 44696) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001aec0 vaddr=3ffb0000 size=02188h (  8584) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001d050 vaddr=40080000 size=02fc8h ( 12232) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=17ee0h ( 98016) map[0m
+[0;32mI (171) esp_image: segment 4: paddr=00037f08 vaddr=40082fc8 size=0a6cch ( 42700) load[0m
+[0;32mI (195) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (195) boot: Disabling RNG early entropy source...[0m
+[0;32mI (207) cpu_start: Multicore app[0m
+[0;32mI (207) cpu_start: Pro cpu up.[0m
+[0;32mI (207) cpu_start: Starting app cpu, entry point is 0x40081224[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (225) cpu_start: Pro cpu start user code[0m
+[0;32mI (225) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (225) cpu_start: Application information:[0m
+[0;32mI (230) cpu_start: Project name:     flexsonic[0m
+[0;32mI (235) cpu_start: App version:      1[0m
+[0;32mI (240) cpu_start: Compile time:     Aug 12 2025 22:54:29[0m
+[0;32mI (246) cpu_start: ELF file SHA256:  84250f817f6d2152...[0m
+[0;32mI (252) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (257) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (262) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (267) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (272) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (279) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (285) heap_init: At 3FFB2A10 len 0002D5F0 (181 KiB): DRAM[0m
+[0;32mI (291) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (297) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (304) heap_init: At 4008D694 len 0001296C (74 KiB): IRAM[0m
+[0;32mI (311) spi_flash: detected chip: generic[0m
+[0;32mI (314) spi_flash: flash io: dio[0m
+[0;33mW (318) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (332) app_start: Starting scheduler on CPU0[0m
+[0;32mI (337) app_start: Starting scheduler on CPU1[0m
+[0;32mI (337) main_task: Started on CPU0[0m
+[0;32mI (347) main_task: Calling app_main()[0m
+[0;32mI (2347) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (3547) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (4747) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (5947) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (7147) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (8347) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (9547) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (10747) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (11947) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (13147) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (14347) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (15547) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (16747) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (17947) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (19147) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (20347) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (21547) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (22747) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (23947) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (25147) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (26347) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (27547) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (28747) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (29947) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (31147) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (32347) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (33547) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (34747) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (35947) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (37147) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (38347) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (39547) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (40747) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (41947) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (43147) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (44347) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (45547) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (46747) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (47947) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (49147) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (50347) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (51547) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (52747) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (53947) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (55147) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (56347) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (57547) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (58747) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (59947) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (61147) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (62347) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (63547) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (64747) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (65947) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (67147) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (68347) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (69547) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (70747) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (71947) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (73147) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (74347) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (75547) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (76747) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (77947) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (79147) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (80347) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (81547) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (82747) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (83947) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (85147) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (86347) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (87547) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (88747) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (89947) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (91147) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (92347) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (93547) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (94747) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (95947) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (97147) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (98347) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (99547) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (100747) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (101947) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (103147) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (104347) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (105547) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (106747) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (107947) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (109147) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (110347) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (111547) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (112747) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (113947) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (115147) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (116347) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (117547) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (118747) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (119947) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (121147) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (122347) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (123547) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (124747) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (125947) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (127147) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (128347) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (129547) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (130747) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (131947) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (133147) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (134347) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (135547) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (135747) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (135947) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (136147) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (136347) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (136547) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (136747) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (136947) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (137147) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (137347) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (137547) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (137747) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (137947) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (138147) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (138347) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (138547) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (138747) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (138947) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (139147) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (139347) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (139547) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (139747) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (139947) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (140147) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (140347) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (140547) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (140747) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (140947) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (141147) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (141347) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (141547) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (141747) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (141947) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (142147) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (142347) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (142547) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (142747) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (142947) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (143147) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (143347) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (143547) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (143747) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (143947) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (144147) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (144347) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (144547) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (144747) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (144947) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (145147) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (145347) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (145547) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (145747) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (145947) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (146147) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (146347) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (146547) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (146747) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (146947) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (147147) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (147347) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (147547) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m
+[0;32mI (147747) MPU_DFPLAYER: Gyro X:0 Y:0 Z:0[0m

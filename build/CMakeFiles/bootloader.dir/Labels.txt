@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+E:/Janhavi/SRA/flexsonic/build/CMakeFiles/bootloader
+E:/Janhavi/SRA/flexsonic/build/CMakeFiles/bootloader.rule
+E:/Janhavi/SRA/flexsonic/build/CMakeFiles/bootloader-complete.rule
+E:/Janhavi/SRA/flexsonic/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+E:/Janhavi/SRA/flexsonic/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+E:/Janhavi/SRA/flexsonic/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+E:/Janhavi/SRA/flexsonic/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+E:/Janhavi/SRA/flexsonic/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+E:/Janhavi/SRA/flexsonic/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+E:/Janhavi/SRA/flexsonic/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

@@ -1,0 +1,902 @@
+ th�ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug 12 2025 22:54:49[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09890h ( 39056) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=000198b8 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (119) esp_image: segment 2: paddr=000198c4 vaddr=3ffb0000 size=02100h (  8448) load[0m
+[0;32mI (128) esp_image: segment 3: paddr=0001b9cc vaddr=40080000 size=0464ch ( 17996) load[0m
+[0;32mI (140) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=14bach ( 84908) map[0m
+[0;32mI (172) esp_image: segment 5: paddr=00034bd4 vaddr=4008464c size=079b0h ( 31152) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (191) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu up.[0m
+[0;32mI (203) cpu_start: Starting app cpu, entry point is 0x400810f0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (221) cpu_start: Pro cpu start user code[0m
+[0;32mI (221) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (221) cpu_start: Application information:[0m
+[0;32mI (226) cpu_start: Project name:     flexsonic[0m
+[0;32mI (231) cpu_start: App version:      1[0m
+[0;32mI (235) cpu_start: Compile time:     Aug 12 2025 22:54:29[0m
+[0;32mI (241) cpu_start: ELF file SHA256:  f276113a5e92098b...[0m
+[0;32mI (247) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (253) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (257) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (262) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (267) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (274) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (280) heap_init: At 3FFB2998 len 0002D668 (181 KiB): DRAM[0m
+[0;32mI (286) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (293) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (299) heap_init: At 4008C000 len 00014000 (80 KiB): IRAM[0m
+[0;32mI (307) spi_flash: detected chip: generic[0m
+[0;32mI (310) spi_flash: flash io: dio[0m
+[0;33mW (314) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (328) app_start: Starting scheduler on CPU0[0m
+[0;32mI (332) app_start: Starting scheduler on CPU1[0m
+[0;32mI (332) main_task: Started on CPU0[0m
+[0;32mI (342) main_task: Calling app_main()[0m
+[0;32mI (342) FLEX_READ: Starting Flex Sensor Readings...[0m
+[0;32mI (352) FLEX_READ: Thumb: 782 | Index: 773 | Middle: 327 | Ring: 80 | Pinky: 891[0m
+[0;32mI (852) FLEX_READ: Thumb: 816 | Index: 772 | Middle: 321 | Ring: 80 | Pinky: 890[0m
+[0;32mI (1352) FLEX_READ: Thumb: 814 | Index: 773 | Middle: 294 | Ring: 79 | Pinky: 890[0m
+[0;32mI (1852) FLEX_READ: Thumb: 829 | Index: 772 | Middle: 281 | Ring: 80 | Pinky: 889[0m
+[0;32mI (2352) FLEX_READ: Thumb: 835 | Index: 772 | Middle: 280 | Ring: 79 | Pinky: 890[0m
+[0;32mI (2852) FLEX_READ: Thumb: 829 | Index: 772 | Middle: 312 | Ring: 80 | Pinky: 889[0m
+[0;32mI (3352) FLEX_READ: Thumb: 822 | Index: 770 | Middle: 323 | Ring: 79 | Pinky: 889[0m
+[0;32mI (3852) FLEX_READ: Thumb: 828 | Index: 772 | Middle: 322 | Ring: 80 | Pinky: 889[0m
+[0;32mI (4352) FLEX_READ: Thumb: 841 | Index: 772 | Middle: 319 | Ring: 79 | Pinky: 889[0m
+[0;32mI (4852) FLEX_READ: Thumb: 844 | Index: 772 | Middle: 329 | Ring: 80 | Pinky: 890[0m
+[0;32mI (5352) FLEX_READ: Thumb: 816 | Index: 736 | Middle: 334 | Ring: 35 | Pinky: 852[0m
+[0;32mI (5852) FLEX_READ: Thumb: 801 | Index: 733 | Middle: 340 | Ring: 34 | Pinky: 851[0m
+[0;32mI (6352) FLEX_READ: Thumb: 794 | Index: 734 | Middle: 320 | Ring: 33 | Pinky: 851[0m
+[0;32mI (6852) FLEX_READ: Thumb: 807 | Index: 744 | Middle: 300 | Ring: 46 | Pinky: 862[0m
+[0;32mI (7352) FLEX_READ: Thumb: 804 | Index: 735 | Middle: 280 | Ring: 35 | Pinky: 852[0m
+[0;32mI (7852) FLEX_READ: Thumb: 792 | Index: 724 | Middle: 290 | Ring: 24 | Pinky: 846[0m
+[0;32mI (8352) FLEX_READ: Thumb: 884 | Index: 771 | Middle: 347 | Ring: 55 | Pinky: 868[0m
+[0;32mI (8852) FLEX_READ: Thumb: 774 | Index: 717 | Middle: 269 | Ring: 13 | Pinky: 834[0m
+[0;32mI (9352) FLEX_READ: Thumb: 778 | Index: 707 | Middle: 244 | Ring: 0 | Pinky: 827[0m
+[0;32mI (9852) FLEX_READ: Thumb: 787 | Index: 709 | Middle: 246 | Ring: 1 | Pinky: 826[0m
+[0;32mI (10352) FLEX_READ: Thumb: 783 | Index: 707 | Middle: 279 | Ring: 0 | Pinky: 827[0m
+[0;32mI (10852) FLEX_READ: Thumb: 776 | Index: 704 | Middle: 307 | Ring: 0 | Pinky: 823[0m
+[0;32mI (11352) FLEX_READ: Thumb: 781 | Index: 706 | Middle: 229 | Ring: 5 | Pinky: 832[0m
+[0;32mI (11852) FLEX_READ: Thumb: 795 | Index: 713 | Middle: 217 | Ring: 10 | Pinky: 833[0m
+[0;32mI (12352) FLEX_READ: Thumb: 799 | Index: 710 | Middle: 237 | Ring: 6 | Pinky: 831[0m
+[0;32mI (12852) FLEX_READ: Thumb: 795 | Index: 711 | Middle: 259 | Ring: 5 | Pinky: 831[0m
+[0;32mI (13352) FLEX_READ: Thumb: 783 | Index: 713 | Middle: 276 | Ring: 6 | Pinky: 831[0m
+[0;32mI (13852) FLEX_READ: Thumb: 776 | Index: 710 | Middle: 249 | Ring: 6 | Pinky: 832[0m
+[0;32mI (14352) FLEX_READ: Thumb: 785 | Index: 715 | Middle: 224 | Ring: 9 | Pinky: 834[0m
+[0;32mI (14852) FLEX_READ: Thumb: 787 | Index: 713 | Middle: 220 | Ring: 9 | Pinky: 833[0m
+[0;32mI (15352) FLEX_READ: Thumb: 780 | Index: 714 | Middle: 225 | Ring: 10 | Pinky: 833[0m
+[0;32mI (15852) FLEX_READ: Thumb: 770 | Index: 712 | Middle: 205 | Ring: 9 | Pinky: 832[0m
+[0;32mI (16352) FLEX_READ: Thumb: 770 | Index: 715 | Middle: 206 | Ring: 11 | Pinky: 834[0m
+[0;32mI (16852) FLEX_READ: Thumb: 776 | Index: 703 | Middle: 197 | Ring: 0 | Pinky: 823[0m
+[0;32mI (17352) FLEX_READ: Thumb: 783 | Index: 700 | Middle: 230 | Ring: 0 | Pinky: 818[0m
+[0;32mI (17852) FLEX_READ: Thumb: 788 | Index: 715 | Middle: 277 | Ring: 12 | Pinky: 835[0m
+[0;32mI (18352) FLEX_READ: Thumb: 782 | Index: 715 | Middle: 272 | Ring: 11 | Pinky: 834[0m
+[0;32mI (18852) FLEX_READ: Thumb: 787 | Index: 715 | Middle: 251 | Ring: 11 | Pinky: 833[0m
+[0;32mI (19352) FLEX_READ: Thumb: 798 | Index: 715 | Middle: 253 | Ring: 12 | Pinky: 834[0m
+[0;32mI (19852) FLEX_READ: Thumb: 804 | Index: 716 | Middle: 272 | Ring: 11 | Pinky: 834[0m
+[0;32mI (20352) FLEX_READ: Thumb: 794 | Index: 715 | Middle: 293 | Ring: 11 | Pinky: 835[0m
+[0;32mI (20852) FLEX_READ: Thumb: 781 | Index: 716 | Middle: 300 | Ring: 11 | Pinky: 833[0m
+[0;32mI (21352) FLEX_READ: Thumb: 778 | Index: 716 | Middle: 0 | Ring: 11 | Pinky: 834[0m
+[0;32mI (21852) FLEX_READ: Thumb: 888 | Index: 716 | Middle: 4095 | Ring: 9 | Pinky: 834[0m
+[0;32mI (22352) FLEX_READ: Thumb: 777 | Index: 717 | Middle: 59 | Ring: 10 | Pinky: 834[0m
+[0;32mI (22852) FLEX_READ: Thumb: 850 | Index: 788 | Middle: 1240 | Ring: 95 | Pinky: 902[0m
+[0;32mI (23352) FLEX_READ: Thumb: 844 | Index: 774 | Middle: 1190 | Ring: 92 | Pinky: 901[0m
+[0;32mI (23852) FLEX_READ: Thumb: 844 | Index: 781 | Middle: 1181 | Ring: 94 | Pinky: 891[0m
+[0;32mI (24352) FLEX_READ: Thumb: 855 | Index: 773 | Middle: 1204 | Ring: 89 | Pinky: 903[0m
+[0;32mI (24852) FLEX_READ: Thumb: 856 | Index: 785 | Middle: 1302 | Ring: 94 | Pinky: 894[0m
+[0;32mI (25352) FLEX_READ: Thumb: 798 | Index: 756 | Middle: 24 | Ring: 63 | Pinky: 876[0m
+[0;32mI (25852) FLEX_READ: Thumb: 798 | Index: 750 | Middle: 18 | Ring: 63 | Pinky: 878[0m
+[0;32mI (26352) FLEX_READ: Thumb: 805 | Index: 761 | Middle: 3 | Ring: 53 | Pinky: 872[0m
+[0;32mI (26852) FLEX_READ: Thumb: 812 | Index: 755 | Middle: 127 | Ring: 63 | Pinky: 873[0m
+[0;32mI (27352) FLEX_READ: Thumb: 820 | Index: 753 | Middle: 29 | Ring: 56 | Pinky: 872[0m
+[0;32mI (27852) FLEX_READ: Thumb: 812 | Index: 754 | Middle: 83 | Ring: 55 | Pinky: 874[0m
+[0;32mI (28352) FLEX_READ: Thumb: 802 | Index: 757 | Middle: 82 | Ring: 56 | Pinky: 872[0m
+[0;32mI (28852) FLEX_READ: Thumb: 842 | Index: 774 | Middle: 1412 | Ring: 94 | Pinky: 899[0m
+[0;32mI (29352) FLEX_READ: Thumb: 850 | Index: 779 | Middle: 1139 | Ring: 86 | Pinky: 896[0m
+[0;32mI (29852) FLEX_READ: Thumb: 852 | Index: 780 | Middle: 1153 | Ring: 88 | Pinky: 895[0m
+[0;32mI (30352) FLEX_READ: Thumb: 845 | Index: 780 | Middle: 1162 | Ring: 85 | Pinky: 895[0m
+[0;32mI (30852) FLEX_READ: Thumb: 838 | Index: 779 | Middle: 1150 | Ring: 86 | Pinky: 896[0m
+[0;32mI (31352) FLEX_READ: Thumb: 835 | Index: 781 | Middle: 1143 | Ring: 92 | Pinky: 898[0m
+[0;32mI (31852) FLEX_READ: Thumb: 875 | Index: 821 | Middle: 1143 | Ring: 142 | Pinky: 940[0m
+[0;32mI (32352) FLEX_READ: Thumb: 882 | Index: 823 | Middle: 1177 | Ring: 139 | Pinky: 939[0m
+[0;32mI (32852) FLEX_READ: Thumb: 883 | Index: 821 | Middle: 1176 | Ring: 137 | Pinky: 939[0m
+[0;32mI (33352) FLEX_READ: Thumb: 821 | Index: 784 | Middle: 19 | Ring: 96 | Pinky: 901[0m
+[0;32mI (33852) FLEX_READ: Thumb: 817 | Index: 786 | Middle: 0 | Ring: 91 | Pinky: 901[0m
+[0;32mI (34352) FLEX_READ: Thumb: 868 | Index: 821 | Middle: 724 | Ring: 120 | Pinky: 902[0m
+[0;32mI (34852) FLEX_READ: Thumb: 831 | Index: 784 | Middle: 0 | Ring: 94 | Pinky: 902[0m
+[0;32mI (35352) FLEX_READ: Thumb: 831 | Index: 784 | Middle: 0 | Ring: 93 | Pinky: 902[0m
+[0;32mI (35852) FLEX_READ: Thumb: 814 | Index: 784 | Middle: 0 | Ring: 93 | Pinky: 901[0m
+[0;32mI (36352) FLEX_READ: Thumb: 764 | Index: 716 | Middle: 0 | Ring: 17 | Pinky: 844[0m
+[0;32mI (36852) FLEX_READ: Thumb: 848 | Index: 840 | Middle: 29 | Ring: 163 | Pinky: 958[0m
+[0;32mI (37352) FLEX_READ: Thumb: 784 | Index: 744 | Middle: 0 | Ring: 47 | Pinky: 863[0m
+[0;32mI (37852) FLEX_READ: Thumb: 797 | Index: 765 | Middle: 0 | Ring: 71 | Pinky: 884[0m
+[0;32mI (38352) FLEX_READ: Thumb: 617 | Index: 0 | Middle: 0 | Ring: 57 | Pinky: 873[0m
+[0;32mI (38852) FLEX_READ: Thumb: 615 | Index: 0 | Middle: 0 | Ring: 62 | Pinky: 878[0m
+[0;32mI (39352) FLEX_READ: Thumb: 668 | Index: 6 | Middle: 23 | Ring: 157 | Pinky: 950[0m
+[0;32mI (39852) FLEX_READ: Thumb: 689 | Index: 43 | Middle: 38 | Ring: 171 | Pinky: 962[0m
+[0;32mI (40352) FLEX_READ: Thumb: 656 | Index: 0 | Middle: 0 | Ring: 110 | Pinky: 912[0m
+[0;32mI (40852) FLEX_READ: Thumb: 652 | Index: 0 | Middle: 0 | Ring: 108 | Pinky: 912[0m
+[0;32mI (41352) FLEX_READ: Thumb: 643 | Index: 0 | Middle: 0 | Ring: 104 | Pinky: 909[0m
+[0;32mI (41852) FLEX_READ: Thumb: 644 | Index: 0 | Middle: 0 | Ring: 98 | Pinky: 905[0m
+[0;32mI (42352) FLEX_READ: Thumb: 657 | Index: 11 | Middle: 0 | Ring: 95 | Pinky: 901[0m
+[0;32mI (42852) FLEX_READ: Thumb: 633 | Index: 0 | Middle: 0 | Ring: 51 | Pinky: 867[0m
+[0;32mI (43352) FLEX_READ: Thumb: 628 | Index: 0 | Middle: 0 | Ring: 49 | Pinky: 863[0m
+[0;32mI (43852) FLEX_READ: Thumb: 776 | Index: 637 | Middle: 0 | Ring: 65 | Pinky: 879[0m
+[0;32mI (44352) FLEX_READ: Thumb: 782 | Index: 731 | Middle: 0 | Ring: 66 | Pinky: 880[0m
+[0;32mI (44852) FLEX_READ: Thumb: 779 | Index: 721 | Middle: 0 | Ring: 56 | Pinky: 870[0m
+[0;32mI (45352) FLEX_READ: Thumb: 779 | Index: 719 | Middle: 0 | Ring: 47 | Pinky: 863[0m
+[0;32mI (45852) FLEX_READ: Thumb: 776 | Index: 720 | Middle: 0 | Ring: 48 | Pinky: 863[0m
+[0;32mI (46352) FLEX_READ: Thumb: 755 | Index: 704 | Middle: 0 | Ring: 24 | Pinky: 848[0m
+[0;32mI (46852) FLEX_READ: Thumb: 752 | Index: 704 | Middle: 0 | Ring: 23 | Pinky: 847[0m
+[0;32mI (47352) FLEX_READ: Thumb: 758 | Index: 704 | Middle: 0 | Ring: 22 | Pinky: 847[0m
+[0;32mI (47852) FLEX_READ: Thumb: 780 | Index: 723 | Middle: 0 | Ring: 47 | Pinky: 864[0m
+[0;32mI (48352) FLEX_READ: Thumb: 770 | Index: 706 | Middle: 0 | Ring: 23 | Pinky: 847[0m
+[0;32mI (48852) FLEX_READ: Thumb: 774 | Index: 724 | Middle: 0 | Ring: 48 | Pinky: 864[0m
+[0;32mI (49352) FLEX_READ: Thumb: 775 | Index: 725 | Middle: 0 | Ring: 48 | Pinky: 865[0m
+[0;32mI (49852) FLEX_READ: Thumb: 767 | Index: 703 | Middle: 0 | Ring: 16 | Pinky: 842[0m
+[0;32mI (50352) FLEX_READ: Thumb: 776 | Index: 703 | Middle: 0 | Ring: 17 | Pinky: 842[0m
+[0;32mI (50852) FLEX_READ: Thumb: 898 | Index: 875 | Middle: 87 | Ring: 218 | Pinky: 1002[0m
+[0;32mI (51352) FLEX_READ: Thumb: 891 | Index: 881 | Middle: 102 | Ring: 234 | Pinky: 1010[0m
+[0;32mI (51852) FLEX_READ: Thumb: 875 | Index: 871 | Middle: 88 | Ring: 218 | Pinky: 1003[0m
+[0;32mI (52352) FLEX_READ: Thumb: 876 | Index: 870 | Middle: 84 | Ring: 217 | Pinky: 1000[0m
+[0;32mI (52852) FLEX_READ: Thumb: 887 | Index: 878 | Middle: 94 | Ring: 226 | Pinky: 1007[0m
+[0;32mI (53352) FLEX_READ: Thumb: 883 | Index: 875 | Middle: 90 | Ring: 222 | Pinky: 1005[0m
+[0;32mI (53852) FLEX_READ: Thumb: 874 | Index: 878 | Middle: 94 | Ring: 225 | Pinky: 1007[0m
+[0;32mI (54352) FLEX_READ: Thumb: 868 | Index: 879 | Middle: 93 | Ring: 226 | Pinky: 1008[0m
+[0;32mI (54852) FLEX_READ: Thumb: 864 | Index: 871 | Middle: 84 | Ring: 218 | Pinky: 1001[0m
+[0;32mI (55352) FLEX_READ: Thumb: 927 | Index: 910 | Middle: 1275 | Ring: 264 | Pinky: 1041[0m
+[0;32mI (55852) FLEX_READ: Thumb: 903 | Index: 905 | Middle: 1169 | Ring: 265 | Pinky: 1041[0m
+[0;32mI (56352) FLEX_READ: Thumb: 868 | Index: 868 | Middle: 79 | Ring: 211 | Pinky: 995[0m
+[0;32mI (56852) FLEX_READ: Thumb: 867 | Index: 867 | Middle: 79 | Ring: 209 | Pinky: 995[0m
+[0;32mI (57352) FLEX_READ: Thumb: 878 | Index: 870 | Middle: 81 | Ring: 214 | Pinky: 1000[0m
+[0;32mI (57852) FLEX_READ: Thumb: 889 | Index: 872 | Middle: 84 | Ring: 217 | Pinky: 1000[0m
+[0;32mI (58352) FLEX_READ: Thumb: 891 | Index: 871 | Middle: 84 | Ring: 219 | Pinky: 1001[0m
+[0;32mI (58852) FLEX_READ: Thumb: 874 | Index: 874 | Middle: 86 | Ring: 220 | Pinky: 989[0m
+[0;32mI (59352) FLEX_READ: Thumb: 858 | Index: 872 | Middle: 83 | Ring: 217 | Pinky: 969[0m
+[0;32mI (59852) FLEX_READ: Thumb: 887 | Index: 870 | Middle: 722 | Ring: 255 | Pinky: 970[0m
+[0;32mI (60352) FLEX_READ: Thumb: 861 | Index: 867 | Middle: 80 | Ring: 210 | Pinky: 961[0m
+[0;32mI (60852) FLEX_READ: Thumb: 859 | Index: 874 | Middle: 79 | Ring: 210 | Pinky: 959[0m
+[0;32mI (61352) FLEX_READ: Thumb: 851 | Index: 899 | Middle: 79 | Ring: 210 | Pinky: 959[0m
+[0;32mI (61852) FLEX_READ: Thumb: 862 | Index: 975 | Middle: 78 | Ring: 209 | Pinky: 957[0m
+[0;32mI (62352) FLEX_READ: Thumb: 881 | Index: 1045 | Middle: 75 | Ring: 208 | Pinky: 955[0m
+[0;32mI (62852) FLEX_READ: Thumb: 872 | Index: 956 | Middle: 76 | Ring: 208 | Pinky: 949[0m
+[0;32mI (63352) FLEX_READ: Thumb: 876 | Index: 958 | Middle: 77 | Ring: 208 | Pinky: 944[0m
+[0;32mI (63852) FLEX_READ: Thumb: 866 | Index: 956 | Middle: 76 | Ring: 208 | Pinky: 945[0m
+[0;32mI (64352) FLEX_READ: Thumb: 870 | Index: 957 | Middle: 78 | Ring: 208 | Pinky: 953[0m
+[0;32mI (64852) FLEX_READ: Thumb: 882 | Index: 955 | Middle: 78 | Ring: 209 | Pinky: 955[0m
+[0;32mI (65352) FLEX_READ: Thumb: 890 | Index: 954 | Middle: 76 | Ring: 208 | Pinky: 955[0m
+[0;32mI (65852) FLEX_READ: Thumb: 892 | Index: 954 | Middle: 76 | Ring: 208 | Pinky: 958[0m
+[0;32mI (66352) FLEX_READ: Thumb: 879 | Index: 955 | Middle: 76 | Ring: 208 | Pinky: 959[0m
+[0;32mI (66852) FLEX_READ: Thumb: 873 | Index: 954 | Middle: 77 | Ring: 208 | Pinky: 960[0m
+[0;32mI (67352) FLEX_READ: Thumb: 874 | Index: 954 | Middle: 76 | Ring: 208 | Pinky: 960[0m
+[0;32mI (67852) FLEX_READ: Thumb: 881 | Index: 955 | Middle: 77 | Ring: 208 | Pinky: 961[0m
+[0;32mI (68352) FLEX_READ: Thumb: 877 | Index: 955 | Middle: 77 | Ring: 208 | Pinky: 963[0m
+[0;32mI (68852) FLEX_READ: Thumb: 793 | Index: 851 | Middle: 0 | Ring: 81 | Pinky: 862[0m
+[0;32mI (69352) FLEX_READ: Thumb: 788 | Index: 848 | Middle: 0 | Ring: 79 | Pinky: 860[0m
+[0;32mI (69852) FLEX_READ: Thumb: 794 | Index: 848 | Middle: 0 | Ring: 78 | Pinky: 860[0m
+[0;32mI (70352) FLEX_READ: Thumb: 802 | Index: 850 | Middle: 0 | Ring: 80 | Pinky: 862[0m
+[0;32mI (70852) FLEX_READ: Thumb: 799 | Index: 850 | Middle: 0 | Ring: 79 | Pinky: 863[0m
+[0;32mI (71352) FLEX_READ: Thumb: 789 | Index: 852 | Middle: 0 | Ring: 79 | Pinky: 862[0m
+[0;32mI (71852) FLEX_READ: Thumb: 790 | Index: 851 | Middle: 0 | Ring: 79 | Pinky: 862[0m
+[0;32mI (72352) FLEX_READ: Thumb: 802 | Index: 850 | Middle: 0 | Ring: 77 | Pinky: 862[0m
+[0;32mI (72852) FLEX_READ: Thumb: 809 | Index: 851 | Middle: 0 | Ring: 79 | Pinky: 863[0m
+[0;32mI (73352) FLEX_READ: Thumb: 809 | Index: 854 | Middle: 0 | Ring: 80 | Pinky: 865[0m
+[0;32mI (73852) FLEX_READ: Thumb: 795 | Index: 854 | Middle: 0 | Ring: 80 | Pinky: 865[0m
+[0;32mI (74352) FLEX_READ: Thumb: 789 | Index: 853 | Middle: 0 | Ring: 79 | Pinky: 865[0m
+[0;32mI (74852) FLEX_READ: Thumb: 796 | Index: 855 | Middle: 0 | Ring: 81 | Pinky: 867[0m
+[0;32mI (75352) FLEX_READ: Thumb: 800 | Index: 855 | Middle: 0 | Ring: 81 | Pinky: 869[0m
+[0;32mI (75852) FLEX_READ: Thumb: 792 | Index: 855 | Middle: 0 | Ring: 81 | Pinky: 868[0m
+[0;32mI (76352) FLEX_READ: Thumb: 787 | Index: 855 | Middle: 0 | Ring: 81 | Pinky: 868[0m
+[0;32mI (76852) FLEX_READ: Thumb: 778 | Index: 844 | Middle: 0 | Ring: 66 | Pinky: 856[0m
+[0;32mI (77352) FLEX_READ: Thumb: 783 | Index: 836 | Middle: 0 | Ring: 59 | Pinky: 848[0m
+[0;32mI (77852) FLEX_READ: Thumb: 808 | Index: 866 | Middle: 0 | Ring: 97 | Pinky: 880[0m
+[0;32mI (78352) FLEX_READ: Thumb: 803 | Index: 863 | Middle: 0 | Ring: 94 | Pinky: 878[0m
+[0;32mI (78852) FLEX_READ: Thumb: 856 | Index: 942 | Middle: 60 | Ring: 193 | Pinky: 956[0m
+[0;32mI (79352) FLEX_READ: Thumb: 873 | Index: 940 | Middle: 56 | Ring: 190 | Pinky: 955[0m
+[0;32mI (79852) FLEX_READ: Thumb: 908 | Index: 926 | Middle: 1251 | Ring: 177 | Pinky: 944[0m
+[0;32mI (80352) FLEX_READ: Thumb: 880 | Index: 925 | Middle: 40 | Ring: 174 | Pinky: 942[0m
+[0;32mI (80852) FLEX_READ: Thumb: 924 | Index: 962 | Middle: 1246 | Ring: 217 | Pinky: 976[0m
+[0;32mI (81352) FLEX_READ: Thumb: 915 | Index: 954 | Middle: 1266 | Ring: 213 | Pinky: 972[0m
+[0;32mI (81852) FLEX_READ: Thumb: 916 | Index: 957 | Middle: 1256 | Ring: 211 | Pinky: 974[0m
+[0;32mI (82352) FLEX_READ: Thumb: 947 | Index: 966 | Middle: 1280 | Ring: 229 | Pinky: 984[0m
+[0;32mI (82852) FLEX_READ: Thumb: 791 | Index: 785 | Middle: 0 | Ring: 2 | Pinky: 806[0m
+[0;32mI (83352) FLEX_READ: Thumb: 821 | Index: 790 | Middle: 1128 | Ring: 10 | Pinky: 813[0m
+[0;32mI (83852) FLEX_READ: Thumb: 817 | Index: 794 | Middle: 1124 | Ring: 14 | Pinky: 815[0m
+[0;32mI (84352) FLEX_READ: Thumb: 827 | Index: 795 | Middle: 1118 | Ring: 12 | Pinky: 815[0m
+[0;32mI (84852) FLEX_READ: Thumb: 829 | Index: 790 | Middle: 1117 | Ring: 8 | Pinky: 811[0m
+[0;32mI (85352) FLEX_READ: Thumb: 827 | Index: 798 | Middle: 1120 | Ring: 13 | Pinky: 816[0m
+[0;32mI (85852) FLEX_READ: Thumb: 819 | Index: 799 | Middle: 1108 | Ring: 16 | Pinky: 816[0m
+[0;32mI (86352) FLEX_READ: Thumb: 827 | Index: 801 | Middle: 1118 | Ring: 16 | Pinky: 817[0m
+[0;32mI (86852) FLEX_READ: Thumb: 832 | Index: 798 | Middle: 1094 | Ring: 13 | Pinky: 816[0m
+[0;32mI (87352) FLEX_READ: Thumb: 796 | Index: 792 | Middle: 0 | Ring: 4 | Pinky: 810[0m
+[0;32mI (87852) FLEX_READ: Thumb: 799 | Index: 795 | Middle: 719 | Ring: 14 | Pinky: 814[0m
+[0;32mI (88352) FLEX_READ: Thumb: 809 | Index: 799 | Middle: 943 | Ring: 13 | Pinky: 816[0m
+[0;32mI (88852) FLEX_READ: Thumb: 813 | Index: 800 | Middle: 1116 | Ring: 14 | Pinky: 816[0m
+[0;32mI (89352) FLEX_READ: Thumb: 819 | Index: 801 | Middle: 1101 | Ring: 13 | Pinky: 816[0m
+[0;32mI (89852) FLEX_READ: Thumb: 810 | Index: 802 | Middle: 1110 | Ring: 14 | Pinky: 816[0m
+[0;32mI (90352) FLEX_READ: Thumb: 800 | Index: 801 | Middle: 1104 | Ring: 14 | Pinky: 815[0m
+[0;32mI (90852) FLEX_READ: Thumb: 795 | Index: 805 | Middle: 1098 | Ring: 15 | Pinky: 818[0m
+[0;32mI (91352) FLEX_READ: Thumb: 803 | Index: 802 | Middle: 1118 | Ring: 15 | Pinky: 817[0m
+[0;32mI (91852) FLEX_READ: Thumb: 811 | Index: 804 | Middle: 1124 | Ring: 15 | Pinky: 817[0m
+[0;32mI (92352) FLEX_READ: Thumb: 825 | Index: 878 | Middle: 11 | Ring: 106 | Pinky: 890[0m
+[0;32mI (92852) FLEX_READ: Thumb: 814 | Index: 873 | Middle: 5 | Ring: 102 | Pinky: 886[0m
+[0;32mI (93352) FLEX_READ: Thumb: 884 | Index: 914 | Middle: 1211 | Ring: 155 | Pinky: 929[0m
+[0;32mI (93852) FLEX_READ: Thumb: 894 | Index: 912 | Middle: 1182 | Ring: 152 | Pinky: 927[0m
+[0;32mI (94352) FLEX_READ: Thumb: 836 | Index: 873 | Middle: 0 | Ring: 104 | Pinky: 886[0m
+[0;32mI (94852) FLEX_READ: Thumb: 840 | Index: 877 | Middle: 0 | Ring: 107 | Pinky: 889[0m
+[0;32mI (95352) FLEX_READ: Thumb: 825 | Index: 878 | Middle: 0 | Ring: 107 | Pinky: 889[0m
+[0;32mI (95852) FLEX_READ: Thumb: 817 | Index: 878 | Middle: 0 | Ring: 106 | Pinky: 889[0m
+[0;32mI (96352) FLEX_READ: Thumb: 818 | Index: 878 | Middle: 0 | Ring: 107 | Pinky: 889[0m
+[0;32mI (96852) FLEX_READ: Thumb: 824 | Index: 878 | Middle: 0 | Ring: 107 | Pinky: 889[0m
+[0;32mI (97352) FLEX_READ: Thumb: 822 | Index: 878 | Middle: 0 | Ring: 107 | Pinky: 889[0m
+[0;32mI (97852) FLEX_READ: Thumb: 810 | Index: 879 | Middle: 0 | Ring: 108 | Pinky: 889[0m
+[0;32mI (98352) FLEX_READ: Thumb: 806 | Index: 879 | Middle: 0 | Ring: 107 | Pinky: 890[0m
+[0;32mI (98852) FLEX_READ: Thumb: 809 | Index: 880 | Middle: 0 | Ring: 111 | Pinky: 893[0m
+[0;32mI (99352) FLEX_READ: Thumb: 824 | Index: 887 | Middle: 0 | Ring: 122 | Pinky: 1000[0m
+[0;32mI (99852) FLEX_READ: Thumb: 906 | Index: 995 | Middle: 116 | Ring: 254 | Pinky: 1008[0m
+[0;32mI (100352) FLEX_READ: Thumb: 900 | Index: 995 | Middle: 116 | Ring: 244 | Pinky: 1000[0m
+[0;32mI (100852) FLEX_READ: Thumb: 772 | Index: 825 | Middle: 0 | Ring: 27 | Pinky: 830[0m
+[0;32mI (101352) FLEX_READ: Thumb: 759 | Index: 800 | Middle: 0 | Ring: 0 | Pinky: 805[0m
+[0;32mI (101852) FLEX_READ: Thumb: 777 | Index: 810 | Middle: 0 | Ring: 0 | Pinky: 813[0m
+[0;32mI (102352) FLEX_READ: Thumb: 778 | Index: 820 | Middle: 0 | Ring: 0 | Pinky: 808[0m
+[0;32mI (102852) FLEX_READ: Thumb: 785 | Index: 840 | Middle: 0 | Ring: 0 | Pinky: 813[0m
+[0;32mI (103352) FLEX_READ: Thumb: 768 | Index: 839 | Middle: 0 | Ring: 0 | Pinky: 803[0m
+[0;32mI (103852) FLEX_READ: Thumb: 761 | Index: 838 | Middle: 0 | Ring: 0 | Pinky: 803[0m
+[0;32mI (104352) FLEX_READ: Thumb: 763 | Index: 846 | Middle: 0 | Ring: 0 | Pinky: 802[0m
+[0;32mI (104852) FLEX_READ: Thumb: 773 | Index: 867 | Middle: 0 | Ring: 0 | Pinky: 802[0m
+[0;32mI (105352) FLEX_READ: Thumb: 773 | Index: 878 | Middle: 0 | Ring: 0 | Pinky: 803[0m
+[0;32mI (105852) FLEX_READ: Thumb: 773 | Index: 913 | Middle: 0 | Ring: 0 | Pinky: 806[0m
+[0;32mI (106352) FLEX_READ: Thumb: 783 | Index: 784 | Middle: 0 | Ring: 82 | Pinky: 890[0m
+[0;32mI (106852) FLEX_READ: Thumb: 834 | Index: 812 | Middle: 1193 | Ring: 112 | Pinky: 913[0m
+[0;32mI (107352) FLEX_READ: Thumb: 846 | Index: 812 | Middle: 1192 | Ring: 107 | Pinky: 913[0m
+[0;32mI (107852) FLEX_READ: Thumb: 851 | Index: 813 | Middle: 1194 | Ring: 109 | Pinky: 914[0m
+[0;32mI (108352) FLEX_READ: Thumb: 854 | Index: 816 | Middle: 1196 | Ring: 110 | Pinky: 917[0m
+[0;32mI (108852) FLEX_READ: Thumb: 844 | Index: 814 | Middle: 1192 | Ring: 100 | Pinky: 913[0m
+[0;32mI (109352) FLEX_READ: Thumb: 838 | Index: 809 | Middle: 1184 | Ring: 94 | Pinky: 911[0m
+[0;32mI (109852) FLEX_READ: Thumb: 827 | Index: 783 | Middle: 1162 | Ring: 63 | Pinky: 885[0m
+[0;32mI (110352) FLEX_READ: Thumb: 839 | Index: 789 | Middle: 1167 | Ring: 66 | Pinky: 890[0m
+[0;32mI (110852) FLEX_READ: Thumb: 842 | Index: 795 | Middle: 1172 | Ring: 72 | Pinky: 895[0m
+[0;32mI (111352) FLEX_READ: Thumb: 895 | Index: 880 | Middle: 1244 | Ring: 176 | Pinky: 977[0m
+[0;32mI (111852) FLEX_READ: Thumb: 857 | Index: 859 | Middle: 1055 | Ring: 149 | Pinky: 958[0m
+[0;32mI (112352) FLEX_READ: Thumb: 841 | Index: 851 | Middle: 1001 | Ring: 142 | Pinky: 952[0m
+[0;32mI (112852) FLEX_READ: Thumb: 830 | Index: 846 | Middle: 998 | Ring: 130 | Pinky: 943[0m
+[0;32mI (113352) FLEX_READ: Thumb: 831 | Index: 844 | Middle: 1153 | Ring: 128 | Pinky: 942[0m
+[0;32mI (113852) FLEX_READ: Thumb: 833 | Index: 840 | Middle: 1155 | Ring: 125 | Pinky: 940[0m
+[0;32mI (114352) FLEX_READ: Thumb: 829 | Index: 835 | Middle: 1153 | Ring: 117 | Pinky: 934[0m
+[0;32mI (114852) FLEX_READ: Thumb: 820 | Index: 834 | Middle: 1146 | Ring: 117 | Pinky: 932[0m
+[0;32mI (115352) FLEX_READ: Thumb: 815 | Index: 833 | Middle: 1194 | Ring: 116 | Pinky: 931[0m
+[0;32mI (115852) FLEX_READ: Thumb: 815 | Index: 834 | Middle: 1209 | Ring: 116 | Pinky: 931[0m
+[0;32mI (116352) FLEX_READ: Thumb: 791 | Index: 798 | Middle: 1100 | Ring: 72 | Pinky: 896[0m
+[0;32mI (116852) FLEX_READ: Thumb: 732 | Index: 739 | Middle: 0 | Ring: 0 | Pinky: 842[0m
+[0;32mI (117352) FLEX_READ: Thumb: 714 | Index: 709 | Middle: 0 | Ring: 0 | Pinky: 812[0m
+[0;32mI (117852) FLEX_READ: Thumb: 758 | Index: 730 | Middle: 1118 | Ring: 0 | Pinky: 831[0m
+[0;32mI (118352) FLEX_READ: Thumb: 752 | Index: 731 | Middle: 1123 | Ring: 0 | Pinky: 831[0m
+[0;32mI (118852) FLEX_READ: Thumb: 752 | Index: 735 | Middle: 1082 | Ring: 0 | Pinky: 827[0m
+[0;32mI (119352) FLEX_READ: Thumb: 760 | Index: 739 | Middle: 1135 | Ring: 9 | Pinky: 839[0m
+[0;32mI (119852) FLEX_READ: Thumb: 760 | Index: 736 | Middle: 850 | Ring: 1 | Pinky: 835[0m
+[0;32mI (120352) FLEX_READ: Thumb: 739 | Index: 725 | Middle: 0 | Ring: 0 | Pinky: 827[0m
+[0;32mI (120852) FLEX_READ: Thumb: 736 | Index: 724 | Middle: 0 | Ring: 0 | Pinky: 825[0m
+[0;32mI (121352) FLEX_READ: Thumb: 730 | Index: 726 | Middle: 0 | Ring: 0 | Pinky: 826[0m
+[0;32mI (121852) FLEX_READ: Thumb: 716 | Index: 725 | Middle: 0 | Ring: 0 | Pinky: 825[0m
+[0;32mI (122352) FLEX_READ: Thumb: 715 | Index: 724 | Middle: 0 | Ring: 0 | Pinky: 825[0m
+[0;32mI (122852) FLEX_READ: Thumb: 722 | Index: 743 | Middle: 0 | Ring: 16 | Pinky: 842[0m
+[0;32mI (123352) FLEX_READ: Thumb: 735 | Index: 751 | Middle: 0 | Ring: 28 | Pinky: 849[0m
+[0;32mI (123852) FLEX_READ: Thumb: 737 | Index: 752 | Middle: 0 | Ring: 28 | Pinky: 849[0m
+[0;32mI (124352) FLEX_READ: Thumb: 801 | Index: 762 | Middle: 0 | Ring: 44 | Pinky: 863[0m
+[0;32mI (124852) FLEX_READ: Thumb: 704 | Index: 707 | Middle: 0 | Ring: 0 | Pinky: 809[0m
+[0;32mI (125352) FLEX_READ: Thumb: 697 | Index: 705 | Middle: 0 | Ring: 0 | Pinky: 806[0m
+[0;32mI (125852) FLEX_READ: Thumb: 700 | Index: 707 | Middle: 0 | Ring: 0 | Pinky: 810[0m
+[0;32mI (126352) FLEX_READ: Thumb: 702 | Index: 705 | Middle: 0 | Ring: 0 | Pinky: 807[0m
+[0;32mI (126852) FLEX_READ: Thumb: 713 | Index: 704 | Middle: 0 | Ring: 0 | Pinky: 805[0m
+[0;32mI (127352) FLEX_READ: Thumb: 724 | Index: 703 | Middle: 0 | Ring: 0 | Pinky: 804[0m
+[0;32mI (127852) FLEX_READ: Thumb: 719 | Index: 703 | Middle: 0 | Ring: 0 | Pinky: 804[0m
+[0;32mI (128352) FLEX_READ: Thumb: 713 | Index: 702 | Middle: 0 | Ring: 0 | Pinky: 802[0m
+[0;32mI (128852) FLEX_READ: Thumb: 710 | Index: 703 | Middle: 0 | Ring: 0 | Pinky: 803[0m
+[0;32mI (129352) FLEX_READ: Thumb: 716 | Index: 705 | Middle: 0 | Ring: 0 | Pinky: 806[0m
+[0;32mI (129852) FLEX_READ: Thumb: 760 | Index: 759 | Middle: 0 | Ring: 38 | Pinky: 851[0m
+[0;32mI (130352) FLEX_READ: Thumb: 735 | Index: 718 | Middle: 0 | Ring: 0 | Pinky: 803[0m
+[0;32mI (130852) FLEX_READ: Thumb: 772 | Index: 765 | Middle: 957 | Ring: 0 | Pinky: 801[0m
+[0;32mI (131352) FLEX_READ: Thumb: 775 | Index: 783 | Middle: 974 | Ring: 0 | Pinky: 801[0m
+[0;32mI (131852) FLEX_READ: Thumb: 735 | Index: 775 | Middle: 0 | Ring: 0 | Pinky: 799[0m
+[0;32mI (132352) FLEX_READ: Thumb: 721 | Index: 784 | Middle: 0 | Ring: 0 | Pinky: 800[0m
+[0;32mI (132852) FLEX_READ: Thumb: 717 | Index: 788 | Middle: 0 | Ring: 0 | Pinky: 801[0m
+[0;32mI (133352) FLEX_READ: Thumb: 717 | Index: 801 | Middle: 0 | Ring: 0 | Pinky: 801[0m
+[0;32mI (133852) FLEX_READ: Thumb: 756 | Index: 799 | Middle: 1084 | Ring: 0 | Pinky: 802[0m
+[0;32mI (134352) FLEX_READ: Thumb: 586 | Index: 0 | Middle: 1092 | Ring: 0 | Pinky: 801[0m
+[0;32mI (134852) FLEX_READ: Thumb: 582 | Index: 0 | Middle: 1092 | Ring: 0 | Pinky: 801[0m
+[0;32mI (135352) FLEX_READ: Thumb: 574 | Index: 0 | Middle: 1095 | Ring: 0 | Pinky: 801[0m
+[0;32mI (135852) FLEX_READ: Thumb: 571 | Index: 0 | Middle: 1094 | Ring: 0 | Pinky: 801[0m
+[0;32mI (136352) FLEX_READ: Thumb: 570 | Index: 0 | Middle: 1095 | Ring: 0 | Pinky: 802[0m
+[0;32mI (136852) FLEX_READ: Thumb: 576 | Index: 0 | Middle: 1094 | Ring: 0 | Pinky: 802[0m
+[0;32mI (137352) FLEX_READ: Thumb: 585 | Index: 0 | Middle: 1094 | Ring: 0 | Pinky: 802[0m
+[0;32mI (137852) FLEX_READ: Thumb: 587 | Index: 0 | Middle: 1095 | Ring: 0 | Pinky: 802[0m
+[0;32mI (138352) FLEX_READ: Thumb: 589 | Index: 0 | Middle: 1094 | Ring: 0 | Pinky: 801[0m
+[0;32mI (138852) FLEX_READ: Thumb: 585 | Index: 0 | Middle: 1095 | Ring: 0 | Pinky: 802[0m
+[0;32mI (139352) FLEX_READ: Thumb: 584 | Index: 0 | Middle: 1095 | Ring: 0 | Pinky: 802[0m
+[0;32mI (139852) FLEX_READ: Thumb: 583 | Index: 0 | Middle: 1094 | Ring: 0 | Pinky: 802[0m
+[0;32mI (140352) FLEX_READ: Thumb: 593 | Index: 0 | Middle: 1096 | Ring: 0 | Pinky: 802[0m
+[0;32mI (140852) FLEX_READ: Thumb: 599 | Index: 0 | Middle: 1094 | Ring: 0 | Pinky: 803[0m
+[0;32mI (141352) FLEX_READ: Thumb: 601 | Index: 0 | Middle: 1095 | Ring: 0 | Pinky: 803[0m
+[0;32mI (141852) FLEX_READ: Thumb: 598 | Index: 0 | Middle: 1095 | Ring: 0 | Pinky: 803[0m
+[0;32mI (142352) FLEX_READ: Thumb: 587 | Index: 0 | Middle: 1096 | Ring: 0 | Pinky: 803[0m
+[0;32mI (142852) FLEX_READ: Thumb: 583 | Index: 0 | Middle: 1092 | Ring: 0 | Pinky: 803[0m
+[0;32mI (143352) FLEX_READ: Thumb: 579 | Index: 0 | Middle: 1092 | Ring: 0 | Pinky: 803[0m
+[0;32mI (143852) FLEX_READ: Thumb: 585 | Index: 0 | Middle: 1093 | Ring: 0 | Pinky: 803[0m
+[0;32mI (144352) FLEX_READ: Thumb: 591 | Index: 0 | Middle: 1092 | Ring: 0 | Pinky: 803[0m
+[0;32mI (144852) FLEX_READ: Thumb: 592 | Index: 0 | Middle: 1092 | Ring: 0 | Pinky: 803[0m
+[0;32mI (145352) FLEX_READ: Thumb: 586 | Index: 0 | Middle: 1090 | Ring: 0 | Pinky: 802[0m
+[0;32mI (145852) FLEX_READ: Thumb: 579 | Index: 0 | Middle: 1089 | Ring: 0 | Pinky: 803[0m
+[0;32mI (146352) FLEX_READ: Thumb: 576 | Index: 0 | Middle: 1088 | Ring: 0 | Pinky: 803[0m
+[0;32mI (146852) FLEX_READ: Thumb: 577 | Index: 0 | Middle: 1081 | Ring: 0 | Pinky: 803[0m
+[0;32mI (147352) FLEX_READ: Thumb: 597 | Index: 0 | Middle: 1074 | Ring: 0 | Pinky: 802[0m
+[0;32mI (147852) FLEX_READ: Thumb: 604 | Index: 0 | Middle: 1073 | Ring: 0 | Pinky: 802[0m
+[0;32mI (148352) FLEX_READ: Thumb: 603 | Index: 0 | Middle: 1070 | Ring: 0 | Pinky: 802[0m
+[0;32mI (148852) FLEX_READ: Thumb: 599 | Index: 0 | Middle: 1054 | Ring: 0 | Pinky: 802[0m
+[0;32mI (149352) FLEX_READ: Thumb: 597 | Index: 0 | Middle: 1053 | Ring: 0 | Pinky: 802[0m
+[0;32mI (149852) FLEX_READ: Thumb: 597 | Index: 0 | Middle: 1050 | Ring: 0 | Pinky: 802[0m
+[0;32mI (150352) FLEX_READ: Thumb: 606 | Index: 0 | Middle: 1048 | Ring: 0 | Pinky: 802[0m
+[0;32mI (150852) FLEX_READ: Thumb: 615 | Index: 0 | Middle: 1044 | Ring: 0 | Pinky: 801[0m
+[0;32mI (151352) FLEX_READ: Thumb: 615 | Index: 0 | Middle: 1040 | Ring: 0 | Pinky: 801[0m
+[0;32mI (151852) FLEX_READ: Thumb: 613 | Index: 0 | Middle: 1040 | Ring: 0 | Pinky: 800[0m
+[0;32mI (152352) FLEX_READ: Thumb: 604 | Index: 0 | Middle: 1040 | Ring: 0 | Pinky: 801[0m
+[0;32mI (152852) FLEX_READ: Thumb: 599 | Index: 0 | Middle: 1039 | Ring: 0 | Pinky: 800[0m
+[0;32mI (153352) FLEX_READ: Thumb: 594 | Index: 0 | Middle: 1037 | Ring: 0 | Pinky: 801[0m
+[0;32mI (153852) FLEX_READ: Thumb: 570 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 799[0m
+[0;32mI (154352) FLEX_READ: Thumb: 573 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 799[0m
+[0;32mI (154852) FLEX_READ: Thumb: 742 | Index: 786 | Middle: 0 | Ring: 0 | Pinky: 799[0m
+[0;32mI (155352) FLEX_READ: Thumb: 737 | Index: 809 | Middle: 0 | Ring: 0 | Pinky: 800[0m
+[0;32mI (155852) FLEX_READ: Thumb: 733 | Index: 811 | Middle: 0 | Ring: 0 | Pinky: 800[0m
+[0;32mI (156352) FLEX_READ: Thumb: 691 | Index: 683 | Middle: 0 | Ring: 0 | Pinky: 799[0m
+[0;32mI (156852) FLEX_READ: Thumb: 743 | Index: 827 | Middle: 0 | Ring: 0 | Pinky: 800[0m
+[0;32mI (157352) FLEX_READ: Thumb: 742 | Index: 766 | Middle: 0 | Ring: 0 | Pinky: 800[0m
+[0;32mI (157852) FLEX_READ: Thumb: 740 | Index: 741 | Middle: 0 | Ring: 0 | Pinky: 799[0m
+[0;32mI (158352) FLEX_READ: Thumb: 739 | Index: 743 | Middle: 0 | Ring: 0 | Pinky: 798[0m
+[0;32mI (158852) FLEX_READ: Thumb: 735 | Index: 741 | Middle: 0 | Ring: 0 | Pinky: 800[0m
+[0;32mI (159352) FLEX_READ: Thumb: 726 | Index: 705 | Middle: 0 | Ring: 0 | Pinky: 799[0m
+[0;32mI (159852) FLEX_READ: Thumb: 735 | Index: 740 | Middle: 0 | Ring: 0 | Pinky: 800[0m
+[0;32mI (160352) FLEX_READ: Thumb: 746 | Index: 740 | Middle: 0 | Ring: 0 | Pinky: 799[0m
+[0;32mI (160852) FLEX_READ: Thumb: 752 | Index: 739 | Middle: 0 | Ring: 0 | Pinky: 800[0m
+[0;32mI (161352) FLEX_READ: Thumb: 755 | Index: 739 | Middle: 0 | Ring: 0 | Pinky: 800[0m
+[0;32mI (161852) FLEX_READ: Thumb: 741 | Index: 732 | Middle: 0 | Ring: 0 | Pinky: 800[0m
+[0;32mI (162352) FLEX_READ: Thumb: 736 | Index: 731 | Middle: 0 | Ring: 0 | Pinky: 800[0m
+[0;32mI (162852) FLEX_READ: Thumb: 730 | Index: 733 | Middle: 0 | Ring: 0 | Pinky: 801[0m
+[0;32mI (163352) FLEX_READ: Thumb: 728 | Index: 734 | Middle: 0 | Ring: 0 | Pinky: 801[0m
+[0;32mI (163852) FLEX_READ: Thumb: 733 | Index: 737 | Middle: 0 | Ring: 0 | Pinky: 801[0m
+[0;32mI (164352) FLEX_READ: Thumb: 738 | Index: 737 | Middle: 0 | Ring: 0 | Pinky: 801[0m
+[0;32mI (164852) FLEX_READ: Thumb: 735 | Index: 739 | Middle: 0 | Ring: 0 | Pinky: 801[0m
+[0;32mI (165352) FLEX_READ: Thumb: 725 | Index: 739 | Middle: 0 | Ring: 0 | Pinky: 801[0m
+[0;32mI (165852) FLEX_READ: Thumb: 717 | Index: 733 | Middle: 0 | Ring: 0 | Pinky: 801[0m
+[0;32mI (166352) FLEX_READ: Thumb: 749 | Index: 724 | Middle: 1100 | Ring: 0 | Pinky: 804[0m
+[0;32mI (166852) FLEX_READ: Thumb: 713 | Index: 655 | Middle: 1egment 3: paddr=0001b9cc vaddr=40080000 size=0464ch ( 17996) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=14bach ( 84908) map[0m
+[0;32mI (172) esp_image: segment 5: paddr=00034bd4 vaddr=4008464c size=079b0h ( 31152) load[0m
+[0;32mI (191) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (192) boot: Disabling RNG early entropy source...[0m
+[0;32mI (203) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu up.[0m
+[0;32mI (203) cpu_start: Starting app cpu, entry point is 0x400810f0[0m
+[0;32mI (191) cpu_start: App cpu up.[0m
+[0;32mI (221) cpu_start: Pro cpu start user code[0m
+[0;32mI (222) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (222) cpu_start: Application information:[0m
+[0;32mI (226) cpu_start: Project name:     flexsonic[0m
+[0;32mI (231) cpu_start: App version:      1[0m
+[0;32mI (236) cpu_start: Compile time:     Aug 12 2025 22:54:29[0m
+[0;32mI (242) cpu_start: ELF file SHA256:  f276113a5e92098b...[0m
+[0;32mI (248) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (253) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (258) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (263) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (268) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (275) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (281) heap_init: At 3FFB2998 len 0002D668 (181 KiB): DRAM[0m
+[0;32mI (287) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (293) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (300) heap_init: At 4008C000 len 00014000 (80 KiB): IRAM[0m
+[0;32mI (308) spi_flash: detected chip: generic[0m
+[0;32mI (311) spi_flash: flash io: dio[0m
+[0;33mW (315) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (328) app_start: Starting scheduler on CPU0[0m
+[0;32mI (333) app_start: Starting scheduler on CPU1[0m
+[0;32mI (333) main_task: Started on CPU0[0m
+[0;32mI (343) main_task: Calling app_main()[0m
+[0;32mI (343) FLEX_READ: Starting Flex Sensor Readings...[0m
+[0;32mI (353) FLEX_READ: Thumb: 725 | Index: 676 | Middle: 1100 | Ring: 0 | Pinky: 803[0m
+[0;32mI (853) FLEX_READ: Thumb: 733 | Index: 672 | Middle: 1099 | Ring: 0 | Pinky: 804[0m
+[0;32mI (1353) FLEX_READ: Thumb: 734 | Index: 671 | Middle: 1099 | Ring: 0 | Pinky: 803[0m
+[0;32mI (1853) FLEX_READ: Thumb: 744 | Index: 670 | Middle: 1098 | Ring: 0 | Pinky: 803[0m
+[0;32mI (2353) FLEX_READ: Thumb: 757 | Index: 671 | Middle: 1098 | Ring: 0 | Pinky: 803[0m
+[0;32mI (2853) FLEX_READ: Thumb: 761 | Index: 671 | Middle: 1099 | Ring: 0 | Pinky: 803[0m
+[0;32mI (3353) FLEX_READ: Thumb: 762 | Index: 670 | Middle: 1099 | Ring: 0 | Pinky: 803[0m
+[0;32mI (3853) FLEX_READ: Thumb: 751 | Index: 671 | Middle: 1099 | Ring: 0 | Pinky: 803[0m
+[0;32mI (4353) FLEX_READ: Thumb: 746 | Index: 671 | Middle: 1099 | Ring: 0 | Pinky: 803[0m
+[0;32mI (4853) FLEX_READ: Thumb: 742 | Index: 671 | Middle: 1099 | Ring: 0 | Pinky: 803[0m
+[0;32mI (5353) FLEX_READ: Thumb: 747 | Index: 671 | Middle: 1098 | Ring: 0 | Pinky: 804[0m
+[0;32mI (5853) FLEX_READ: Thumb: 752 | Index: 671 | Middle: 1099 | Ring: 0 | Pinky: 804[0m
+[0;32mI (6353) FLEX_READ: Thumb: 753 | Index: 671 | Middle: 1098 | Ring: 0 | Pinky: 804[0m
+[0;32mI (6853) FLEX_READ: Thumb: 721 | Index: 669 | Middle: 221 | Ring: 0 | Pinky: 801[0m
+[0;32mI (7353) FLEX_READ: Thumb: 704 | Index: 667 | Middle: 15 | Ring: 0 | Pinky: 801[0m
+[0;32mI (7853) FLEX_READ: Thumb: 700 | Index: 668 | Middle: 0 | Ring: 0 | Pinky: 801[0m
+[0;32mI (8353) FLEX_READ: Thumb: 702 | Index: 664 | Middle: 0 | Ring: 0 | Pinky: 802[0m
+[0;32mI (8853) FLEX_READ: Thumb: 712 | Index: 655 | Middle: 0 | Ring: 0 | Pinky: 801[0m
+[0;32mI (9353) FLEX_READ: Thumb: 714 | Index: 654 | Middle: 0 | Ring: 0 | Pinky: 801[0m
+[0;32mI (9853) FLEX_READ: Thumb: 714 | Index: 642 | Middle: 0 | Ring: 0 | Pinky: 801[0m
+[0;32mI (10353) FLEX_READ: Thumb: 588 | Index: 0 | Middle: 887 | Ring: 0 | Pinky: 800[0m
+[0;32mI (10853) FLEX_READ: Thumb: 737 | Index: 648 | Middle: 1091 | Ring: 0 | Pinky: 803[0m
+[0;32mI (11353) FLEX_READ: Thumb: 780 | Index: 646 | Middle: 3824 | Ring: 0 | Pinky: 802[0m
+[0;32mI (11853) FLEX_READ: Thumb: 748 | Index: 643 | Middle: 1125 | Ring: 0 | Pinky: 802[0m
+[0;32mI (12353) FLEX_READ: Thumb: 753 | Index: 644 | Middle: 1099 | Ring: 0 | Pinky: 801[0m
+[0;32mI (12853) FLEX_READ: Thumb: 754 | Index: 645 | Middle: 1101 | Ring: 0 | Pinky: 801[0m
+[0;32mI (852) FLEX_READ: Thumb: 713 | Index: 647 | Middle: 1092 | Ring: 0 | Pinky: 801[0m
+[0;32mI (1352) FLEX_READ: Thumb: 712 | Index: 647 | Middle: 1091 | Ring: 0 | Pinky: 801[0m
+[0;32mI (1852) FLEX_READ: Thumb: 708 | Index: 648 | Middle: 1085 | Ring: 0 | Pinky: 801[0m
+[0;32mI (2352) FLEX_READ: Thumb: 713 | Index: 647 | Middle: 990 | Ring: 0 | Pinky: 801[0m
+[0;32mI (2852) FLEX_READ: Thumb: 720 | Index: 648 | Middle: 1048 | Ring: 0 | Pinky: 801[0m
+[0;32mI (3352) FLEX_READ: Thumb: 721 | Index: 648 | Middle: 1055 | Ring: 0 | Pinky: 801[0m
+[0;32mI (3852) FLEX_READ: Thumb: 721 | Index: 649 | Middle: 1084 | Ring: 0 | Pinky: 802[0m
+[0;32mI (4352) FLEX_READ: Thumb: 715 | Index: 649 | Middle: 1088 | Ring: 0 | Pinky: 802[0m
+[0;32mI (4852) FLEX_READ: Thumb: 714 | Index: 648 | Middle: 1090 | Ring: 0 | Pinky: 801[0m
+[0;32mI (5352) FLEX_READ: Thumb: 718 | Index: 649 | Middle: 1092 | Ring: 0 | Pinky: 802[0m
+[0;32mI (5852) FLEX_READ: Thumb: 730 | Index: 649 | Middle: 1088 | Ring: 0 | Pinky: 802[0m
+[0;32mI (6352) FLEX_READ: Thumb: 739 | Index: 649 | Middle: 1089 | Ring: 0 | Pinky: 802[0m
+[0;32mI (6852) FLEX_READ: Thumb: 739 | Index: 648 | Middle: 1088 | Ring: 0 | Pinky: 802[0m
+[0;32mI (7352) FLEX_READ: Thumb: 737 | Index: 649 | Middle: 1086 | Ring: 0 | Pinky: 802[0m
+[0;32mI (7852) FLEX_READ: Thumb: 725 | Index: 649 | Middle: 1087 | Ring: 0 | Pinky: 802[0m
+[0;32mI (8352) FLEX_READ: Thumb: 717 | Index: 649 | Middle: 1094 | Ring: 0 | Pinky: 802[0m
+[0;32mI (8852) FLEX_READ: Thumb: 715 | Index: 649 | Middle: 1095 | Ring: 0 | Pinky: 802[0m
+[0;32mI (9352) FLEX_READ: Thumb: 718 | Index: 649 | Middle: 1095 | Ring: 0 | Pinky: 802[0m
+[0;32mI (9852) FLEX_READ: Thumb: 724 | Index: 650 | Middle: 1095 | Ring: 0 | Pinky: 802[0m
+[0;32mI (10352) FLEX_READ: Thumb: 726 | Index: 649 | Middle: 1095 | Ring: 0 | Pinky: 802[0m
+[0;32mI (10852) FLEX_READ: Thumb: 721 | Index: 650 | Middle: 1096 | Ring: 0 | Pinky: 802[0m
+[0;32mI (11352) FLEX_READ: Thumb: 708 | Index: 649 | Middle: 1095 | Ring: 0 | Pinky: 802[0m
+[0;32mI (11852) FLEX_READ: Thumb: 707 | Index: 650 | Middle: 1096 | Ring: 0 | Pinky: 802[0m
+[0;32mI (12352) FLEX_READ: Thumb: 706 | Index: 650 | Middle: 1096 | Ring: 0 | Pinky: 802[0m
+[0;32mI (12852) FLEX_READ: Thumb: 709 | Index: 649 | Middle: 1096 | Ring: 0 | Pinky: 802[0m
+[0;32mI (13352) FLEX_READ: Thumb: 720 | Index: 649 | Middle: 1095 | Ring: 0 | Pinky: 802[0m
+[0;32mI (13852) FLEX_READ: Thumb: 722 | Index: 650 | Middle: 1096 | Ring: 0 | Pinky: 803[0m
+[0;32mI (14352) FLEX_READ: Thumb: 723 | Index: 649 | Middle: 1095 | Ring: 0 | Pinky: 802[0m
+[0;32mI (14852) FLEX_READ: Thumb: 719 | Index: 649 | Middle: 1094 | Ring: 0 | Pinky: 802[0m
+[0;32mI (15352) FLEX_READ: Thumb: 717 | Index: 649 | Middle: 1094 | Ring: 0 | Pinky: 802[0m
+[0;32mI (15852) FLEX_READ: Thumb: 719 | Index: 650 | Middle: 1094 | Ring: 0 | Pinky: 802[0m
+[0;32mI (16352) FLEX_READ: Thumb: 723 | Index: 648 | Middle: 1094 | Ring: 0 | Pinky: 803[0m
+[0;32mI (16852) FLEX_READ: Thumb: 736 | Index: 649 | Middle: 1091 | Ring: 0 | Pinky: 802[0m
+[0;32mI (17352) FLEX_READ: Thumb: 740 | Index: 648 | Middle: 1090 | Ring: 0 | Pinky: 802[0m
+[0;32mI (17852) FLEX_READ: Thumb: 742 | Index: 648 | Middle: 1093 | Ring: 0 | Pinky: 803[0m
+[0;32mI (18352) FLEX_READ: Thumb: 741 | Index: 647 | Middle: 1094 | Ring: 0 | Pinky: 802[0m
+[0;32mI (18852) FLEX_READ: Thumb: 729 | Index: 648 | Middle: 1094 | Ring: 0 | Pinky: 802[0m
+[0;32mI (19352) FLEX_READ: Thumb: 725 | Index: 648 | Middle: 1094 | Ring: 0 | Pinky: 802[0m
+[0;32mI (19852) FLEX_READ: Thumb: 723 | Index: 647 | Middle: 1095 | Ring: 0 | Pinky: 802[0m
+[0;32mI (20352) FLEX_READ: Thumb: 725 | Index: 648 | Middle: 1095 | Ring: 0 | Pinky: 802[0m
+[0;32mI (20852) FLEX_READ: Thumb: 730 | Index: 649 | Middle: 1093 | Ring: 0 | Pinky: 803[0m
+[0;32mI (21352) FLEX_READ: Thumb: 730 | Index: 649 | Middle: 1088 | Ring: 0 | Pinky: 802[0m
+[0;32mI (21852) FLEX_READ: Thumb: 729 | Index: 648 | Middle: 1087 | Ring: 0 | Pinky: 803[0m
+[0;32mI (22352) FLEX_READ: Thumb: 722 | Index: 649 | Middle: 1085 | Ring: 0 | Pinky: 802[0m
+[0;32mI (22852) FLEX_READ: Thumb: 714 | Index: 649 | Middle: 1090 | Ring: 0 | Pinky: 803[0m
+[0;32mI (23352) FLEX_READ: Thumb: 711 | Index: 647 | Middle: 1088 | Ring: 0 | Pinky: 802[0m
+[0;32mI (23852) FLEX_READ: Thumb: 708 | Index: 648 | Middle: 1033 | Ring: 0 | Pinky: 803[0m
+[0;32mI (24352) FLEX_READ: Thumb: 716 | Index: 649 | Middle: 1088 | Ring: 0 | Pinky: 802[0m
+[0;32mI (24852) FLEX_READ: Thumb: 725 | Index: 647 | Middle: 1087 | Ring: 0 | Pinky: 802[0m
+[0;32mI (25352) FLEX_READ: Thumb: 726 | Index: 647 | Middle: 1071 | Ring: 0 | Pinky: 802[0m
+[0;32mI (25852) FLEX_READ: Thumb: 728 | Index: 648 | Middle: 1088 | Ring: 0 | Pinky: 802[0m
+[0;32mI (26352) FLEX_READ: Thumb: 722 | Index: 646 | Middle: 1088 | Ring: 0 | Pinky: 802[0m
+[0;32mI (26852) FLEX_READ: Thumb: 718 | Index: 648 | Middle: 1087 | Ring: 0 | Pinky: 802[0m
+[0;32mI (27352) FLEX_READ: Thumb: 717 | Index: 647 | Middle: 1087 | Ring: 0 | Pinky: 802[0m
+[0;32mI (27852) FLEX_READ: Thumb: 721 | Index: 647 | Middle: 1087 | Ring: 0 | Pinky: 803[0m
+[0;32mI (28352) FLEX_READ: Thumb: 731 | Index: 647 | Middle: 1087 | Ring: 0 | Pinky: 802[0m
+[0;32mI (28852) FLEX_READ: Thumb: 738 | Index: 647 | Middle: 1086 | Ring: 0 | Pinky: 802[0m
+[0;32mI (29352) FLEX_READ: Thumb: 738 | Index: 647 | Middle: 1085 | Ring: 0 | Pinky: 802[0m
+[0;32mI (29852) FLEX_READ: Thumb: 740 | Index: 646 | Middle: 1083 | Ring: 0 | Pinky: 802[0m
+[0;32mI (30352) FLEX_READ: Thumb: 734 | Index: 647 | Middle: 1082 | Ring: 0 | Pinky: 803[0m
+[0;32mI (30852) FLEX_READ: Thumb: 725 | Index: 646 | Middle: 1080 | Ring: 0 | Pinky: 803[0m
+[0;32mI (31352) FLEX_READ: Thumb: 718 | Index: 647 | Middle: 1076 | Ring: 0 | Pinky: 802[0m
+[0;32mI (31852) FLEX_READ: Thumb: 716 | Index: 647 | Middle: 1075 | Ring: 0 | Pinky: 802[0m
+[0;32mI (32352) FLEX_READ: Thumb: 724 | Index: 646 | Middle: 1074 | Ring: 0 | Pinky: 803[0m
+[0;32mI (32852) FLEX_READ: Thumb: 728 | Index: 647 | Middle: 1072 | Ring: 0 | Pinky: 801[0m
+[0;32mI (33352) FLEX_READ: Thumb: 728 | Index: 647 | Middle: 1072 | Ring: 0 | Pinky: 803[0m
+[0;32mI (33852) FLEX_READ: Thumb: 726 | Index: 647 | Middle: 1072 | Ring: 0 | Pinky: 802[0m
+[0;32mI (34352) FLEX_READ: Thumb: 715 | Index: 646 | Middle: 1070 | Ring: 0 | Pinky: 803[0m
+[0;32mI (34852) FLEX_READ: Thumb: 710 | Index: 648 | Middle: 1070 | Ring: 0 | Pinky: 803[0m
+[0;32mI (35352) FLEX_READ: Thumb: 708 | Index: 649 | Middle: 1061 | Ring: 0 | Pinky: 805[0m
+[0;32mI (35852) FLEX_READ: Thumb: 708 | Index: 647 | Middle: 1093 | Ring: 0 | Pinky: 803[0m
+[0;32mI (36352) FLEX_READ: Thumb: 718 | Index: 647 | Middle: 1092 | Ring: 0 | Pinky: 802[0m
+[0;32mI (36852) FLEX_READ: Thumb: 1693 | Index: 2345 | Middle: 2544 | Ring: 2031 | Pinky: 2413[0m
+[0;32mI (37352) FLEX_READ: Thumb: 729 | Index: 652 | Middle: 954 | Ring: 0 | Pinky: 807[0m
+[0;32mI (37852) FLEX_READ: Thumb: 1431 | Index: 1927 | Middle: 1456 | Ring: 1532 | Pinky: 2032[0m
+[0;32mI (38352) FLEX_READ: Thumb: 841 | Index: 673 | Middle: 0 | Ring: 3 | Pinky: 830[0m
+[0;32mI (38852) FLEX_READ: Thumb: 817 | Index: 825 | Middle: 77 | Ring: 186 | Pinky: 975[0m
+[0;32mI (39352) FLEX_READ: Thumb: 703 | Index: 648 | Middle: 0 | Ring: 0 | Pinky: 805[0m
+[0;32mI (39852) FLEX_READ: Thumb: 853 | Index: 875 | Middle: 138 | Ring: 244 | Pinky: 1022[0m
+[0;32mI (40352) FLEX_READ: Thumb: 957 | Index: 1019 | Middle: 319 | Ring: 420 | Pinky: 1166[0m
+[0;32mI (40852) FLEX_READ: Thumb: 929 | Index: 965 | Middle: 251 | Ring: 355 | Pinky: 1112[0m
+[0;32mI (41352) FLEX_READ: Thumb: 904 | Index: 922 | Middle: 197 | Ring: 304 | Pinky: 1072[0m
+[0;32mI (41852) FLEX_READ: Thumb: 912 | Index: 932 | Middle: 208 | Ring: 315 | Pinky: 1082[0m
+[0;32mI (42352) FLEX_READ: Thumb: 907 | Index: 942 | Middle: 222 | Ring: 327 | Pinky: 1090[0m
+[0;32mI (42852) FLEX_READ: Thumb: 926 | Index: 977 | Middle: 268 | Ring: 369 | Pinky: 1125[0m
+[0;32mI (43352) FLEX_READ: Thumb: 888 | Index: 913 | Middle: 204 | Ring: 321 | Pinky: 1060[0m
+[0;32mI (43852) FLEX_READ: Thumb: 905 | Index: 945 | Middle: 227 | Ring: 334 | Pinky: 1093[0m
+[0;32mI (44352) FLEX_READ: Thumb: 901 | Index: 943 | Middle: 227 | Ring: 337 | Pinky: 1104[0m
+[0;32mI (44852) FLEX_READ: Thumb: 892 | Index: 922 | Middle: 196 | Ring: 304 | Pinky: 1072[0m
+[0;32mI (45352) FLEX_READ: Thumb: 1000 | Index: 1137 | Middle: 401 | Ring: 533 | Pinky: 1234[0m
+[0;32mI (45852) FLEX_READ: Thumb: 1020 | Index: 1163 | Middle: 493 | Ring: 580 | Pinky: 1281[0m
+[0;32mI (46352) FLEX_READ: Thumb: 824 | Index: 845 | Middle: 100 | Ring: 208 | Pinky: 993[0m
+[0;32mI (46852) FLEX_READ: Thumb: 822 | Index: 847 | Middle: 103 | Ring: 209 | Pinky: 994[0m
+[0;32mI (47352) FLEX_READ: Thumb: 823 | Index: 848 | Middle: 108 | Ring: 214 | Pinky: 998[0m
+[0;32mI (47852) FLEX_READ: Thumb: 826 | Index: 852 | Middle: 112 | Ring: 220 | Pinky: 1003[0m
+[0;32mI (48352) FLEX_READ: Thumb: 873 | Index: 910 | Middle: 178 | Ring: 286 | Pinky: 1060[0m
+[0;32mI (48852) FLEX_READ: Thumb: 922 | Index: 982 | Middle: 272 | Ring: 374 | Pinky: 1131[0m
+[0;32mI (49352) FLEX_READ: Thumb: 871 | Index: 895 | Middle: 163 | Ring: 269 | Pinky: 1047[0m
+[0;32mI (49852) FLEX_READ: Thumb: 954 | Index: 1043 | Middle: 341 | Ring: 338 | Pinky: 1180[0m
+[0;32mI (50352) FLEX_READ: Thumb: 926 | Index: 1005 | Middle: 298 | Ring: 298 | Pinky: 1149[0m
+[0;32mI (50852) FLEX_READ: Thumb: 923 | Index: 999 | Middle: 292 | Ring: 292 | Pinky: 1147[0m
+[0;32mI (51352) FLEX_READ: Thumb: 924 | Index: 996 | Middle: 288 | Ring: 288 | Pinky: 1142[0m
+[0;32mI (51852) FLEX_READ: Thumb: 932 | Index: 993 | Middle: 285 | Ring: 286 | Pinky: 1138[0m
+[0;32mI (52352) FLEX_READ: Thumb: 942 | Index: 996 | Middle: 288 | Ring: 288 | Pinky: 1142[0m
+[0;32mI (52852) FLEX_READ: Thumb: 942 | Index: 995 | Middle: 287 | Ring: 288 | Pinky: 1140[0m
+[0;32mI (53352) FLEX_READ: Thumb: 946 | Index: 996 | Middle: 286 | Ring: 287 | Pinky: 1141[0m
+[0;32mI (53852) FLEX_READ: Thumb: 935 | Index: 995 | Middle: 288 | Ring: 288 | Pinky: 1140[0m
+[0;32mI (54352) FLEX_READ: Thumb: 927 | Index: 995 | Middle: 286 | Ring: 287 | Pinky: 1140[0m
+[0;32mI (54852) FLEX_READ: Thumb: 928 | Index: 1004 | Middle: 297 | Ring: 297 | Pinky: 1148[0m
+[0;32mI (55352) FLEX_READ: Thumb: 931 | Index: 1008 | Middle: 303 | Ring: 304 | Pinky: 1153[0m
+[0;32mI (55852) FLEX_READ: Thumb: 934 | Index: 1006 | Middle: 300 | Ring: 301 | Pinky: 1151[0m
+[0;32mI (56352) FLEX_READ: Thumb: 934 | Index: 1003 | Middle: 297 | Ring: 296 | Pinky: 1148[0m
+[0;32mI (56852) FLEX_READ: Thumb: 932 | Index: 1001 | Middle: 294 | Ring: 295 | Pinky: 1146[0m
+[0;32mI (57352) FLEX_READ: Thumb: 931 | Index: 1004 | Middle: 297 | Ring: 298 | Pinky: 1149[0m
+[0;32mI (57852) FLEX_READ: Thumb: 917 | Index: 999 | Middle: 292 | Ring: 293 | Pinky: 1146[0m
+[0;32mI (58352) FLEX_READ: Thumb: 912 | Index: 999 | Middle: 291 | Ring: 291 | Pinky: 1143[0m
+[0;32mI (58852) FLEX_READ: Thumb: 912 | Index: 1002 | Middle: 294 | Ring: 295 | Pinky: 1146[0m
+[0;32mI (59352) FLEX_READ: Thumb: 911 | Index: 1001 | Middle: 294 | Ring: 294 | Pinky: 1146[0m
+[0;32mI (59852) FLEX_READ: Thumb: 923 | Index: 1001 | Middle: 294 | Ring: 295 | Pinky: 1147[0m
+[0;32mI (60352) FLEX_READ: Thumb: 927 | Index: 999 | Middle: 290 | Ring: 291 | Pinky: 1143[0m
+[0;32mI (60852) FLEX_READ: Thumb: 930 | Index: 997 | Middle: 289 | Ring: 289 | Pinky: 1143[0m
+[0;32mI (61352) FLEX_READ: Thumb: 928 | Index: 998 | Middle: 290 | Ring: 291 | Pinky: 1145[0m
+[0;32mI (61852) FLEX_READ: Thumb: 920 | Index: 996 | Middle: 288 | Ring: 289 | Pinky: 1141[0m
+[0;32mI (62352) FLEX_READ: Thumb: 917 | Index: 995 | Middle: 288 | Ring: 288 | Pinky: 1142[0m
+[0;32mI (62852) FLEX_READ: Thumb: 921 | Index: 995 | Middle: 288 | Ring: 289 | Pinky: 1141[0m
+[0;32mI (63352) FLEX_READ: Thumb: 926 | Index: 994 | Middle: 287 | Ring: 287 | Pinky: 1140[0m
+[0;32mI (63852) FLEX_READ: Thumb: 936 | Index: 993 | Middle: 285 | Ring: 284 | Pinky: 1139[0m
+[0;32mI (64352) FLEX_READ: Thumb: 941 | Index: 993 | Middle: 286 | Ring: 286 | Pinky: 1139[0m
+[0;32mI (64852) FLEX_READ: Thumb: 942 | Index: 993 | Middle: 285 | Ring: 284 | Pinky: 1139[0m
+[0;32mI (65352) FLEX_READ: Thumb: 945 | Index: 998 | Middle: 291 | Ring: 291 | Pinky: 1145[0m
+[0;32mI (65852) FLEX_READ: Thumb: 932 | Index: 997 | Middle: 290 | Ring: 288 | Pinky: 1142[0m
+[0;32mI (66352) FLEX_READ: Thumb: 926 | Index: 994 | Middle: 288 | Ring: 288 | Pinky: 1142[0m
+[0;32mI (66852) FLEX_READ: Thumb: 922 | Index: 995 | Middle: 287 | Ring: 287 | Pinky: 1140[0m
+[0;32mI (67352) FLEX_READ: Thumb: 922 | Index: 995 | Middle: 286 | Ring: 288 | Pinky: 1140[0m
+[0;32mI (67852) FLEX_READ: Thumb: 929 | Index: 995 | Middle: 292 | Ring: 297 | Pinky: 1149[0m
+[0;32mI (68352) FLEX_READ: Thumb: 978 | Index: 1085 | Middle: 365 | Ring: 389 | Pinky: 1231[0m
+[0;32mI (68852) FLEX_READ: Thumb: 787 | Index: 811 | Middle: 84 | Ring: 154 | Pinky: 1384[0m
+[0;32mI (69352) FLEX_READ: Thumb: 883 | Index: 918 | Middle: 192 | Ring: 194 | Pinky: 1074[0m
+[0;32mI (69852) FLEX_READ: Thumb: 857 | Index: 878 | Middle: 142 | Ring: 143 | Pinky: 1028[0m
+[0;32mI (70352) FLEX_READ: Thumb: 709 | Index: 650 | Middle: 0 | Ring: 37 | Pinky: 811[0m
+[0;32mI (70852) FLEX_READ: Thumb: 707 | Index: 654 | Middle: 0 | Ring: 39 | Pinky: 814[0m
+[0;32mI (71352) FLEX_READ: Thumb: 705 | Index: 648 | Middle: 0 | Ring: 29 | Pinky: 809[0m
+[0;32mI (71852) FLEX_READ: Thumb: 728 | Index: 672 | Middle: 0 | Ring: 46 | Pinky: 831[0m
+[0;32mI (72352) FLEX_READ: Thumb: 715 | Index: 644 | Middle: 0 | Ring: 44 | Pinky: 805[0m
+[0;32mI (72852) FLEX_READ: Thumb: 728 | Index: 657 | Middle: 0 | Ring: 66 | Pinky: 817[0m
+[0;32mI (73352) FLEX_READ: Thumb: 720 | Index: 643 | Middle: 0 | Ring: 48 | Pinky: 803[0m
+[0;32mI (73852) FLEX_READ: Thumb: 820 | Index: 788 | Middle: 41 | Ring: 220 | Pinky: 942[0m
+[0;32mI (74352) FLEX_READ: Thumb: 789 | Index: 731 | Middle: 0 | Ring: 163 | Pinky: 887[0m
+[0;32mI (74852) FLEX_READ: Thumb: 740 | Index: 664 | Middle: 0 | Ring: 71 | Pinky: 818[0m
+[0;32mI (75352) FLEX_READ: Thumb: 862 | Index: 856 | Middle: 336 | Ring: 303 | Pinky: 1007[0m
+[0;32mI (75852) FLEX_READ: Thumb: 769 | Index: 668 | Middle: 262 | Ring: 62 | Pinky: 817[0m
+[0;32mI (76352) FLEX_READ: Thumb: 757 | Index: 656 | Middle: 0 | Ring: 60 | Pinky: 811[0m
+[0;32mI (76852) FLEX_READ: Thumb: 739 | Index: 643 | Middle: 0 | Ring: 51 | Pinky: 805[0m
+[0;32mI (77352) FLEX_READ: Thumb: 781 | Index: 720 | Middle: 0 | Ring: 0 | Pinky: 880[0m
+[0;32mI (77852) FLEX_READ: Thumb: 738 | Index: 658 | Middle: 0 | Ring: 0 | Pinky: 820[0m
+[0;32mI (78352) FLEX_READ: Thumb: 981 | Index: 1043 | Middle: 349 | Ring: 350 | Pinky: 1183[0m
+[0;32mI (78852) FLEX_READ: Thumb: 998 | Index: 1056 | Middle: 365 | Ring: 409 | Pinky: 1198[0m
+[0;32mI (79352) FLEX_READ: Thumb: 993 | Index: 1059 | Middle: 367 | Ring: 366 | Pinky: 1199[0m
+[0;32mI (79852) FLEX_READ: Thumb: 1243 | Index: 1576 | Middle: 1014 | Ring: 1026 | Pinky: 1708[0m
+[0;32mI (80352) FLEX_READ: Thumb: 1069 | Index: 1048 | Middle: 4091 | Ring: 454 | Pinky: 1188[0m
+[0;32mI (80852) FLEX_READ: Thumb: 980 | Index: 1041 | Middle: 343 | Ring: 366 | Pinky: 1182[0m
+[0;32mI (81352) FLEX_READ: Thumb: 991 | Index: 1058 | Middle: 362 | Ring: 400 | Pinky: 1199[0m
+[0;32mI (81852) FLEX_READ: Thumb: 1015 | Index: 1102 | Middle: 417 | Ring: 442 | Pinky: 1239[0m
+[0;32mI (82352) FLEX_READ: Thumb: 797 | Index: 765 | Middle: 7 | Ring: 18 | Pinky: 918[0m
+[0;32mI (82852) FLEX_READ: Thumb: 729 | Index: 672 | Middle: 0 | Ring: 10 | Pinky: 831[0m
+[0;32mI (83352) FLEX_READ: Thumb: 728 | Index: 675 | Middle: 0 | Ring: 14 | Pinky: 833[0m
+[0;32mI (852) FLEX_READ: Thumb: 1140 | Index: 1288 | Middle: 640 | Ring: 669 | Pinky: 1363[0m
+[0;32mI (852) FLEX_READ: Thumb: 841 | Index: 865 | Middle: 130 | Ring: 128 | Pinky: 1012[0m
+[0;32mI (1352) FLEX_READ: Thumb: 834 | Index: 858 | Middle: 122 | Ring: 120 | Pinky: 1007[0m
+[0;32mI (1852) FLEX_READ: Thumb: 826 | Index: 851 | Middle: 113 | Ring: 114 | Pinky: 1004[0m
+[0;32mI (2352) FLEX_READ: Thumb: 824 | Index: 848 | Middle: 108 | Ring: 106 | Pinky: 994[0m
+[0;32mI (2852) FLEX_READ: Thumb: 822 | Index: 834 | Middle: 91 | Ring: 92 | Pinky: 984[0m
+[0;32mI (3352) FLEX_READ: Thumb: 630 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 906[0m
+[0;32mI (3852) FLEX_READ: Thumb: 573 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 817[0m
+[0;32mI (4352) FLEX_READ: Thumb: 564 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 803[0m
+[0;32mI (4852) FLEX_READ: Thumb: 559 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 804[0m
+[0;32mI (5352) FLEX_READ: Thumb: 551 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 804[0m
+[0;32mI (5852) FLEX_READ: Thumb: 548 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 804[0m
+[0;32mI (6352) FLEX_READ: Thumb: 546 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 804[0m
+[0;32mI (6852) FLEX_READ: Thumb: 542 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 805[0m
+[0;32mI (7352) FLEX_READ: Thumb: 546 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 806[0m
+[0;32mI (7852) FLEX_READ: Thumb: 554 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 805[0m
+[0;32mI (8352) FLEX_READ: Thumb: 537 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 805[0m
+[0;32mI (8852) FLEX_READ: Thumb: 557 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 806[0m
+[0;32mI (9352) FLEX_READ: Thumb: 557 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 806[0m
+[0;32mI (9852) FLEX_READ: Thumb: 555 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 806[0m
+[0;32mI (10352) FLEX_READ: Thumb: 550 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 806[0m
+[0;32mI (10852) FLEX_READ: Thumb: 548 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 807[0m
+[0;32mI (11352) FLEX_READ: Thumb: 549 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 806[0m
+[0;32mI (11852) FLEX_READ: Thumb: 553 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 805[0m
+[0;32mI (12352) FLEX_READ: Thumb: 555 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 805[0m
+[0;32mI (12852) FLEX_READ: Thumb: 563 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 807[0m
+[0;32mI (13352) FLEX_READ: Thumb: 567 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 805[0m
+[0;32mI (13852) FLEX_READ: Thumb: 568 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 806[0m
+[0;32mI (14352) FLEX_READ: Thumb: 569 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 806[0m
+[0;32mI (14852) FLEX_READ: Thumb: 568 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 807[0m
+[0;32mI (15352) FLEX_READ: Thumb: 566 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 806[0m
+[0;32mI (15852) FLEX_READ: Thumb: 561 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 806[0m
+[0;32mI (16352) FLEX_READ: Thumb: 557 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 806[0m
+[0;32mI (16852) FLEX_READ: Thumb: 553 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 806[0m
+[0;32mI (17352) FLEX_READ: Thumb: 552 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 805[0m
+[0;32mI (17852) FLEX_READ: Thumb: 552 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 807[0m
+[0;32mI (18352) FLEX_READ: Thumb: 554 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 806[0m
+[0;32mI (18852) FLEX_READ: Thumb: 556 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 807[0m
+[0;32mI (19352) FLEX_READ: Thumb: 558 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 805[0m
+[0;32mI (19852) FLEX_READ: Thumb: 556 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 806[0m
+[0;32mI (20352) FLEX_READ: Thumb: 566 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 806[0m
+[0;32mI (20852) FLEX_READ: Thumb: 566 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 805[0m
+[0;32mI (21352) FLEX_READ: Thumb: 563 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 805[0m
+[0;32mI (21852) FLEX_READ: Thumb: 554 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 805[0m
+[0;32mI (22352) FLEX_READ: Thumb: 552 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 805[0m
+[0;32mI (22852) FLEX_READ: Thumb: 549 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 805[0m
+[0;32mI (23352) FLEX_READ: Thumb: 548 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 805[0m
+[0;32mI (23852) FLEX_READ: Thumb: 550 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 805[0m
+[0;32mI (24352) FLEX_READ: Thumb: 558 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 805[0m
+[0;32mI (24852) FLEX_READ: Thumb: 560 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 805[0m
+[0;32mI (25352) FLEX_READ: Thumb: 561 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 805[0m
+[0;32mI (25852) FLEX_READ: Thumb: 561 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 806[0m
+[0;32mI (26352) FLEX_READ: Thumb: 562 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 806[0m
+[0;32mI (26852) FLEX_READ: Thumb: 560 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 803[0m
+[0;32mI (27352) FLEX_READ: Thumb: 551 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 799[0m
+[0;32mI (27852) FLEX_READ: Thumb: 548 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 795[0m
+[0;32mI (28352) FLEX_READ: Thumb: 545 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 787[0m
+[0;32mI (28852) FLEX_READ: Thumb: 540 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 776[0m
+[0;32mI (29352) FLEX_READ: Thumb: 540 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 763[0m
+[0;32mI (29852) FLEX_READ: Thumb: 540 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 756[0m
+[0;32mI (30352) FLEX_READ: Thumb: 544 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 751[0m
+[0;32mI (30852) FLEX_READ: Thumb: 546 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 753[0m
+[0;32mI (31352) FLEX_READ: Thumb: 547 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 764[0m
+[0;32mI (31852) FLEX_READ: Thumb: 543 | Index: 0 | Middle: 125 | Ring: 0 | Pinky: 736[0m
+[0;32mI (32352) FLEX_READ: Thumb: 538 | Index: 0 | Middle: 132 | Ring: 0 | Pinky: 732[0m
+[0;32mI (32852) FLEX_READ: Thumb: 536 | Index: 0 | Middle: 120 | Ring: 0 | Pinky: 732[0m
+[0;32mI (33352) FLEX_READ: Thumb: 526 | Index: 0 | Middle: 126 | Ring: 0 | Pinky: 730[0m
+[0;32mI (33852) FLEX_READ: Thumb: 521 | Index: 0 | Middle: 117 | Ring: 0 | Pinky: 740[0m
+[0;32mI (34352) FLEX_READ: Thumb: 525 | Index: 0 | Middle: 63 | Ring: 0 | Pinky: 754[0m
+[0;32mI (34852) FLEX_READ: Thumb: 525 | Index: 0 | Middle: 63 | Ring: 0 | Pinky: 771[0m
+[0;32mI (35352) FLEX_READ: Thumb: 526 | Index: 0 | Middle: 52 | Ring: 0 | Pinky: 771[0m
+[0;32mI (35852) FLEX_READ: Thumb: 527 | Index: 0 | Middle: 34 | Ring: 0 | Pinky: 771[0m
+[0;32mI (36352) FLEX_READ: Thumb: 528 | Index: 0 | Middle: 21 | Ring: 0 | Pinky: 776[0m
+[0;32mI (36852) FLEX_READ: Thumb: 532 | Index: 0 | Middle: 15 | Ring: 0 | Pinky: 775[0m
+[0;32mI (37352) FLEX_READ: Thumb: 533 | Index: 0 | Middle: 9 | Ring: 0 | Pinky: 781[0m
+[0;32mI (37852) FLEX_READ: Thumb: 533 | Index: 0 | Middle: 7 | Ring: 0 | Pinky: 780[0m
+[0;32mI (38352) FLEX_READ: Thumb: 534 | Index: 0 | Middle: 4 | Ring: 0 | Pinky: 782[0m
+[0;32mI (38852) FLEX_READ: Thumb: 532 | Index: 0 | Middle: 10 | Ring: 0 | Pinky: 783[0m
+[0;32mI (39352) FLEX_READ: Thumb: 531 | Index: 0 | Middle: 16 | Ring: 0 | Pinky: 782[0m
+[0;32mI (39852) FLEX_READ: Thumb: 517 | Index: 0 | Middle: 20 | Ring: 0 | Pinky: 582[0m
+[0;32mI (40352) FLEX_READ: Thumb: 225 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (40852) FLEX_READ: Thumb: 225 | Index: 0 | Middle: 2 | Ring: 0 | Pinky: 0[0m
+[0;32mI (41352) FLEX_READ: Thumb: 221 | Index: 0 | Middle: 5 | Ring: 0 | Pinky: 0[0m
+[0;32mI (41852) FLEX_READ: Thumb: 219 | Index: 0 | Middle: 2 | Ring: 0 | Pinky: 0[0m
+[0;32mI (42352) FLEX_READ: Thumb: 216 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (42852) FLEX_READ: Thumb: 218 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (43352) FLEX_READ: Thumb: 217 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (43852) FLEX_READ: Thumb: 220 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (44352) FLEX_READ: Thumb: 220 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (44852) FLEX_READ: Thumb: 229 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (45352) FLEX_READ: Thumb: 234 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (45852) FLEX_READ: Thumb: 236 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (46352) FLEX_READ: Thumb: 235 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (46852) FLEX_READ: Thumb: 235 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (47352) FLEX_READ: Thumb: 236 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (47852) FLEX_READ: Thumb: 237 | Index: 0 | Middle: 2 | Ring: 0 | Pinky: 0[0m
+[0;32mI (48352) FLEX_READ: Thumb: 237 | Index: 0 | Middle: 3 | Ring: 0 | Pinky: 0[0m
+[0;32mI (48852) FLEX_READ: Thumb: 234 | Index: 0 | Middle: 5 | Ring: 0 | Pinky: 0[0m
+[0;32mI (49352) FLEX_READ: Thumb: 228 | Index: 0 | Middle: 5 | Ring: 0 | Pinky: 0[0m
+[0;32mI (49852) FLEX_READ: Thumb: 229 | Index: 0 | Middle: 4 | Ring: 0 | Pinky: 0[0m
+[0;32mI (50352) FLEX_READ: Thumb: 230 | Index: 0 | Middle: 6 | Ring: 0 | Pinky: 0[0m
+[0;32mI (50852) FLEX_READ: Thumb: 228 | Index: 0 | Middle: 5 | Ring: 0 | Pinky: 0[0m
+[0;32mI (51352) FLEX_READ: Thumb: 231 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (51852) FLEX_READ: Thumb: 231 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (52352) FLEX_READ: Thumb: 238 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (52852) FLEX_READ: Thumb: 244 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (53352) FLEX_READ: Thumb: 248 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (53852) FLEX_READ: Thumb: 248 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (54352) FLEX_READ: Thumb: 250 | Index: 0 | Middle: 2 | Ring: 0 | Pinky: 0[0m
+[0;32mI (54852) FLEX_READ: Thumb: 250 | Index: 0 | Middle: 11 | Ring: 0 | Pinky: 0[0m
+[0;32mI (55352) FLEX_READ: Thumb: 250 | Index: 0 | Middle: 23 | Ring: 0 | Pinky: 0[0m
+[0;32mI (55852) FLEX_READ: Thumb: 247 | Index: 0 | Middle: 31 | Ring: 0 | Pinky: 0[0m
+[0;32mI (56352) FLEX_READ: Thumb: 241 | Index: 0 | Middle: 35 | Ring: 0 | Pinky: 0[0m
+[0;32mI (56852) FLEX_READ: Thumb: 233 | Index: 0 | Middle: 35 | Ring: 0 | Pinky: 0[0m
+[0;32mI (57352) FLEX_READ: Thumb: 229 | Index: 0 | Middle: 36 | Ring: 0 | Pinky: 0[0m
+[0;32mI (57852) FLEX_READ: Thumb: 230 | Index: 0 | Middle: 36 | Ring: 0 | Pinky: 0[0m
+[0;32mI (58352) FLEX_READ: Thumb: 228 | Index: 0 | Middle: 24 | Ring: 0 | Pinky: 0[0m
+[0;32mI (58852) FLEX_READ: Thumb: 227 | Index: 0 | Middle: 2 | Ring: 0 | Pinky: 0[0m
+[0;32mI (59352) FLEX_READ: Thumb: 231 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (59852) FLEX_READ: Thumb: 235 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (60352) FLEX_READ: Thumb: 238 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (60852) FLEX_READ: Thumb: 240 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (61352) FLEX_READ: Thumb: 238 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (61852) FLEX_READ: Thumb: 246 | Index: 0 | Middle: 4 | Ring: 0 | Pinky: 0[0m
+[0;32mI (62352) FLEX_READ: Thumb: 237 | Index: 0 | Middle: 7 | Ring: 0 | Pinky: 0[0m
+[0;32mI (62852) FLEX_READ: Thumb: 231 | Index: 0 | Middle: 10 | Ring: 0 | Pinky: 0[0m
+[0;32mI (63352) FLEX_READ: Thumb: 221 | Index: 0 | Middle: 9 | Ring: 0 | Pinky: 0[0m
+[0;32mI (63852) FLEX_READ: Thumb: 223 | Index: 0 | Middle: 6 | Ring: 0 | Pinky: 0[0m
+[0;32mI (64352) FLEX_READ: Thumb: 224 | Index: 0 | Middle: 5 | Ring: 0 | Pinky: 0[0m
+[0;32mI (64852) FLEX_READ: Thumb: 223 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (65352) FLEX_READ: Thumb: 225 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (65852) FLEX_READ: Thumb: 228 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (66352) FLEX_READ: Thumb: 231 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (66852) FLEX_READ: Thumb: 240 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (67352) FLEX_READ: Thumb: 241 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (67852) FLEX_READ: Thumb: 236 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (68352) FLEX_READ: Thumb: 235 | Index: 0 | Middle: 1 | Ring: 0 | Pinky: 0[0m
+[0;32mI (68852) FLEX_READ: Thumb: 234 | Index: 0 | Middle: 5 | Ring: 0 | Pinky: 0[0m
+[0;32mI (69352) FLEX_READ: Thumb: 229 | Index: 0 | Middle: 1 | Ring: 0 | Pinky: 0[0m
+[0;32mI (69852) FLEX_READ: Thumb: 227 | Index: 0 | Middle: 3 | Ring: 0 | Pinky: 0[0m
+[0;32mI (70352) FLEX_READ: Thumb: 229 | Index: 0 | Middle: 5 | Ring: 0 | Pinky: 0[0m
+[0;32mI (70852) FLEX_READ: Thumb: 231 | Index: 0 | Middle: 1 | Ring: 0 | Pinky: 0[0m
+[0;32mI (71352) FLEX_READ: Thumb: 237 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (71852) FLEX_READ: Thumb: 242 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (72352) FLEX_READ: Thumb: 250 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (72852) FLEX_READ: Thumb: 253 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (73352) FLEX_READ: Thumb: 253 | Index: 0 | Middle: 1 | Ring: 0 | Pinky: 0[0m
+[0;32mI (73852) FLEX_READ: Thumb: 255 | Index: 0 | Middle: 14 | Ring: 0 | Pinky: 0[0m
+[0;32mI (74352) FLEX_READ: Thumb: 256 | Index: 0 | Middle: 22 | Ring: 0 | Pinky: 0[0m
+[0;32mI (74852) FLEX_READ: Thumb: 252 | Index: 0 | Middle: 33 | Ring: 0 | Pinky: 0[0m
+[0;32mI (75352) FLEX_READ: Thumb: 245 | Index: 0 | Middle: 34 | Ring: 0 | Pinky: 0[0m
+[0;32mI (75852) FLEX_READ: Thumb: 241 | Index: 0 | Middle: 38 | Ring: 0 | Pinky: 0[0m
+[0;32mI (76352) FLEX_READ: Thumb: 237 | Index: 0 | Middle: 43 | Ring: 0 | Pinky: 0[0m
+[0;32mI (76852) FLEX_READ: Thumb: 238 | Index: 0 | Middle: 26 | Ring: 0 | Pinky: 0[0m
+[0;32mI (77352) FLEX_READ: Thumb: 237 | Index: 0 | Middle: 2 | Ring: 0 | Pinky: 0[0m
+[0;32mI (77852) FLEX_READ: Thumb: 238 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (78352) FLEX_READ: Thumb: 245 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (78852) FLEX_READ: Thumb: 244 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (79352) FLEX_READ: Thumb: 244 | Index: 0 | Middle: 3 | Ring: 0 | Pinky: 0[0m
+[0;32mI (79852) FLEX_READ: Thumb: 240 | Index: 0 | Middle: 10 | Ring: 0 | Pinky: 0[0m
+[0;32mI (80352) FLEX_READ: Thumb: 236 | Index: 0 | Middle: 13 | Ring: 0 | Pinky: 0[0m
+[0;32mI (80852) FLEX_READ: Thumb: 232 | Index: 0 | Middle: 11 | Ring: 0 | Pinky: 0[0m
+[0;32mI (81352) FLEX_READ: Thumb: 229 | Index: 0 | Middle: 10 | Ring: 0 | Pinky: 0[0m
+[0;32mI (81852) FLEX_READ: Thumb: 225 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (82352) FLEX_READ: Thumb: 225 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (82852) FLEX_READ: Thumb: 235 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (83352) FLEX_READ: Thumb: 239 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (83852) FLEX_READ: Thumb: 242 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (84352) FLEX_READ: Thumb: 244 | Index: 0 | Middle: 1 | Ring: 0 | Pinky: 0[0m
+[0;32mI (84852) FLEX_READ: Thumb: 240 | Index: 0 | Middle: 4 | Ring: 0 | Pinky: 0[0m
+[0;32mI (85352) FLEX_READ: Thumb: 235 | Index: 0 | Middle: 7 | Ring: 0 | Pinky: 0[0m
+[0;32mI (85852) FLEX_READ: Thumb: 237 | Index: 0 | Middle: 6 | Ring: 0 | Pinky: 0[0m
+[0;32mI (86352) FLEX_READ: Thumb: 237 | Index: 0 | Middle: 2 | Ring: 0 | Pinky: 0[0m
+[0;32mI (86852) FLEX_READ: Thumb: 245 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (87352) FLEX_READ: Thumb: 253 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (87852) FLEX_READ: Thumb: 261 | Index: 0 | Middle: 1 | Ring: 0 | Pinky: 0[0m
+[0;32mI (88352) FLEX_READ: Thumb: 261 | Index: 0 | Middle: 11 | Ring: 0 | Pinky: 0[0m
+[0;32mI (88852) FLEX_READ: Thumb: 0 | Index: 0 | Middle: 22 | Ring: 0 | Pinky: 9[0m
+[0;32mI (89352) FLEX_READ: Thumb: 0 | Index: 0 | Middle: 27 | Ring: 0 | Pinky: 23[0m
+[0;32mI (89852) FLEX_READ: Thumb: 0 | Index: 0 | Middle: 39 | Ring: 0 | Pinky: 14[0m
+[0;32mI (90352) FLEX_READ: Thumb: 0 | Index: 0 | Middle: 40 | Ring: 0 | Pinky: 9[0m
+[0;32mI (90852) FLEX_READ: Thumb: 0 | Index: 0 | Middle: 12 | Ring: 0 | Pinky: 15[0m
+[0;32mI (91352) FLEX_READ: Thumb: 0 | Index: 0 | Middle: 7 | Ring: 0 | Pinky: 4[0m
+[0;32mI (91852) FLEX_READ: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 36[0m
+[0;32mI (92352) FLEX_READ: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 20[0m
+[0;32mI (92852) FLEX_READ: Thumb: 0 | Index: 0 | Middle: 8 | Ring: 0 | Pinky: 12[0m
+[0;32mI (93352) FLEX_READ: Thumb: 0 | Index: 0 | Middle: 8 | Ring: 0 | Pinky: 6[0m
+[0;32mI (93852) FLEX_READ: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 61[0m
+[0;32mI (94352) FLEX_READ: Thumb: 200 | Index: 0 | Middle: 11 | Ring: 0 | Pinky: 0[0m
+[0;32mI (94852) FLEX_READ: Thumb: 197 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (95352) FLEX_READ: Thumb: 190 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (95852) FLEX_READ: Thumb: 186 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (96352) FLEX_READ: Thumb: 244 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (96852) FLEX_READ: Thumb: 235 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (97352) FLEX_READ: Thumb: 227 | Index: 0 | Middle: 2 | Ring: 0 | Pinky: 0[0m
+[0;32mI (97852) FLEX_READ: Thumb: 220 | Index: 0 | Middle: 4 | Ring: 0 | Pinky: 0[0m
+[0;32mI (98352) FLEX_READ: Thumb: 207 | Index: 0 | Middle: 5 | Ring: 0 | Pinky: 1[0m
+[0;32mI (98852) FLEX_READ: Thumb: 202 | Index: 0 | Middle: 8 | Ring: 0 | Pinky: 0[0m
+[0;32mI (99352) FLEX_READ: Thumb: 202 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (99852) FLEX_READ: Thumb: 219 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (100352) FLEX_READ: Thumb: 565 | Index: 0 | Middle: 27 | Ring: 0 | Pinky: 795[0m
+[0;32mI (100852) FLEX_READ: Thumb: 573 | Index: 0 | Middle: 113 | Ring: 0 | Pinky: 797[0m
+[0;32mI (101352) FLEX_READ: Thumb: 573 | Index: 0 | Middle: 59 | Ring: 0 | Pinky: 798[0m
+[0;32mI (101852) FLEX_READ: Thumb: 572 | Index: 0 | Middle: 52 | Ring: 0 | Pinky: 802[0m
+[0;32mI (102352) FLEX_READ: Thumb: 248 | Index: 0 | Middle: 2 | Ring: 0 | Pinky: 0[0m
+[0;32mI (102852) FLEX_READ: Thumb: 558 | Index: 0 | Middle: 105 | Ring: 0 | Pinky: 805[0m
+[0;32mI (103352) FLEX_READ: Thumb: 547 | Index: 0 | Middle: 135 | Ring: 0 | Pinky: 813[0m
+[0;32mI (103852) FLEX_READ: Thumb: 550 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 814[0m
+[0;32mI (104352) FLEX_READ: Thumb: 204 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (104852) FLEX_READ: Thumb: 555 | Index: 0 | Middle: 31 | Ring: 0 | Pinky: 837[0m
+[0;32mI (105352) FLEX_READ: Thumb: 556 | Index: 0 | Middle: 44 | Ring: 0 | Pinky: 806[0m
+[0;32mI (105852) FLEX_READ: Thumb: 556 | Index: 0 | Middle: 52 | Ring: 0 | Pinky: 804[0m
+[0;32mI (106352) FLEX_READ: Thumb: 555 | Index: 0 | Middle: 50 | Ring: 0 | Pinky: 810[0m
+[0;32mI (106852) FLEX_READ: Thumb: 546 | Index: 0 | Middle: 57 | Ring: 0 | Pinky: 800[0m
+[0;32mI (107352) FLEX_READ: Thumb: 191 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (107852) FLEX_READ: Thumb: 520 | Index: 0 | Middle: 76 | Ring: 0 | Pinky: 809[0m
+[0;32mI (108352) FLEX_READ: Thumb: 209 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (108852) FLEX_READ: Thumb: 232 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (109352) FLEX_READ: Thumb: 241 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (109852) FLEX_READ: Thumb: 246 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (110352) FLEX_READ: Thumb: 246 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (110852) FLEX_READ: Thumb: 246 | Index: 0 | Middle: 1 | Ring: 0 | Pinky: 0[0m
+[0;32mI (111352) FLEX_READ: Thumb: 245 | Index: 0 | Middle: 5 | Ring: 0 | Pinky: 0[0m
+[0;32mI (111852) FLEX_READ: Thumb: 239 | Index: 0 | Middle: 7 | Ring: 0 | Pinky: 0[0m
+[0;32mI (112352) FLEX_READ: Thumb: 238 | Index: 0 | Middle: 7 | Ring: 0 | Pinky: 0[0m
+[0;32mI (112852) FLEX_READ: Thumb: 240 | Index: 0 | Middle: 3 | Ring: 0 | Pinky: 0[0m
+[0;32mI (113352) FLEX_READ: Thumb: 238 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (113852) FLEX_READ: Thumb: 252 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (114352) FLEX_READ: Thumb: 257 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (114852) FLEX_READ: Thumb: 259 | Index: 0 | Middle: 3 | Ring: 0 | Pinky: 0[0m
+[0;32mI (115352) FLEX_READ: Thumb: 262 | Index: 0 | Middle: 21 | Ring: 0 | Pinky: 0[0m
+[0;32mI (115852) FLEX_READ: Thumb: 258 | Index: 0 | Middle: 35 | Ring: 0 | Pinky: 0[0m
+[0;32mI (116352) FLEX_READ: Thumb: 251 | Index: 0 | Middle: 38 | Ring: 0 | Pinky: 0[0m
+[0;32mI (116852) FLEX_READ: Thumb: 248 | Index: 0 | Middle: 49 | Ring: 0 | Pinky: 0[0m
+[0;32mI (117352) FLEX_READ: Thumb: 247 | Index: 0 | Middle: 38 | Ring: 0 | Pinky: 0[0m
+[0;32mI (117852) FLEX_READ: Thumb: 241 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (118352) FLEX_READ: Thumb: 251 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (118852) FLEX_READ: Thumb: 253 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (119352) FLEX_READ: Thumb: 255 | Index: 0 | Middle: 4 | Ring: 0 | Pinky: 0[0m
+[0;32mI (119852) FLEX_READ: Thumb: 253 | Index: 0 | Middle: 12 | Ring: 0 | Pinky: 0[0m
+[0;32mI (120352) FLEX_READ: Thumb: 243 | Index: 0 | Middle: 20 | Ring: 0 | Pinky: 0[0m
+[0;32mI (120852) FLEX_READ: Thumb: 241 | Index: 0 | Middle: 23 | Ring: 0 | Pinky: 0[0m
+[0;32mI (121352) FLEX_READ: Thumb: 238 | Index: 0 | Middle: 14 | Ring: 0 | Pinky: 0[0m
+[0;32mI (121852) FLEX_READ: Thumb: 239 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (122352) FLEX_READ: Thumb: 250 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (122852) FLEX_READ: Thumb: 254 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (123352) FLEX_READ: Thumb: 255 | Index: 0 | Middle: 3 | Ring: 0 | Pinky: 0[0m
+[0;32mI (123852) FLEX_READ: Thumb: 252 | Index: 0 | Middle: 14 | Ring: 0 | Pinky: 0[0m
+[0;32mI (124352) FLEX_READ: Thumb: 243 | Index: 0 | Middle: 19 | Ring: 0 | Pinky: 0[0m
+[0;32mI (124852) FLEX_READ: Thumb: 243 | Index: 0 | Middle: 17 | Ring: 0 | Pinky: 0[0m
+[0;32mI (125352) FLEX_READ: Thumb: 242 | Index: 0 | Middle: 5 | Ring: 0 | Pinky: 0[0m
+[0;32mI (125852) FLEX_READ: Thumb: 247 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (126352) FLEX_READ: Thumb: 253 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (126852) FLEX_READ: Thumb: 257 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (127352) FLEX_READ: Thumb: 258 | Index: 0 | Middle: 10 | Ring: 0 | Pinky: 0[0m
+[0;32mI (127852) FLEX_READ: Thumb: 255 | Index: 0 | Middle: 26 | Ring: 0 | Pinky: 0[0m
+[0;32mI (128352) FLEX_READ: Thumb: 248 | Index: 0 | Middle: 32 | Ring: 0 | Pinky: 0[0m
+[0;32mI (128852) FLEX_READ: Thumb: 245 | Index: 0 | Middle: 42 | Ring: 0 | Pinky: 0[0m
+[0;32mI (129352) FLEX_READ: Thumb: 242 | Index: 0 | Middle: 26 | Ring: 0 | Pinky: 0[0m
+[0;32mI (129852) FLEX_READ: Thumb: 247 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (130352) FLEX_READ: Thumb: 251 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (130852) FLEX_READ: Thumb: 254 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (131352) FLEX_READ: Thumb: 252 | Index: 0 | Middle: 9 | Ring: 0 | Pinky: 0[0m
+[0;32mI (131852) FLEX_READ: Thumb: 250 | Index: 0 | Middle: 16 | Ring: 0 | Pinky: 0[0m
+[0;32mI (132352) FLEX_READ: Thumb: 243 | Index: 0 | Middle: 21 | Ring: 0 | Pinky: 0[0m
+[0;32mI (132852) FLEX_READ: Thumb: 240 | Index: 0 | Middle: 23 | Ring: 0 | Pinky: 0[0m
+[0;32mI (133352) FLEX_READ: Thumb: 233 | Index: 0 | Middle: 4 | Ring: 0 | Pinky: 0[0m
+[0;32mI (133852) FLEX_READ: Thumb: 239 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (134352) FLEX_READ: Thumb: 250 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (134852) FLEX_READ: Thumb: 250 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (135352) FLEX_READ: Thumb: 253 | Index: 0 | Middle: 7 | Ring: 0 | Pinky: 0[0m
+[0;32mI (135852) FLEX_READ: Thumb: 244 | Index: 0 | Middle: 15 | Ring: 0 | Pinky: 0[0m
+[0;32mI (136352) FLEX_READ: Thumb: 242 | Index: 0 | Middle: 18 | Ring: 0 | Pinky: 0[0m
+[0;32mI (136852) FLEX_READ: Thumb: 240 | Index: 0 | Middle: 17 | Ring: 0 | Pinky: 0[0m
+[0;32mI (137352) FLEX_READ: Thumb: 238 | Index: 0 | Middle: 4 | Ring: 0 | Pinky: 0[0m
+[0;32mI (137852) FLEX_READ: Thumb: 247 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (138352) FLEX_READ: Thumb: 252 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (138852) FLEX_READ: Thumb: 255 | Index: 0 | Middle: 1 | Ring: 0 | Pinky: 0[0m
+[0;32mI (139352) FLEX_READ: Thumb: 255 | Index: 0 | Middle: 16 | Ring: 0 | Pinky: 0[0m
+[0;32mI (139852) FLEX_READ: Thumb: 254 | Index: 0 | Middle: 27 | Ring: 0 | Pinky: 0[0m

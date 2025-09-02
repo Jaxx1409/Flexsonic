@@ -1,0 +1,740 @@
+) sp�ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug 12 2025 22:54:49[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b618h ( 46616) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001b640 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (121) esp_image: segment 2: paddr=0001b64c vaddr=3ffb0000 size=02158h (  8536) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=0001d7ac vaddr=40080000 size=0286ch ( 10348) load[0m
+[0;32mI (140) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=1b714h (112404) map[0m
+[0;32mI (184) esp_image: segment 5: paddr=0003b73c vaddr=4008286c size=0a66ch ( 42604) load[0m
+[0;32mI (209) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (209) boot: Disabling RNG early entropy source...[0m
+[0;32mI (220) cpu_start: Multicore app[0m
+[0;32mI (221) cpu_start: Pro cpu up.[0m
+[0;32mI (221) cpu_start: Starting app cpu, entry point is 0x400811e0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (239) cpu_start: Pro cpu start user code[0m
+[0;32mI (239) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (239) cpu_start: Application information:[0m
+[0;32mI (244) cpu_start: Project name:     flexsonic[0m
+[0;32mI (249) cpu_start: App version:      1[0m
+[0;32mI (253) cpu_start: Compile time:     Aug 12 2025 22:54:29[0m
+[0;32mI (259) cpu_start: ELF file SHA256:  cb4df746f9f92f63...[0m
+[0;32mI (265) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (271) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (275) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (280) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (285) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (292) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (298) heap_init: At 3FFB29F8 len 0002D608 (181 KiB): DRAM[0m
+[0;32mI (304) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (311) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (317) heap_init: At 4008CED8 len 00013128 (76 KiB): IRAM[0m
+[0;32mI (325) spi_flash: detected chip: generic[0m
+[0;32mI (328) spi_flash: flash io: dio[0m
+[0;33mW (332) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (346) app_start: Starting scheduler on CPU0[0m
+[0;32mI (350) app_start: Starting scheduler on CPU1[0m
+[0;32mI (350) main_task: Started on CPU0[0m
+[0;32mI (360) main_task: Calling app_main()[0m
+[0;32mI (360) FLEX_DFPLAYER_SAFE: Starting FLEX->DFPLAYER (safe) example[0m
+[0;32mI (370) FLEX_DFPLAYER_SAFE: ADC initialized[0m
+[0;32mI (370) FLEX_DFPLAYER_SAFE: UART initialized (TX=25 RX=26)[0m
+[0;33mW (940) FLEX_DFPLAYER_SAFE: DFPlayer: start/end bytes mismatch: 0x00 ... 0x00[0m
+[0;33mW (940) FLEX_DFPLAYER_SAFE: DFPlayer response invalid (attempt 1/3).[0m
+[0;33mW (950) FLEX_DFPLAYER_SAFE: DFPlayer raw: 00 00 00 00 00 00 00 C4 00 00 [0m
+[0;33mW (1000) FLEX_DFPLAYER_SAFE: DFPlayer: start/end bytes mismatch: 0x00 ... 0x00[0m
+[0;33mW (1000) FLEX_DFPLAYER_SAFE: DFPlayer response invalid (attempt 2/3).[0m
+[0;33mW (1000) FLEX_DFPLAYER_SAFE: DFPlayer raw: 00 00 00 00 00 00 FF 00 00 00 [0m
+[0;33mW (1060) FLEX_DFPLAYER_SAFE: DFPlayer: start/end bytes mismatch: 0x00 ... 0xFF[0m
+[0;33mW (1060) FLEX_DFPLAYER_SAFE: DFPlayer response invalid (attempt 3/3).[0m
+[0;33mW (1060) FLEX_DFPLAYER_SAFE: DFPlayer raw: 00 00 00 00 00 00 00 00 00 FF [0m
+[0;31mE (1120) FLEX_DFPLAYER_SAFE: DFPlayer command failed after 3 attempts.[0m
+[0;33mW (1120) FLEX_DFPLAYER_SAFE: Setting volume failed - continuing but audio may not play[0m
+[0;32mI (1120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (1420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (1720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (2020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (2320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (2620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (2920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (3220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (3520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (3820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (4120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (4420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (4720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (5020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (5320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (5620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (5920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (6220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (6520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (6820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (7120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (7420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (7720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (8020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (8320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (8620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (8920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (9220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (9520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (9820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (10120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (10420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (10720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (11020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (11320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (11620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (11920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (12220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (12520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (12820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (13120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (13420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (13720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (14020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (14320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (14620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (14920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (15220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (15520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (15820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (16120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (16420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (16720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (17020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (17320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (17620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (17920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (18220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (18520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (18820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (19120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (19420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (19720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (20020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (20320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (20620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (20920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (21220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (21520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (21820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (22120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (22420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (22720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (23020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (23320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (23620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (23920) FLEX_DFPLAYER_SAFE: ADC idx=740 rng=0[0m
+[0;32mI (24220) FLEX_DFPLAYER_SAFE: ADC idx=3496 rng=21[0m
+[0;32mI (24520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (24820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (25120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (25420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (25720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (26020) FLEX_DFPLAYER_SAFE: ADC idx=2835 rng=0[0m
+[0;32mI (26020) FLEX_DFPLAYER_SAFE: State changed: 0 -> 1[0m
+[0;32mI (26020) FLEX_DFPLAYER_SAFE: Requesting play track 1[0m
+[0;33mW (26020) FLEX_DFPLAYER_SAFE: DFPlayer: start/end bytes mismatch: 0x00 ... 0x00[0m
+[0;33mW (26030) FLEX_DFPLAYER_SAFE: DFPlayer response invalid (attempt 1/3).[0m
+[0;33mW (26040) FLEX_DFPLAYER_SAFE: DFPlayer raw: 00 00 00 00 00 00 00 00 00 00 [0m
+[0;33mW (26100) FLEX_DFPLAYER_SAFE: DFPlayer: start/end bytes mismatch: 0xFF ... 0x00[0m
+[0;33mW (26100) FLEX_DFPLAYER_SAFE: DFPlayer response invalid (attempt 2/3).[0m
+[0;33mW (26100) FLEX_DFPLAYER_SAFE: DFPlayer raw: FF 00 00 00 00 00 00 FF 00 00 [0m
+[0;33mW (26160) FLEX_DFPLAYER_SAFE: DFPlayer: start/end bytes mismatch: 0x00 ... 0xFF[0m
+[0;33mW (26160) FLEX_DFPLAYER_SAFE: DFPlayer response invalid (attempt 3/3).[0m
+[0;33mW (26160) FLEX_DFPLAYER_SAFE: DFPlayer raw: 00 00 00 FF 00 00 00 00 00 FF [0m
+[0;31mE (26220) FLEX_DFPLAYER_SAFE: DFPlayer command failed after 3 attempts.[0m
+[0;31mE (26220) FLEX_DFPLAYER_SAFE: play_track_safe failed for 1[0m
+[0;32mI (26520) FLEX_DFPLAYER_SAFE: ADC idx=1395 rng=0[0m
+[0;32mI (26820) FLEX_DFPLAYER_SAFE: ADC idx=2195 rng=0[0m
+[0;32mI (27120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (27120) FLEX_DFPLAYER_SAFE: State changed: 1 -> 0[0m
+[0;32mI (27120) FLEX_DFPLAYER_SAFE: No fingers bent: resetting state[0m
+[0;32mI (27420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (27720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (28020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (28320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (28620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (28920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (29220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (29520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (29820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (30120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (30420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (30720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (31020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (31320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (31620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (31920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (32220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (32520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (32820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (33120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (33420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (33720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (34020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (34320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (34620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (34920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (35220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (35520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (35820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (36120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (36420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (36720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (37020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (37320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (37620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (37920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (38220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (38520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (38820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (39120) FLEX_DFPLAYER_SAFE: ADC idx=22 rng=21[0m
+[0;32mI (39420) FLEX_DFPLAYER_SAFE: ADC idx=26 rng=26[0m
+[0;32mI (39720) FLEX_DFPLAYER_SAFE: ADC idx=15 rng=15[0m
+[0;32mI (40020) FLEX_DFPLAYER_SAFE: ADC idx=25 rng=24[0m
+[0;32mI (40320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (40620) FLEX_DFPLAYER_SAFE: ADC idx=28 rng=26[0m
+[0;32mI (40920) FLEX_DFPLAYER_SAFE: ADC idx=16 rng=16[0m
+[0;32mI (41220) FLEX_DFPLAYER_SAFE: ADC idx=32 rng=32[0m
+[0;32mI (41520) FLEX_DFPLAYER_SAFE: ADC idx=35 rng=34[0m
+[0;32mI (41820) FLEX_DFPLAYER_SAFE: ADC idx=32 rng=32[0m
+[0;32mI (42120) FLEX_DFPLAYER_SAFE: ADC idx=15 rng=16[0m
+[0;32mI (42420) FLEX_DFPLAYER_SAFE: ADC idx=12 rng=12[0m
+[0;32mI (42720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (43020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (43320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (43620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (43920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (44220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (44520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (44820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (45120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (45420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (45720) FLEX_DFPLAYER_SAFE: ADC idx=3724 rng=0[0m
+[0;32mI (46020) FLEX_DFPLAYER_SAFE: ADC idx=3509 rng=0[0m
+[0;32mI (46320) FLEX_DFPLAYER_SAFE: ADC idx=3506 rng=0[0m
+[0;32mI (46620) FLEX_DFPLAYER_SAFE: ADC idx=2640 rng=0[0m
+[0;32mI (46620) FLEX_DFPLAYER_SAFE: State changed: 0 -> 1[0m
+[0;32mI (46620) FLEX_DFPLAYER_SAFE: Requesting play track 1[0m
+[0;33mW (46620) FLEX_DFPLAYER_SAFE: DFPlayer: start/end bytes mismatch: 0x00 ... 0x00[0m
+[0;33mW (46630) FLEX_DFPLAYER_SAFE: DFPlayer response invalid (attempt 1/3).[0m
+[0;33mW (46640) FLEX_DFPLAYER_SAFE: DFPlayer raw: 00 00 00 00 00 00 00 00 00 00 [0m
+[0;33mW (46700) FLEX_DFPLAYER_SAFE: DFPlayer: start/end bytes mismatch: 0x00 ... 0x00[0m
+[0;33mW (46700) FLEX_DFPLAYER_SAFE: DFPlayer response invalid (attempt 2/3).[0m
+[0;33mW (46700) FLEX_DFPLAYER_SAFE: DFPlayer raw: 00 00 00 00 00 00 00 00 00 00 [0m
+[0;33mW (46760) FLEX_DFPLAYER_SAFE: DFPlayer: start/end bytes mismatch: 0x00 ... 0x00[0m
+[0;33mW (46760) FLEX_DFPLAYER_SAFE: DFPlayer response invalid (attempt 3/3).[0m
+[0;33mW (46760) FLEX_DFPLAYER_SAFE: DFPlayer raw: 00 00 00 00 00 00 00 00 00 00 [0m
+[0;31mE (46820) FLEX_DFPLAYER_SAFE: DFPlayer command failed after 3 attempts.[0m
+[0;31mE (46820) FLEX_DFPLAYER_SAFE: play_track_safe failed for 1[0m
+[0;32mI (47120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (47120) FLEX_DFPLAYER_SAFE: State changed: 1 -> 0[0m
+[0;32mI (47120) FLEX_DFPLAYER_SAFE: No fingers bent: resetting state[0m
+[0;32mI (47420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (47720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (48020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (48320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (48620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (48920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (49220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (49520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (49820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (50120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (50420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (50720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (51020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (51320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (51620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (51920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (52220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (52520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (52820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (53120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (53420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (53720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (54020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (54320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (54620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (54920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (55220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (55520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (55820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (56120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (56420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (56720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (57020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (57320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (57620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (57920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (58220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (58520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (58820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (59120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (59420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (59720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (60020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (60320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (60620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (60920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (61220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (61520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (61820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (62120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (62420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (62720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (63020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (63320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (63620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (63920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (64220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (64520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (64820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (65120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (65420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (65720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (66020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (66320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (66620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (66920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (67220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (67520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (67820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (68120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (68420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (68720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (69020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (69320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (69620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (69920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (70220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (70520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (70820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (71120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (71420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (71720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (72020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (72320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (72620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (72920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (73220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (73520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (73820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (74120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (74420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (74720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (75020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (75320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (75620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (75920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (76220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (76520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (76820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (77120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (77420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (77720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (78020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (78320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (78620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (78920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (79220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (79520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (79820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (80120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (80420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (80720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (81020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (81320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (81620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (81920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (82220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (82520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (82820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (83120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (83420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (83720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (84020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (84320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (84620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (84920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (85220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (85520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (85820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (86120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (86420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (86720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (87020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (87320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (87620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (87920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (88220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (88520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (88820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (89120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (89420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (89720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (90020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (90320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (90620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (90920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (91220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (91520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (91820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (92120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (92420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (92720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (93020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (93320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (93620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (93920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (94220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (94520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (94820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (95120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (95420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (95720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (96020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (96320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (96620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (96920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (97220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (97520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (97820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (98120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (98420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (98720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (99020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (99320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (99620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (99920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (100220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (100520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (100820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (101120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (101420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (101720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (102020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (102320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (102620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (102920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (103220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (103520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (103820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (104120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (104420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (104720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (105020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (105320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (105620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (105920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (106220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (106520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (106820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (107120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (107420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (107720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (108020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (108320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (108620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (108920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (109220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (109520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (109820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (110120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (110420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (110720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (111020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (111320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (111620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (111920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (112220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (112520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (112820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (113120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (113420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (113720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (114020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (114320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (114620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (114920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (115220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (115520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (115820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (116120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (116420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (116720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (117020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (117320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (117620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (117920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (118220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (118520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (118820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (119120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (119420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (119720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (120020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (120320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (120620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (120920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (121220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (121520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (121820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (122120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (122420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (122720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (123020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (123320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (123620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (123920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (124220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (124520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (124820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (125120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (125420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (125720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (126020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (126320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (126620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (126920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (127220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (127520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (127820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (128120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (128420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (128720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (129020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (129320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (129620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (129920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (130220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (130520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (130820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (131120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (131420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (131720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (132020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (132320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (132620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (132920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (133220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (133520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (133820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (134120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (134420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (134720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (135020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (135320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (135620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (135920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (136220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (136520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (136820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (137120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (137420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (137720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (138020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (138320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (138620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (138920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (139220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (139520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (139820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (140120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (140420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (140720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (141020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (141320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (141620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (141920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (142220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (142520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (142820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (143120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (143420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (143720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (144020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (144320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (144620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (144920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (145220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (145520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (145820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (146120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (146420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (146720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (147020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (147320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (147620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (147920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (148220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (148520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (148820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (149120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (149420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (149720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (150020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (150320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (150620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (150920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (151220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (151520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (151820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (152120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (152420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (152720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (153020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (153320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (153620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (153920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (154220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (154520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (154820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (155120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (155420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (155720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (156020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (156320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (156620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (156920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (157220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (157520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (157820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (158120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (158420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (158720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (159620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (159920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (160220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (160520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (160820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (161120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (161420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (161720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (162020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (162320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (162620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (162920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (163220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (163520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (163820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (164120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (164420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (164720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (165020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (165320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (165620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (165920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (166220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (166520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (166820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (167120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (167420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (167720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (168020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (168320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (168620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (168920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (169220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (169520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (169820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (170120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (170420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (170720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (171020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (171320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (171620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (171920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (172220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (172520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (172820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (173120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (173420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (173720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (174020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (174320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (174620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (174920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (175220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (175520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (175820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (176120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (176420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (176720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (177020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (177320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (177620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (177920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (178220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (178520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (178820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (179120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (179420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (179720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (180020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (180320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (180620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (180920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (181220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (181520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (181820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (182120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (182420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (182720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (183020) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (183320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (183620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (183920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (184220) FLEX_DFPLAYER_SAFE: ADC idx=206 rng=0[0m
+[0;32mI (184520) FLEX_DFPLAYER_SAFE: ADC idx=1675 rng=0[0m
+[0;32mI (184520) FLEX_DFPLAYER_SAFE: State changed: 0 -> 1[0m
+[0;32mI (184520) FLEX_DFPLAYER_SAFE: Requesting play track 1[0m
+[0;33mW (184520) FLEX_DFPLAYER_SAFE: DFPlayer: start/end bytes mismatch: 0x00 ... 0x00[0m
+[0;33mW (184530) FLEX_DFPLAYER_SAFE: DFPlayer response invalid (attempt 1/3).[0m
+[0;33mW (184540) FLEX_DFPLAYER_SAFE: DFPlayer raw: 00 FF 00 00 00 00 00 00 00 00 [0m
+[0;33mW (184600) FLEX_DFPLAYER_SAFE: DFPlayer: start/end bytes mismatch: 0x00 ... 0x00[0m
+[0;33mW (184600) FLEX_DFPLAYER_SAFE: DFPlayer response invalid (attempt 2/3).[0m
+[0;33mW (184600) FLEX_DFPLAYER_SAFE: DFPlayer raw: 00 00 FF 00 00 00 00 00 FF 00 [0m
+[0;33mW (184660) FLEX_DFPLAYER_SAFE: DFPlayer: start/end bytes mismatch: 0x00 ... 0x00[0m
+[0;33mW (184660) FLEX_DFPLAYER_SAFE: DFPlayer response invalid (attempt 3/3).[0m
+[0;33mW (184660) FLEX_DFPLAYER_SAFE: DFPlayer raw: 00 00 00 00 00 00 00 00 FF 00 [0m
+[0;31mE (184720) FLEX_DFPLAYER_SAFE: DFPlayer command failed after 3 attempts.[0m
+[0;31mE (184720) FLEX_DFPLAYER_SAFE: play_track_safe failed for 1[0m
+[0;32mI (185020) FLEX_DFPLAYER_SAFE: ADC idx=589 rng=0[0m
+[0;32mI (185020) FLEX_DFPLAYER_SAFE: State changed: 1 -> 0[0m
+[0;32mI (185020) FLEX_DFPLAYER_SAFE: No fingers bent: resetting state[0m
+[0;32mI (185320) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (185620) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (185920) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (186220) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (186520) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (186820) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (187120) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (187420) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m
+[0;32mI (187720) FLEX_DFPLAYER_SAFE: ADC idx=0 rng=0[0m

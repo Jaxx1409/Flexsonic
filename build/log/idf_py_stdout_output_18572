@@ -1,0 +1,175 @@
+M[�ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug 12 2025 22:54:49[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0add0h ( 44496) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001adf8 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (121) esp_image: segment 2: paddr=0001ae04 vaddr=3ffb0000 size=02158h (  8536) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=0001cf64 vaddr=40080000 size=030b4h ( 12468) load[0m
+[0;32mI (140) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=17e1ch ( 97820) map[0m
+[0;32mI (178) esp_image: segment 5: paddr=00037e44 vaddr=400830b4 size=09e24h ( 40484) load[0m
+[0;32mI (202) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (202) boot: Disabling RNG early entropy source...[0m
+[0;32mI (214) cpu_start: Multicore app[0m
+[0;32mI (214) cpu_start: Pro cpu up.[0m
+[0;32mI (214) cpu_start: Starting app cpu, entry point is 0x400811e0[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (232) cpu_start: Pro cpu start user code[0m
+[0;32mI (232) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (232) cpu_start: Application information:[0m
+[0;32mI (237) cpu_start: Project name:     flexsonic[0m
+[0;32mI (242) cpu_start: App version:      1[0m
+[0;32mI (246) cpu_start: Compile time:     Aug 12 2025 22:54:29[0m
+[0;32mI (252) cpu_start: ELF file SHA256:  70c465c41e7d0fc9...[0m
+[0;32mI (258) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (264) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (268) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (273) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (278) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (285) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (291) heap_init: At 3FFB29F8 len 0002D608 (181 KiB): DRAM[0m
+[0;32mI (297) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (304) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (310) heap_init: At 4008CED8 len 00013128 (76 KiB): IRAM[0m
+[0;32mI (318) spi_flash: detected chip: generic[0m
+[0;32mI (321) spi_flash: flash io: dio[0m
+[0;33mW (325) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (339) app_start: Starting scheduler on CPU0[0m
+[0;32mI (343) app_start: Starting scheduler on CPU1[0m
+[0;32mI (343) main_task: Started on CPU0[0m
+[0;32mI (353) main_task: Calling app_main()[0m
+[0;32mI (353) FLEX_DFPLAYER: Data is being sent to DFPlayer: cmd=0x06, param=25[0m
+[0;32mI (1163) FLEX_DFPLAYER: UART read length = 0[0m
+[0;33mW (1163) FLEX_DFPLAYER: No response from DFPlayer.[0m
+[0;32mI (1863) FLEX_DFPLAYER: System Ready. Monitoring flex sensors...[0m
+[0;32mI (3863) FLEX_DFPLAYER: Thumb: 0 | Index: 3336 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (4163) FLEX_DFPLAYER: Thumb: 0 | Index: 3121 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (4463) FLEX_DFPLAYER: Thumb: 0 | Index: 3419 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (4763) FLEX_DFPLAYER: Thumb: 0 | Index: 3052 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (5063) FLEX_DFPLAYER: Thumb: 0 | Index: 3531 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (5363) FLEX_DFPLAYER: Thumb: 0 | Index: 1746 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (5363) FLEX_DFPLAYER: Playing file 0001.mp3[0m
+[0;32mI (5363) FLEX_DFPLAYER: Data is being sent to DFPlayer: cmd=0x03, param=1[0m
+[0;32mI (6173) FLEX_DFPLAYER: UART read length = 0[0m
+[0;33mW (6173) FLEX_DFPLAYER: No response from DFPlayer.[0m
+[0;32mI (6673) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (6973) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (7273) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (7573) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 3535[0m
+[0;32mI (7873) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 4045[0m
+[0;32mI (8173) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 4016[0m
+[0;32mI (8473) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 4020[0m
+[0;32mI (8773) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 3982[0m
+[0;32mI (9073) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 3973[0m
+[0;32mI (9373) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 3937[0m
+[0;32mI (9673) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 3936[0m
+[0;32mI (9973) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 3905[0m
+[0;32mI (10273) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 3853[0m
+[0;32mI (10573) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 3480[0m
+[0;32mI (10873) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 2959[0m
+[0;32mI (10873) FLEX_DFPLAYER: Playing file 0005.mp3[0m
+[0;32mI (10873) FLEX_DFPLAYER: Data is being sent to DFPlayer: cmd=0x03, param=5[0m
+[0;32mI (11683) FLEX_DFPLAYER: UART read length = 0[0m
+[0;33mW (11683) FLEX_DFPLAYER: No response from DFPlayer.[0m
+[0;32mI (12183) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 2910[0m
+[0;32mI (12483) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 1194[0m
+[0;32mI (12783) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 764[0m
+[0;32mI (13083) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 952[0m
+[0;32mI (13383) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 1073[0m
+[0;32mI (13383) FLEX_DFPLAYER: Playing file 0005.mp3[0m
+[0;32mI (13383) FLEX_DFPLAYER: Data is being sent to DFPlayer: cmd=0x03, param=5[0m
+[0;32mI (14193) FLEX_DFPLAYER: UART read length = 0[0m
+[0;33mW (14193) FLEX_DFPLAYER: No response from DFPlayer.[0m
+[0;32mI (14693) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 1258[0m
+[0;32mI (14993) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 1195[0m
+[0;32mI (15293) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 1339[0m
+[0;32mI (15593) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 1394[0m
+[0;32mI (15893) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 1346[0m
+[0;32mI (16193) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 1300[0m
+[0;32mI (16493) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 1263[0m
+[0;32mI (16793) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 1303[0m
+[0;32mI (17093) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 1262[0m
+[0;32mI (17393) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 1234[0m
+[0;32mI (17693) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 1219[0m
+[0;32mI (17993) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 1188[0m
+[0;32mI (18293) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 1158[0m
+[0;32mI (18593) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 1151[0m
+[0;32mI (18893) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 1113[0m
+[0;32mI (19193) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 1082[0m
+[0;32mI (19493) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 1046[0m
+[0;32mI (19793) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 954[0m
+[0;32mI (20093) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 838[0m
+[0;32mI (20393) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 575[0m
+[0;32mI (20693) FLEX_DFPLAYER: Thumb: 0 | Index: 3785 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (20993) FLEX_DFPLAYER: Thumb: 0 | Index: 3904 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (21293) FLEX_DFPLAYER: Thumb: 0 | Index: 3781 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (21593) FLEX_DFPLAYER: Thumb: 0 | Index: 3582 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (21893) FLEX_DFPLAYER: Thumb: 0 | Index: 3567 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (22193) FLEX_DFPLAYER: Thumb: 0 | Index: 3555 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (22493) FLEX_DFPLAYER: Thumb: 0 | Index: 3393 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (22793) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (23093) FLEX_DFPLAYER: Thumb: 0 | Index: 3731 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (23393) FLEX_DFPLAYER: Thumb: 0 | Index: 3719 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (23693) FLEX_DFPLAYER: Thumb: 0 | Index: 3349 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (23993) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (24293) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (24593) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (24893) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 764[0m
+[0;32mI (25193) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 3730[0m
+[0;32mI (25493) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 3981[0m
+[0;32mI (25793) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 3971[0m
+[0;32mI (26093) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 3888[0m
+[0;32mI (26393) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 3883[0m
+[0;32mI (26693) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 3904[0m
+[0;32mI (26993) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 3750[0m
+[0;32mI (27293) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 2812[0m
+[0;32mI (27293) FLEX_DFPLAYER: Playing file 0005.mp3[0m
+[0;32mI (27293) FLEX_DFPLAYER: Data is being sent to DFPlayer: cmd=0x03, param=5[0m
+[0;32mI (28103) FLEX_DFPLAYER: UART read length = 0[0m
+[0;33mW (28103) FLEX_DFPLAYER: No response from DFPlayer.[0m
+[0;32mI (28603) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 2353[0m
+[0;32mI (28903) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (29203) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (29503) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (29803) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (30103) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (30403) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (30703) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (31003) FLEX_DFPLAYER: Thumb: 0 | Index: 2161 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (31003) FLEX_DFPLAYER: Playing file 0001.mp3[0m
+[0;32mI (31003) FLEX_DFPLAYER: Data is being sent to DFPlayer: cmd=0x03, param=1[0m
+[0;32mI (31813) FLEX_DFPLAYER: UART read length = 0[0m
+[0;33mW (31813) FLEX_DFPLAYER: No response from DFPlayer.[0m
+[0;32mI (32313) FLEX_DFPLAYER: Thumb: 0 | Index: 3505 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (32613) FLEX_DFPLAYER: Thumb: 0 | Index: 3373 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (32913) FLEX_DFPLAYER: Thumb: 0 | Index: 1854 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (32913) FLEX_DFPLAYER: Playing file 0001.mp3[0m
+[0;32mI (32913) FLEX_DFPLAYER: Data is being sent to DFPlayer: cmd=0x03, param=1[0m
+[0;32mI (33723) FLEX_DFPLAYER: UART read length = 0[0m
+[0;33mW (33723) FLEX_DFPLAYER: No response from DFPlayer.[0m
+[0;32mI (34223) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (34523) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (34823) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m
+[0;32mI (35123) FLEX_DFPLAYER: Thumb: 0 | Index: 0 | Middle: 0 | Ring: 0 | Pinky: 0[0m

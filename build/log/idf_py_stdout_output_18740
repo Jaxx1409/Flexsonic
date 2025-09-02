@@ -1,0 +1,517 @@
+r tha�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug 12 2025 22:54:49[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b380h ( 45952) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001b3a8 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=0001b3b4 vaddr=3ffb0000 size=02188h (  8584) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=0001d544 vaddr=40080000 size=02ad4h ( 10964) load[0m
+[0;32mI (140) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=1926ch (103020) map[0m
+[0;32mI (181) esp_image: segment 5: paddr=00039294 vaddr=40082ad4 size=0abc0h ( 43968) load[0m
+[0;32mI (207) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (207) boot: Disabling RNG early entropy source...[0m
+[0;32mI (218) cpu_start: Multicore app[0m
+[0;32mI (219) cpu_start: Pro cpu up.[0m
+[0;32mI (219) cpu_start: Starting app cpu, entry point is 0x40081224[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (236) cpu_start: Pro cpu start user code[0m
+[0;32mI (237) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (237) cpu_start: Application information:[0m
+[0;32mI (241) cpu_start: Project name:     flexsonic[0m
+[0;32mI (246) cpu_start: App version:      1[0m
+[0;32mI (251) cpu_start: Compile time:     Aug 12 2025 22:54:29[0m
+[0;32mI (257) cpu_start: ELF file SHA256:  830afcd17775e7fc...[0m
+[0;32mI (263) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (268) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (273) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (278) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (283) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (290) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (296) heap_init: At 3FFB2A30 len 0002D5D0 (181 KiB): DRAM[0m
+[0;32mI (302) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (308) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (315) heap_init: At 4008D694 len 0001296C (74 KiB): IRAM[0m
+[0;32mI (323) spi_flash: detected chip: generic[0m
+[0;32mI (326) spi_flash: flash io: dio[0m
+[0;33mW (330) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (343) app_start: Starting scheduler on CPU0[0m
+[0;32mI (348) app_start: Starting scheduler on CPU1[0m
+[0;32mI (348) main_task: Started on CPU0[0m
+[0;32mI (358) main_task: Calling app_main()[0m
+[0;32mI (1058) FLEX+MPU+DFPLAYER: System Ready. Monitoring sensors...[0m
+[0;32mI (1058) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:672 | Pinky:0[0m
+[0;32mI (1058) FLEX+MPU+DFPLAYER: Playing file 4.mp3[0m
+[0;32mI (1258) FLEX+MPU+DFPLAYER: Gyro X:-403 Y:-60 Z:-156[0m
+[0;32mI (1558) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:776 | Pinky:0[0m
+[0;32mI (1558) FLEX+MPU+DFPLAYER: Gyro X:-350 Y:21 Z:-141[0m
+[0;32mI (1858) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:717 | Pinky:0[0m
+[0;32mI (1858) FLEX+MPU+DFPLAYER: Gyro X:-364 Y:-78 Z:-147[0m
+[0;32mI (2158) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:915 | Pinky:0[0m
+[0;32mI (2158) FLEX+MPU+DFPLAYER: Gyro X:-342 Y:-93 Z:-160[0m
+[0;32mI (2458) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:651 | Pinky:0[0m
+[0;32mI (2458) FLEX+MPU+DFPLAYER: Playing file 4.mp3[0m
+[0;32mI (2658) FLEX+MPU+DFPLAYER: Gyro X:-391 Y:-101 Z:-132[0m
+[0;32mI (2958) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:773 | Pinky:0[0m
+[0;32mI (2958) FLEX+MPU+DFPLAYER: Gyro X:-368 Y:-106 Z:-135[0m
+[0;32mI (3258) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:634 | Pinky:0[0m
+[0;32mI (3258) FLEX+MPU+DFPLAYER: Gyro X:-373 Y:-98 Z:-127[0m
+[0;32mI (3558) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:725 | Pinky:0[0m
+[0;32mI (3558) FLEX+MPU+DFPLAYER: Gyro X:-337 Y:-100 Z:-135[0m
+[0;32mI (3858) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:782 | Pinky:0[0m
+[0;32mI (3858) FLEX+MPU+DFPLAYER: Gyro X:-391 Y:-58 Z:-155[0m
+[0;32mI (4158) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:799 | Pinky:0[0m
+[0;32mI (4158) FLEX+MPU+DFPLAYER: Gyro X:-362 Y:-110 Z:-150[0m
+[0;32mI (4458) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:814 | Pinky:0[0m
+[0;32mI (4458) FLEX+MPU+DFPLAYER: Gyro X:-315 Y:-74 Z:-152[0m
+[0;32mI (4758) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:822 | Pinky:0[0m
+[0;32mI (4758) FLEX+MPU+DFPLAYER: Gyro X:-368 Y:-87 Z:-136[0m
+[0;32mI (5058) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:857 | Pinky:0[0m
+[0;32mI (5058) FLEX+MPU+DFPLAYER: Gyro X:-393 Y:-52 Z:-143[0m
+[0;32mI (5358) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:0 | Pinky:0[0m
+[0;32mI (5358) FLEX+MPU+DFPLAYER: Gyro X:-368 Y:-76 Z:-134[0m
+[0;32mI (5658) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:1342 | Pinky:0[0m
+[0;32mI (5658) FLEX+MPU+DFPLAYER: Gyro X:-400 Y:-201 Z:-130[0m
+[0;32mI (5958) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:1337 | Pinky:0[0m
+[0;32mI (5958) FLEX+MPU+DFPLAYER: Gyro X:-158 Y:-177 Z:-105[0m
+[0;32mI (6258) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:1748 | Pinky:0[0m
+[0;32mI (6258) FLEX+MPU+DFPLAYER: Gyro X:-358 Y:-78 Z:-127[0m
+[0;32mI (6558) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:1489 | Pinky:0[0m
+[0;32mI (6558) FLEX+MPU+DFPLAYER: Gyro X:-382 Y:-57 Z:-152[0m
+[0;32mI (6858) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:1517 | Pinky:0[0m
+[0;32mI (6858) FLEX+MPU+DFPLAYER: Gyro X:-322 Y:-46 Z:-135[0m
+[0;32mI (7158) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:1511 | Pinky:0[0m
+[0;32mI (7158) FLEX+MPU+DFPLAYER: Gyro X:-378 Y:-51 Z:-155[0m
+[0;32mI (7458) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:1489 | Pinky:0[0m
+[0;32mI (7458) FLEX+MPU+DFPLAYER: Gyro X:-422 Y:-100 Z:-148[0m
+[0;32mI (7758) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:1465 | Pinky:0[0m
+[0;32mI (7758) FLEX+MPU+DFPLAYER: Gyro X:-367 Y:-87 Z:-135[0m
+[0;32mI (8058) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:1490 | Pinky:0[0m
+[0;32mI (8058) FLEX+MPU+DFPLAYER: Gyro X:-351 Y:-59 Z:-131[0m
+[0;32mI (8358) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:1488 | Pinky:0[0m
+[0;32mI (8358) FLEX+MPU+DFPLAYER: Gyro X:-353 Y:-45 Z:-147[0m
+[0;32mI (8658) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:1490 | Pinky:0[0m
+[0;32mI (8658) FLEX+MPU+DFPLAYER: Gyro X:-365 Y:-64 Z:-149[0m
+[0;32mI (8958) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:1492 | Pinky:0[0m
+[0;32mI (8958) FLEX+MPU+DFPLAYER: Gyro X:-384 Y:116 Z:-137[0m
+[0;32mI (9258) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:1490 | Pinky:0[0m
+[0;32mI (9258) FLEX+MPU+DFPLAYER: Gyro X:-370 Y:-32 Z:-147[0m
+[0;32mI (9558) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:1491 | Pinky:0[0m
+[0;32mI (9558) FLEX+MPU+DFPLAYER: Gyro X:-382 Y:-133 Z:-135[0m
+[0;32mI (9858) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:1508 | Pinky:0[0m
+[0;32mI (9858) FLEX+MPU+DFPLAYER: Gyro X:-349 Y:-75 Z:-149[0m
+[0;32mI (10158) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:1504 | Pinky:0[0m
+[0;32mI (10158) FLEX+MPU+DFPLAYER: Gyro X:-368 Y:-54 Z:-140[0m
+[0;32mI (10458) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:1520 | Pinky:0[0m
+[0;32mI (10458) FLEX+MPU+DFPLAYER: Gyro X:-335 Y:-86 Z:-148[0m
+[0;32mI (10758) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:1520 | Pinky:0[0m
+[0;32mI (10758) FLEX+MPU+DFPLAYER: Gyro X:-352 Y:-81 Z:-149[0m
+[0;32mI (11058) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:1516 | Pinky:0[0m
+[0;32mI (11058) FLEX+MPU+DFPLAYER: Gyro X:-356 Y:-164 Z:-161[0m
+[0;32mI (11358) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:1529 | Pinky:0[0m
+[0;32mI (11358) FLEX+MPU+DFPLAYER: Gyro X:-340 Y:-82 Z:-150[0m
+[0;32mI (11658) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:1532 | Pinky:0[0m
+[0;32mI (11658) FLEX+MPU+DFPLAYER: Gyro X:-381 Y:-83 Z:-144[0m
+[0;32mI (11958) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:1518 | Pinky:0[0m
+[0;32mI (11958) FLEX+MPU+DFPLAYER: Gyro X:-312 Y:-100 Z:-131[0m
+[0;32mI (12258) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:1534 | Pinky:0[0m
+[0;32mI (12258) FLEX+MPU+DFPLAYER: Gyro X:-356 Y:-57 Z:-139[0m
+[0;32mI (12558) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:1535 | Pinky:0[0m
+[0;32mI (12558) FLEX+MPU+DFPLAYER: Gyro X:-358 Y:-42 Z:-141[0m
+[0;32mI (12858) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:1535 | Pinky:0[0m
+[0;32mI (12858) FLEX+MPU+DFPLAYER: Gyro X:-326 Y:-36 Z:-139[0m
+[0;32mI (13158) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:1558 | Pinky:0[0m
+[0;32mI (13158) FLEX+MPU+DFPLAYER: Gyro X:-303 Y:-122 Z:-145[0m
+[0;32mI (13458) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:1420 | Pinky:0[0m
+[0;32mI (13458) FLEX+MPU+DFPLAYER: Gyro X:-278 Y:-44 Z:-152[0m
+[0;32mI (13758) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:812 | Pinky:0[0m
+[0;32mI (13758) FLEX+MPU+DFPLAYER: Gyro X:-296 Y:-62 Z:-137[0m
+[0;32mI (14058) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:762 | Pinky:0[0m
+[0;32mI (14058) FLEX+MPU+DFPLAYER: Playing file 4.mp3[0m
+[0;32mI (14258) FLEX+MPU+DFPLAYER: Gyro X:-550 Y:-106 Z:-180[0m
+[0;32mI (14558) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:1056 | Pinky:0[0m
+[0;32mI (14558) FLEX+MPU+DFPLAYER: Gyro X:-130 Y:-22 Z:-118[0m
+[0;32mI (14858) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:1323 | Pinky:0[0m
+[0;32mI (14858) FLEX+MPU+DFPLAYER: Gyro X:-358 Y:-76 Z:-141[0m
+[0;32mI (15158) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:1359 | Pinky:0[0m
+[0;32mI (15158) FLEX+MPU+DFPLAYER: Gyro X:-346 Y:-68 Z:-158[0m
+[0;32mI (15458) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:1356 | Pinky:0[0m
+[0;32mI (15458) FLEX+MPU+DFPLAYER: Gyro X:-344 Y:-69 Z:-118[0m
+[0;32mI (15758) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:1372 | Pinky:0[0m
+[0;32mI (15758) FLEX+MPU+DFPLAYER: Gyro X:-384 Y:-55 Z:-152[0m
+[0;32mI (16058) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:1361 | Pinky:0[0m
+[0;32mI (16058) FLEX+MPU+DFPLAYER: Gyro X:55 Y:-116 Z:-4300[0m
+[0;32mI (16358) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:0 | Pinky:0[0m
+[0;32mI (16358) FLEX+MPU+DFPLAYER: Gyro X:-506 Y:-657 Z:3212[0m
+[0;32mI (16658) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:1347 | Pinky:0[0m
+[0;32mI (16658) FLEX+MPU+DFPLAYER: Gyro X:-283 Y:-40 Z:-1086[0m
+[0;32mI (16958) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:1382 | Pinky:0[0m
+[0;32mI (16958) FLEX+MPU+DFPLAYER: Gyro X:-273 Y:37 Z:-179[0m
+[0;32mI (17258) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:3854 | Pinky:0[0m
+[0;32mI (17258) FLEX+MPU+DFPLAYER: Gyro X:-45 Y:195 Z:-135[0m
+[0;32mI (17558) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:0 | Pinky:0[0m
+[0;32mI (17558) FLEX+MPU+DFPLAYER: Gyro X:-115 Y:415 Z:-364[0m
+[0;32mI (17858) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:4095 | Pinky:0[0m
+[0;32mI (17858) FLEX+MPU+DFPLAYER: Gyro X:502 Y:453 Z:-5630[0m
+[0;32mI (18158) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:4095 | Pinky:0[0m
+[0;32mI (18158) FLEX+MPU+DFPLAYER: Gyro X:-1206 Y:2719 Z:12999[0m
+[0;32mI (18458) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:3484 | Pinky:0[0m
+[0;32mI (18458) FLEX+MPU+DFPLAYER: Gyro X:-553 Y:-136 Z:-2192[0m
+[0;32mI (18758) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:3156 | Ring:3796 | Pinky:0[0m
+[0;32mI (18758) FLEX+MPU+DFPLAYER: Gyro X:-284 Y:-155 Z:-160[0m
+[0;32mI (19058) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:3905 | Ring:4095 | Pinky:0[0m
+[0;32mI (19058) FLEX+MPU+DFPLAYER: Gyro X:-179 Y:-329 Z:-1996[0m
+[0;32mI (19358) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:1136 | Pinky:0[0m
+[0;32mI (19358) FLEX+MPU+DFPLAYER: Gyro X:-1433 Y:-850 Z:3726[0m
+[0;32mI (19658) FLEX+MPU+DFPLAYER: Thumb:0 | Index:3897 | Middle:3636 | Ring:4095 | Pinky:0[0m
+[0;32mI (19658) FLEX+MPU+DFPLAYER: Gyro X:814 Y:-4273 Z:-13084[0m
+[0;32mI (19958) FLEX+MPU+DFPLAYER: Thumb:0 | Index:3910 | Middle:4095 | Ring:4095 | Pinky:0[0m
+[0;32mI (19958) FLEX+MPU+DFPLAYER: Gyro X:692 Y:-3868 Z:3473[0m
+[0;32mI (20258) FLEX+MPU+DFPLAYER: Thumb:0 | Index:754 | Middle:3961 | Ring:191 | Pinky:0[0m
+[0;32mI (20258) FLEX+MPU+DFPLAYER: Playing file 1.mp3[0m
+[0;32mI (20458) FLEX+MPU+DFPLAYER: Gyro X:-386 Y:-141 Z:-82[0m
+[0;32mI (20758) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:0 | Pinky:0[0m
+[0;32mI (20758) FLEX+MPU+DFPLAYER: Gyro X:-366 Y:-104 Z:-126[0m
+[0;32mI (21058) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:0 | Pinky:0[0m
+[0;32mI (21058) FLEX+MPU+DFPLAYER: Gyro X:-390 Y:-26 Z:-132[0m
+[0;32mI (21358) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:2712 | Ring:0 | Pinky:0[0m
+[0;32mI (21358) FLEX+MPU+DFPLAYER: Gyro X:-281 Y:-100 Z:-130[0m
+[0;32mI (21658) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:0 | Pinky:0[0m
+[0;32mI (21658) FLEX+MPU+DFPLAYER: Gyro X:-371 Y:-41 Z:-150[0m
+[0;32mI (21958) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:0 | Pinky:0[0m
+[0;32mI (21958) FLEX+MPU+DFPLAYER: Gyro X:-349 Y:-62 Z:-140[0m
+[0;32mI (22258) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:679 | Ring:0 | Pinky:0[0m
+[0;32mI (22258) FLEX+MPU+DFPLAYER: Playing file 3.mp3[0m
+[0;32mI (22458) FLEX+MPU+DFPLAYER: Gyro X:-359 Y:-54 Z:-133[0m
+[0;32mI (22758) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:2104 | Ring:613 | Pinky:0[0m
+[0;32mI (22758) FLEX+MPU+DFPLAYER: Playing file 4.mp3[0m
+[0;32mI (22958) FLEX+MPU+DFPLAYER: Gyro X:-358 Y:-36 Z:-146[0m
+[0;32mI (23258) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:2238 | Ring:0 | Pinky:0[0m
+[0;32mI (23258) FLEX+MPU+DFPLAYER: Gyro X:-376 Y:-102 Z:-146[0m
+[0;32mI (23558) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:0 | Pinky:0[0m
+[0;32mI (23558) FLEX+MPU+DFPLAYER: Gyro X:-339 Y:-82 Z:-149[0m
+[0;32mI (23858) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2554 | Pinky:0[0m
+[0;32mI (23858) FLEX+MPU+DFPLAYER: Gyro X:-369 Y:-71 Z:-152[0m
+[0;32mI (24158) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:0 | Pinky:0[0m
+[0;32mI (24158) FLEX+MPU+DFPLAYER: Gyro X:-334 Y:-295 Z:-168[0m
+[0;32mI (24458) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:1745 | Pinky:0[0m
+[0;32mI (24458) FLEX+MPU+DFPLAYER: Gyro X:-433 Y:-9 Z:-139[0m
+[0;32mI (24758) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:0 | Pinky:0[0m
+[0;32mI (24758) FLEX+MPU+DFPLAYER: Gyro X:-269 Y:-34 Z:-118[0m
+[0;32mI (25058) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:1315 | Pinky:0[0m
+[0;32mI (25058) FLEX+MPU+DFPLAYER: Gyro X:-299 Y:-30 Z:-132[0m
+[0;32mI (25358) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:2656 | Ring:2715 | Pinky:0[0m
+[0;32mI (25358) FLEX+MPU+DFPLAYER: Gyro X:-299 Y:-112 Z:-143[0m
+[0;32mI (25658) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:2995 | Ring:2504 | Pinky:0[0m
+[0;32mI (25658) FLEX+MPU+DFPLAYER: Gyro X:-420 Y:-127 Z:-138[0m
+[0;32mI (25958) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:2607 | Ring:2624 | Pinky:0[0m
+[0;32mI (25958) FLEX+MPU+DFPLAYER: Gyro X:-353 Y:-36 Z:-149[0m
+[0;32mI (26258) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:3059 | Ring:2720 | Pinky:0[0m
+[0;32mI (26258) FLEX+MPU+DFPLAYER: Gyro X:-251 Y:-75 Z:-126[0m
+[0;32mI (26558) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:3053 | Ring:2678 | Pinky:0[0m
+[0;32mI (26558) FLEX+MPU+DFPLAYER: Gyro X:-334 Y:-92 Z:-155[0m
+[0;32mI (26858) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:1616 | Ring:2667 | Pinky:0[0m
+[0;32mI (26858) FLEX+MPU+DFPLAYER: Gyro X:-309 Y:-107 Z:-123[0m
+[0;32mI (27158) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:2220 | Ring:2178 | Pinky:0[0m
+[0;32mI (27158) FLEX+MPU+DFPLAYER: Gyro X:-375 Y:-76 Z:-144[0m
+[0;32mI (27458) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:1769 | Ring:1293 | Pinky:0[0m
+[0;32mI (27458) FLEX+MPU+DFPLAYER: Gyro X:-368 Y:-58 Z:-121[0m
+[0;32mI (27758) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:1505 | Ring:648 | Pinky:0[0m
+[0;32mI (27758) FLEX+MPU+DFPLAYER: Playing file 4.mp3[0m
+[0;32mI (27958) FLEX+MPU+DFPLAYER: Gyro X:-338 Y:-198 Z:-143[0m
+[0;32mI (28258) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:1129 | Ring:112 | Pinky:0[0m
+[0;32mI (28258) FLEX+MPU+DFPLAYER: Gyro X:-360 Y:-50 Z:-137[0m
+[0;32mI (28558) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:1161 | Ring:950 | Pinky:0[0m
+[0;32mI (28558) FLEX+MPU+DFPLAYER: Gyro X:-350 Y:-134 Z:-146[0m
+[0;32mI (28858) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:1104 | Ring:1052 | Pinky:0[0m
+[0;32mI (28858) FLEX+MPU+DFPLAYER: Gyro X:-363 Y:-99 Z:-145[0m
+[0;32mI (29158) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:1135 | Ring:768 | Pinky:0[0m
+[0;32mI (29158) FLEX+MPU+DFPLAYER: Playing file 4.mp3[0m
+[0;32mI (29358) FLEX+MPU+DFPLAYER: Gyro X:-364 Y:-31 Z:-127[0m
+[0;32mI (29658) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:1447 | Ring:928 | Pinky:0[0m
+[0;32mI (29658) FLEX+MPU+DFPLAYER: Gyro X:-348 Y:-63 Z:-143[0m
+[0;32mI (29958) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:1505 | Ring:1096 | Pinky:0[0m
+[0;32mI (29958) FLEX+MPU+DFPLAYER: Gyro X:-374 Y:-99 Z:-143[0m
+[0;32mI (30258) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:1534 | Ring:1125 | Pinky:0[0m
+[0;32mI (30258) FLEX+MPU+DFPLAYER: Gyro X:-392 Y:-62 Z:-140[0m
+[0;32mI (30558) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:1056 | Ring:1106 | Pinky:0[0m
+[0;32mI (30558) FLEX+MPU+DFPLAYER: Gyro X:-319 Y:-90 Z:-150[0m
+[0;32mI (30858) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:1059 | Pinky:0[0m
+[0;32mI (30858) FLEX+MPU+DFPLAYER: Gyro X:-344 Y:-81 Z:-140[0m
+[0;32mI (31158) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2029 | Pinky:0[0m
+[0;32mI (31158) FLEX+MPU+DFPLAYER: Gyro X:-383 Y:-77 Z:-114[0m
+[0;32mI (31458) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2540 | Pinky:0[0m
+[0;32mI (31458) FLEX+MPU+DFPLAYER: Gyro X:-390 Y:-97 Z:-165[0m
+[0;32mI (31758) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2186 | Pinky:0[0m
+[0;32mI (31758) FLEX+MPU+DFPLAYER: Gyro X:-390 Y:-57 Z:-137[0m
+[0;32mI (32058) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:973 | Pinky:0[0m
+[0;32mI (32058) FLEX+MPU+DFPLAYER: Gyro X:-363 Y:-64 Z:-131[0m
+[0;32mI (32358) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:1240 | Pinky:0[0m
+[0;32mI (32358) FLEX+MPU+DFPLAYER: Gyro X:-380 Y:-66 Z:-139[0m
+[0;32mI (32658) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:1265 | Pinky:0[0m
+[0;32mI (32658) FLEX+MPU+DFPLAYER: Gyro X:-212 Y:-151 Z:-141[0m
+[0;32mI (32958) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2634 | Pinky:0[0m
+[0;32mI (32958) FLEX+MPU+DFPLAYER: Gyro X:-374 Y:-65 Z:-141[0m
+[0;32mI (33258) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:2600 | Ring:3249 | Pinky:0[0m
+[0;32mI (33258) FLEX+MPU+DFPLAYER: Gyro X:-468 Y:19 Z:-139[0m
+[0;32mI (33558) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:3166 | Pinky:0[0m
+[0;32mI (33558) FLEX+MPU+DFPLAYER: Gyro X:-458 Y:-117 Z:-178[0m
+[0;32mI (33858) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:3102 | Pinky:0[0m
+[0;32mI (33858) FLEX+MPU+DFPLAYER: Gyro X:-574 Y:122 Z:-121[0m
+[0;32mI (34158) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:3055 | Pinky:0[0m
+[0;32mI (34158) FLEX+MPU+DFPLAYER: Gyro X:-273 Y:-103 Z:-135[0m
+[0;32mI (34458) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:3087 | Pinky:0[0m
+[0;32mI (34458) FLEX+MPU+DFPLAYER: Gyro X:-345 Y:-57 Z:-129[0m
+[0;32mI (34758) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:3091 | Pinky:0[0m
+[0;32mI (34758) FLEX+MPU+DFPLAYER: Gyro X:-387 Y:-65 Z:-154[0m
+[0;32mI (35058) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:3118 | Pinky:0[0m
+[0;32mI (35058) FLEX+MPU+DFPLAYER: Gyro X:-402 Y:-117 Z:-136[0m
+[0;32mI (35358) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2975 | Pinky:0[0m
+[0;32mI (35358) FLEX+MPU+DFPLAYER: Gyro X:-375 Y:-32 Z:-135[0m
+[0;32mI (35658) FLEX+MPU+DFPLAYER: Thumb:0 | Index:3284 | Middle:0 | Ring:3106 | Pinky:0[0m
+[0;32mI (35658) FLEX+MPU+DFPLAYER: Gyro X:-382 Y:-73 Z:-123[0m
+[0;32mI (35958) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:3133 | Pinky:0[0m
+[0;32mI (35958) FLEX+MPU+DFPLAYER: Gyro X:-357 Y:-121 Z:-138[0m
+[0;32mI (36258) FLEX+MPU+DFPLAYER: Thumb:0 | Index:4095 | Middle:0 | Ring:3119 | Pinky:0[0m
+[0;32mI (36258) FLEX+MPU+DFPLAYER: Gyro X:-311 Y:-94 Z:-149[0m
+[0;32mI (36558) FLEX+MPU+DFPLAYER: Thumb:0 | Index:3986 | Middle:0 | Ring:3114 | Pinky:0[0m
+[0;32mI (36558) FLEX+MPU+DFPLAYER: Gyro X:-329 Y:-64 Z:-161[0m
+[0;32mI (36858) FLEX+MPU+DFPLAYER: Thumb:0 | Index:3982 | Middle:0 | Ring:3086 | Pinky:0[0m
+[0;32mI (36858) FLEX+MPU+DFPLAYER: Gyro X:-349 Y:-113 Z:-146[0m
+[0;32mI (37158) FLEX+MPU+DFPLAYER: Thumb:0 | Index:4095 | Middle:0 | Ring:3073 | Pinky:0[0m
+[0;32mI (37158) FLEX+MPU+DFPLAYER: Gyro X:-366 Y:-110 Z:-134[0m
+[0;32mI (37458) FLEX+MPU+DFPLAYER: Thumb:0 | Index:4095 | Middle:2283 | Ring:3060 | Pinky:0[0m
+[0;32mI (37458) FLEX+MPU+DFPLAYER: Gyro X:-362 Y:-48 Z:-132[0m
+[0;32mI (37758) FLEX+MPU+DFPLAYER: Thumb:0 | Index:1755 | Middle:0 | Ring:3121 | Pinky:0[0m
+[0;32mI (37758) FLEX+MPU+DFPLAYER: Gyro X:-374 Y:-85 Z:-123[0m
+[0;32mI (38058) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:3112 | Pinky:0[0m
+[0;32mI (38058) FLEX+MPU+DFPLAYER: Gyro X:-400 Y:-27 Z:-143[0m
+[0;32mI (38358) FLEX+MPU+DFPLAYER: Thumb:0 | Index:3807 | Middle:0 | Ring:3089 | Pinky:0[0m
+[0;32mI (38358) FLEX+MPU+DFPLAYER: Gyro X:-400 Y:-54 Z:-145[0m
+[0;32mI (38658) FLEX+MPU+DFPLAYER: Thumb:0 | Index:3203 | Middle:0 | Ring:3123 | Pinky:0[0m
+[0;32mI (38658) FLEX+MPU+DFPLAYER: Gyro X:-302 Y:-128 Z:-138[0m
+[0;32mI (38958) FLEX+MPU+DFPLAYER: Thumb:0 | Index:3052 | Middle:0 | Ring:3136 | Pinky:0[0m
+[0;32mI (38958) FLEX+MPU+DFPLAYER: Gyro X:-306 Y:3 Z:-124[0m
+[0;32mI (39258) FLEX+MPU+DFPLAYER: Thumb:0 | Index:3699 | Middle:0 | Ring:3132 | Pinky:0[0m
+[0;32mI (39258) FLEX+MPU+DFPLAYER: Gyro X:-363 Y:-70 Z:-143[0m
+[0;32mI (39558) FLEX+MPU+DFPLAYER: Thumb:0 | Index:4095 | Middle:2030 | Ring:3123 | Pinky:0[0m
+[0;32mI (39558) FLEX+MPU+DFPLAYER: Gyro X:-391 Y:-72 Z:-140[0m
+[0;32mI (39858) FLEX+MPU+DFPLAYER: Thumb:0 | Index:3724 | Middle:0 | Ring:3133 | Pinky:0[0m
+[0;32mI (39858) FLEX+MPU+DFPLAYER: Gyro X:-380 Y:-109 Z:-165[0m
+[0;32mI (40158) FLEX+MPU+DFPLAYER: Thumb:0 | Index:4095 | Middle:0 | Ring:3153 | Pinky:0[0m
+[0;32mI (40158) FLEX+MPU+DFPLAYER: Gyro X:-364 Y:-72 Z:-152[0m
+[0;32mI (40458) FLEX+MPU+DFPLAYER: Thumb:0 | Index:4095 | Middle:0 | Ring:3140 | Pinky:0[0m
+[0;32mI (40458) FLEX+MPU+DFPLAYER: Gyro X:-351 Y:-93 Z:-148[0m
+[0;32mI (40758) FLEX+MPU+DFPLAYER: Thumb:0 | Index:1659 | Middle:0 | Ring:3132 | Pinky:0[0m
+[0;32mI (40758) FLEX+MPU+DFPLAYER: Gyro X:-329 Y:-149 Z:-141[0m
+[0;32mI (41058) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:3162 | Pinky:0[0m
+[0;32mI (41058) FLEX+MPU+DFPLAYER: Gyro X:-368 Y:-102 Z:-114[0m
+[0;32mI (41358) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:3100 | Pinky:0[0m
+[0;32mI (41358) FLEX+MPU+DFPLAYER: Gyro X:-359 Y:-95 Z:-156[0m
+[0;32mI (41658) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2928 | Pinky:0[0m
+[0;32mI (41658) FLEX+MPU+DFPLAYER: Gyro X:-337 Y:-114 Z:-144[0m
+[0;32mI (41958) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:3096 | Pinky:0[0m
+[0;32mI (41958) FLEX+MPU+DFPLAYER: Gyro X:-341 Y:-57 Z:-135[0m
+[0;32mI (42258) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:2619 | Ring:2299 | Pinky:0[0m
+[0;32mI (42258) FLEX+MPU+DFPLAYER: Gyro X:-355 Y:-81 Z:-126[0m
+[0;32mI (42558) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2927 | Pinky:0[0m
+[0;32mI (42558) FLEX+MPU+DFPLAYER: Gyro X:-320 Y:-93 Z:-136[0m
+[0;32mI (42858) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:3099 | Pinky:0[0m
+[0;32mI (42858) FLEX+MPU+DFPLAYER: Gyro X:-331 Y:-93 Z:-146[0m
+[0;32mI (43158) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:3099 | Pinky:0[0m
+[0;32mI (43158) FLEX+MPU+DFPLAYER: Gyro X:-66 Y:-191 Z:-147[0m
+[0;32mI (43458) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:3107 | Pinky:0[0m
+[0;32mI (43458) FLEX+MPU+DFPLAYER: Gyro X:-343 Y:-35 Z:-124[0m
+[0;32mI (43758) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:3057 | Pinky:0[0m
+[0;32mI (43758) FLEX+MPU+DFPLAYER: Gyro X:-436 Y:-120 Z:-168[0m
+[0;32mI (44058) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:3027 | Pinky:0[0m
+[0;32mI (44058) FLEX+MPU+DFPLAYER: Gyro X:-474 Y:304 Z:-239[0m
+[0;32mI (44358) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:3062 | Pinky:0[0m
+[0;32mI (44358) FLEX+MPU+DFPLAYER: Gyro X:-1036 Y:-679 Z:4453[0m
+[0;32mI (44658) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:3065 | Pinky:0[0m
+[0;32mI (44658) FLEX+MPU+DFPLAYER: Gyro X:537 Y:-2150 Z:-8331[0m
+[0;32mI (44958) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:3082 | Pinky:0[0m
+[0;32mI (44958) FLEX+MPU+DFPLAYER: Gyro X:142 Y:-602 Z:-4250[0m
+[0;32mI (45258) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:3034 | Pinky:0[0m
+[0;32mI (45258) FLEX+MPU+DFPLAYER: Gyro X:-218 Y:121 Z:-434[0m
+[0;32mI (45558) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:3069 | Pinky:0[0m
+[0;32mI (45558) FLEX+MPU+DFPLAYER: Gyro X:84 Y:440 Z:4256[0m
+[0;32mI (45858) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:3071 | Pinky:0[0m
+[0;32mI (45858) FLEX+MPU+DFPLAYER: Gyro X:-1293 Y:-464 Z:1211[0m
+[0;32mI (46158) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:3052 | Pinky:0[0m
+[0;32mI (46158) FLEX+MPU+DFPLAYER: Gyro X:3132 Y:-10066 Z:-4628[0m
+[0;32mI (46458) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2992 | Pinky:0[0m
+[0;32mI (46458) FLEX+MPU+DFPLAYER: Gyro X:-486 Y:-56 Z:-153[0m
+[0;32mI (46758) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2992 | Pinky:0[0m
+[0;32mI (46758) FLEX+MPU+DFPLAYER: Gyro X:-759 Y:685 Z:1420[0m
+[0;32mI (47058) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2986 | Pinky:0[0m
+[0;32mI (47058) FLEX+MPU+DFPLAYER: Gyro X:-5197 Y:-4769 Z:-1477[0m
+[0;32mI (47358) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2925 | Pinky:0[0m
+[0;32mI (47358) FLEX+MPU+DFPLAYER: Gyro X:-6187 Y:-266 Z:178[0m
+[0;32mI (47658) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:1462 | Pinky:0[0m
+[0;32mI (47658) FLEX+MPU+DFPLAYER: Gyro X:-4999 Y:-448 Z:531[0m
+[0;32mI (47958) FLEX+MPU+DFPLAYER: Thumb:0 | Index:2751 | Middle:0 | Ring:0 | Pinky:0[0m
+[0;32mI (47958) FLEX+MPU+DFPLAYER: Gyro X:4792 Y:582 Z:213[0m
+[0;32mI (48258) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:0 | Pinky:0[0m
+[0;32mI (48258) FLEX+MPU+DFPLAYER: Gyro X:2560 Y:765 Z:620[0m
+[0;32mI (48558) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:1328 | Ring:0 | Pinky:0[0m
+[0;32mI (48558) FLEX+MPU+DFPLAYER: Gyro X:-623 Y:201 Z:-63[0m
+[0;32mI (48858) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2748 | Pinky:0[0m
+[0;32mI (48858) FLEX+MPU+DFPLAYER: Gyro X:-3332 Y:-2952 Z:27[0m
+[0;32mI (49158) FLEX+MPU+DFPLAYER: Thumb:0 | Index:3166 | Middle:1629 | Ring:2559 | Pinky:0[0m
+[0;32mI (49158) FLEX+MPU+DFPLAYER: Gyro X:-4407 Y:-2387 Z:-670[0m
+[0;32mI (49458) FLEX+MPU+DFPLAYER: Thumb:0 | Index:2220 | Middle:1816 | Ring:2430 | Pinky:0[0m
+[0;32mI (49458) FLEX+MPU+DFPLAYER: Gyro X:-22 Y:-1561 Z:-1381[0m
+[0;32mI (49758) FLEX+MPU+DFPLAYER: Thumb:0 | Index:2027 | Middle:0 | Ring:2434 | Pinky:0[0m
+[0;32mI (49758) FLEX+MPU+DFPLAYER: Gyro X:5923 Y:3541 Z:125[0m
+[0;32mI (50058) FLEX+MPU+DFPLAYER: Thumb:0 | Index:1919 | Middle:0 | Ring:2635 | Pinky:0[0m
+[0;32mI (50058) FLEX+MPU+DFPLAYER: Gyro X:1316 Y:836 Z:77[0m
+[0;32mI (50358) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2690 | Pinky:0[0m
+[0;32mI (50358) FLEX+MPU+DFPLAYER: Gyro X:-62 Y:-4 Z:-62[0m
+[0;32mI (50658) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2619 | Pinky:0[0m
+[0;32mI (50658) FLEX+MPU+DFPLAYER: Gyro X:-455 Y:524 Z:-86[0m
+[0;32mI (50958) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2749 | Pinky:0[0m
+[0;32mI (50958) FLEX+MPU+DFPLAYER: Gyro X:-361 Y:-103 Z:-142[0m
+[0;32mI (51258) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2705 | Pinky:0[0m
+[0;32mI (51258) FLEX+MPU+DFPLAYER: Gyro X:-340 Y:-92 Z:-124[0m
+[0;32mI (51558) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2690 | Pinky:0[0m
+[0;32mI (51558) FLEX+MPU+DFPLAYER: Gyro X:-370 Y:-136 Z:-162[0m
+[0;32mI (51858) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2699 | Pinky:0[0m
+[0;32mI (51858) FLEX+MPU+DFPLAYER: Gyro X:-314 Y:-54 Z:-135[0m
+[0;32mI (52158) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2704 | Pinky:0[0m
+[0;32mI (52158) FLEX+MPU+DFPLAYER: Gyro X:-344 Y:-53 Z:-152[0m
+[0;32mI (52458) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2624 | Pinky:0[0m
+[0;32mI (52458) FLEX+MPU+DFPLAYER: Gyro X:-392 Y:-77 Z:-135[0m
+[0;32mI (52758) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2499 | Pinky:0[0m
+[0;32mI (52758) FLEX+MPU+DFPLAYER: Gyro X:-341 Y:-52 Z:-140[0m
+[0;32mI (53058) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2064 | Pinky:0[0m
+[0;32mI (53058) FLEX+MPU+DFPLAYER: Gyro X:-319 Y:-93 Z:-127[0m
+[0;32mI (53358) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2159 | Pinky:0[0m
+[0;32mI (53358) FLEX+MPU+DFPLAYER: Gyro X:-353 Y:-66 Z:-135[0m
+[0;32mI (53658) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2288 | Pinky:0[0m
+[0;32mI (53658) FLEX+MPU+DFPLAYER: Gyro X:-353 Y:-139 Z:-120[0m
+[0;32mI (53958) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2515 | Pinky:0[0m
+[0;32mI (53958) FLEX+MPU+DFPLAYER: Gyro X:-358 Y:-137 Z:-143[0m
+[0;32mI (54258) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2534 | Pinky:0[0m
+[0;32mI (54258) FLEX+MPU+DFPLAYER: Gyro X:-362 Y:-114 Z:-130[0m
+[0;32mI (54558) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:1302 | Pinky:0[0m
+[0;32mI (54558) FLEX+MPU+DFPLAYER: Gyro X:-325 Y:-57 Z:-143[0m
+[0;32mI (54858) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:0 | Pinky:0[0m
+[0;32mI (54858) FLEX+MPU+DFPLAYER: Gyro X:-359 Y:-80 Z:-133[0m
+[0;32mI (55158) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:0 | Pinky:0[0m
+[0;32mI (55158) FLEX+MPU+DFPLAYER: Gyro X:-321 Y:-55 Z:-142[0m
+[0;32mI (55458) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2226 | Pinky:0[0m
+[0;32mI (55458) FLEX+MPU+DFPLAYER: Gyro X:-391 Y:-109 Z:-144[0m
+[0;32mI (55758) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2941 | Pinky:0[0m
+[0;32mI (55758) FLEX+MPU+DFPLAYER: Gyro X:-359 Y:-88 Z:-134[0m
+[0;32mI (56058) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2961 | Pinky:0[0m
+[0;32mI (56058) FLEX+MPU+DFPLAYER: Gyro X:-345 Y:-95 Z:-152[0m
+[0;32mI (56358) FLEX+MPU+DFPLAYER: Thumb:0 | Index:1623 | Middle:0 | Ring:2975 | Pinky:0[0m
+[0;32mI (56358) FLEX+MPU+DFPLAYER: Gyro X:-379 Y:-96 Z:-149[0m
+[0;32mI (56658) FLEX+MPU+DFPLAYER: Thumb:0 | Index:4095 | Middle:0 | Ring:2976 | Pinky:0[0m
+[0;32mI (56658) FLEX+MPU+DFPLAYER: Gyro X:-339 Y:36 Z:-123[0m
+[0;32mI (56958) FLEX+MPU+DFPLAYER: Thumb:0 | Index:4095 | Middle:0 | Ring:2934 | Pinky:0[0m
+[0;32mI (56958) FLEX+MPU+DFPLAYER: Gyro X:-352 Y:-36 Z:-132[0m
+[0;32mI (57258) FLEX+MPU+DFPLAYER: Thumb:0 | Index:2723 | Middle:0 | Ring:2959 | Pinky:0[0m
+[0;32mI (57258) FLEX+MPU+DFPLAYER: Gyro X:-357 Y:-42 Z:-152[0m
+[0;32mI (57558) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2966 | Pinky:0[0m
+[0;32mI (57558) FLEX+MPU+DFPLAYER: Gyro X:-324 Y:-110 Z:-145[0m
+[0;32mI (57858) FLEX+MPU+DFPLAYER: Thumb:0 | Index:2494 | Middle:0 | Ring:2969 | Pinky:0[0m
+[0;32mI (57858) FLEX+MPU+DFPLAYER: Gyro X:-371 Y:1 Z:-143[0m
+[0;32mI (58158) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2967 | Pinky:0[0m
+[0;32mI (58158) FLEX+MPU+DFPLAYER: Gyro X:-345 Y:-78 Z:-142[0m
+[0;32mI (58458) FLEX+MPU+DFPLAYER: Thumb:0 | Index:3842 | Middle:0 | Ring:2961 | Pinky:0[0m
+[0;32mI (58458) FLEX+MPU+DFPLAYER: Gyro X:-371 Y:-83 Z:-146[0m
+[0;32mI (58758) FLEX+MPU+DFPLAYER: Thumb:0 | Index:3808 | Middle:0 | Ring:2924 | Pinky:0[0m
+[0;32mI (58758) FLEX+MPU+DFPLAYER: Gyro X:-342 Y:-64 Z:-138[0m
+[0;32mI (59058) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2942 | Pinky:0[0m
+[0;32mI (59058) FLEX+MPU+DFPLAYER: Gyro X:-332 Y:-36 Z:-131[0m
+[0;32mI (59358) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2944 | Pinky:0[0m
+[0;32mI (59358) FLEX+MPU+DFPLAYER: Gyro X:-369 Y:-94 Z:-128[0m
+[0;32mI (59658) FLEX+MPU+DFPLAYER: Thumb:0 | Index:3492 | Middle:0 | Ring:2958 | Pinky:0[0m
+[0;32mI (59658) FLEX+MPU+DFPLAYER: Gyro X:-366 Y:-70 Z:-145[0m
+[0;32mI (59958) FLEX+MPU+DFPLAYER: Thumb:0 | Index:3658 | Middle:2168 | Ring:1974 | Pinky:0[0m
+[0;32mI (59958) FLEX+MPU+DFPLAYER: Gyro X:-371 Y:-45 Z:-147[0m
+[0;32mI (60258) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2094 | Pinky:0[0m
+[0;32mI (60258) FLEX+MPU+DFPLAYER: Gyro X:-358 Y:-99 Z:-143[0m
+[0;32mI (60558) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2800 | Pinky:0[0m
+[0;32mI (60558) FLEX+MPU+DFPLAYER: Gyro X:-339 Y:-52 Z:-127[0m
+[0;32mI (60858) FLEX+MPU+DFPLAYER: Thumb:0 | Index:3420 | Middle:0 | Ring:2832 | Pinky:0[0m
+[0;32mI (60858) FLEX+MPU+DFPLAYER: Gyro X:-342 Y:-82 Z:-138[0m
+[0;32mI (61158) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2971 | Pinky:0[0m
+[0;32mI (61158) FLEX+MPU+DFPLAYER: Gyro X:-373 Y:-54 Z:-143[0m
+[0;32mI (61458) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2985 | Pinky:0[0m
+[0;32mI (61458) FLEX+MPU+DFPLAYER: Gyro X:-348 Y:-87 Z:-159[0m
+[0;32mI (61758) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2994 | Pinky:0[0m
+[0;32mI (61758) FLEX+MPU+DFPLAYER: Gyro X:-353 Y:-70 Z:-149[0m
+[0;32mI (62058) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2995 | Pinky:0[0m
+[0;32mI (62058) FLEX+MPU+DFPLAYER: Gyro X:-172 Y:116 Z:-105[0m
+[0;32mI (62358) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2998 | Pinky:0[0m
+[0;32mI (62358) FLEX+MPU+DFPLAYER: Gyro X:-246 Y:-164 Z:-121[0m
+[0;32mI (62658) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2996 | Pinky:0[0m
+[0;32mI (62658) FLEX+MPU+DFPLAYER: Gyro X:-227 Y:-765 Z:411[0m
+[0;32mI (62958) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:3001 | Pinky:0[0m
+[0;32mI (62958) FLEX+MPU+DFPLAYER: Gyro X:-1881 Y:-666 Z:-1581[0m
+[0;32mI (63258) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2975 | Pinky:0[0m
+[0;32mI (63258) FLEX+MPU+DFPLAYER: Gyro X:-5030 Y:2094 Z:2228[0m
+[0;32mI (63558) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2830 | Pinky:0[0m
+[0;32mI (63558) FLEX+MPU+DFPLAYER: Gyro X:-5107 Y:-2395 Z:-2767[0m
+[0;32mI (63858) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2543 | Pinky:0[0m
+[0;32mI (63858) FLEX+MPU+DFPLAYER: Gyro X:-3512 Y:-880 Z:-671[0m
+[0;32mI (64158) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2034 | Pinky:0[0m
+[0;32mI (64158) FLEX+MPU+DFPLAYER: Gyro X:3830 Y:2328 Z:997[0m
+[0;32mI (64458) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2852 | Pinky:0[0m
+[0;32mI (64458) FLEX+MPU+DFPLAYER: Gyro X:11902 Y:1530 Z:2364[0m
+[0;32mI (64758) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2997 | Pinky:0[0m
+[0;32mI (64758) FLEX+MPU+DFPLAYER: Gyro X:236 Y:-796 Z:814[0m
+[0;32mI (65058) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2990 | Pinky:0[0m
+[0;32mI (65058) FLEX+MPU+DFPLAYER: Gyro X:-4775 Y:-659 Z:-912[0m
+[0;32mI (65358) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2763 | Pinky:0[0m
+[0;32mI (65358) FLEX+MPU+DFPLAYER: Gyro X:-2200 Y:719 Z:-386[0m
+[0;32mI (65658) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2549 | Pinky:0[0m
+[0;32mI (65658) FLEX+MPU+DFPLAYER: Gyro X:-3055 Y:-773 Z:-997[0m
+[0;32mI (65958) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2515 | Pinky:0[0m
+[0;32mI (65958) FLEX+MPU+DFPLAYER: Gyro X:4479 Y:529 Z:-1192[0m
+[0;32mI (66258) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2847 | Pinky:0[0m
+[0;32mI (66258) FLEX+MPU+DFPLAYER: Gyro X:4663 Y:-3418 Z:-1887[0m
+[0;32mI (66558) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2977 | Pinky:0[0m
+[0;32mI (66558) FLEX+MPU+DFPLAYER: Gyro X:120 Y:1250 Z:-275[0m
+[0;32mI (66858) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2976 | Pinky:0[0m
+[0;32mI (66858) FLEX+MPU+DFPLAYER: Gyro X:-367 Y:-70 Z:-144[0m
+[0;32mI (67158) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2977 | Pinky:0[0m
+[0;32mI (67158) FLEX+MPU+DFPLAYER: Gyro X:-316 Y:-89 Z:-131[0m
+[0;32mI (67458) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2989 | Pinky:0[0m
+[0;32mI (67458) FLEX+MPU+DFPLAYER: Gyro X:-377 Y:-67 Z:-148[0m
+[0;32mI (67758) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2991 | Pinky:0[0m
+[0;32mI (67758) FLEX+MPU+DFPLAYER: Gyro X:-348 Y:-51 Z:-138[0m
+[0;32mI (68058) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2991 | Pinky:0[0m
+[0;32mI (68058) FLEX+MPU+DFPLAYER: Gyro X:-362 Y:-65 Z:-134[0m
+[0;32mI (68358) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2996 | Pinky:0[0m
+[0;32mI (68358) FLEX+MPU+DFPLAYER: Gyro X:-385 Y:-108 Z:-157[0m
+[0;32mI (68658) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:2999 | Pinky:0[0m
+[0;32mI (68658) FLEX+MPU+DFPLAYER: Gyro X:-342 Y:-63 Z:-127[0m
+[0;32mI (68958) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:3001 | Pinky:0[0m
+[0;32mI (68958) FLEX+MPU+DFPLAYER: Gyro X:-662 Y:-102 Z:-149[0m
+[0;32mI (69258) FLEX+MPU+DFPLAYER: Thumb:0 | Index:0 | Middle:0 | Ring:3001 | Pinky:0[0m
+[0;32mI (69258) FLEX+MPU+DFPLAYER: Gyro X:-328 Y:-52 Z:-143[0m
