@@ -178,7 +178,7 @@ void app_main(void) {
         else if (is_in_trigger_range(middle) && last_played != 3) { play_mp3_file(3); last_played = 3; }
         else if (is_in_trigger_range(ring) && last_played != 4) { play_mp3_file(4); last_played = 4; }
         else if (is_in_trigger_range(pinky) && last_played != 5) { play_mp3_file(5); last_played = 5; }
-        else if (gyro_x > 15000 || gyro_y > 15000 || gyro_z > 15000) {
+        else if (gyro_x > 2000 || gyro_y > 2000 || gyro_z > 2000) {
             play_mp3_file(6); last_played = 6; // Strong motion trigger
             vTaskDelay(pdMS_TO_TICKS(1000));
         }
