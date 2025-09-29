@@ -55,7 +55,7 @@ This project is inspired by **MIT’s SignAloud glove** but focuses on affordabi
 
 ---
 
-## 📂 File Structure
+##  File Structure
 .
 ├── docs                    
 │   ├── report.pdf          # Project report
