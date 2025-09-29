@@ -5,7 +5,7 @@ A wearable assistive device that translates hand gestures into audible speech us
 
 ---
 
-## 📑 Table of Contents
+##  Table of Contents
 - [About the Project](#-about-the-project)  
 - [Tech Stack](#️-tech-stack)  
 - [File Structure](#-file-structure)  
