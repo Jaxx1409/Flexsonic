@@ -22,7 +22,7 @@ A wearable assistive device that translates hand gestures into audible speech us
 
 ---
 
-## 📖 About the Project
+##  About the Project
 
 ### Aim  
 FlexSonic aims to bridge the communication gap for speech-impaired individuals by converting hand gestures into audible phrases.
@@ -34,7 +34,7 @@ This project is inspired by **MIT’s SignAloud glove** but focuses on affordabi
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 **Hardware:**  
 - ESP32  
@@ -83,9 +83,9 @@ This project is inspired by **MIT’s SignAloud glove** but focuses on affordabi
 ├── Setup.md                # Detailed setup instructions
 └── todo.md                 # Future tasks and ongoing progress
 
-## 🚀 Getting Started
+##  Getting Started
 
-### 📌 Prerequisites
+### Prerequisites
 - **ESP-IDF v4.0+** (or Arduino IDE with ESP32 boards installed)  
 - **Python 3.8+**
 
@@ -99,7 +99,7 @@ This project is inspired by **MIT’s SignAloud glove** but focuses on affordabi
 pip install -r requirements.txt
 ```
 
-## ⚙️ Installation
+##  Installation
 
 Clone the repo:
 ```bash
